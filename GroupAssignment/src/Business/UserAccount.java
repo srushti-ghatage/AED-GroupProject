@@ -4,6 +4,13 @@
  */
 package Business;
 
+import UI.Admin.AdminJFrame;
+import UI.CertificationAuthority.CertificationAuthorityJFrame;
+import UI.ProfessorActions.ProfessorJFrame;
+import UI.StudentActions.StudentJFrame;
+import java.awt.Frame;
+import javax.swing.JFrame;
+
 /**
  *
  * @author 18573
@@ -69,5 +76,21 @@ public class UserAccount {
         this.password= password;
         this.role= role;
         
+    }
+    public JFrame getWorkArea(String role, Business business, UserAccount useraccount){
+        if(role.equals("admin")){
+            System.out.println("LOL");
+            return new AdminJFrame(business,useraccount);
+        }
+        if(role.equals("student")){
+            return new StudentJFrame(business,useraccount);
+        }
+        if(role.equals("professor")){
+            return new ProfessorJFrame(business,useraccount);
+        }
+         if(role.equals("certificationauthority")){
+            return new CertificationAuthorityJFrame(business,useraccount);
+        }
+        return null;
     }
 }
