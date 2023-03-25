@@ -4,10 +4,41 @@
  */
 package Courses;
 
+import java.util.ArrayList;
+
 /**
  *
- * @author 18573
+ * @author megha
  */
 public class CourseCatalog {
+    
+    ArrayList<Course> courseList;
+    
+    public CourseCatalog() {
+        this.courseList = new ArrayList<Course>();
+    }
+
+    public ArrayList<Course> getCourseList() {
+        return courseList;
+    }
+
+    public void setCourseList(ArrayList<Course> courseList) {
+        this.courseList = courseList;
+    }
+  public void addCourse(Course c)
+    {
+       this.courseList.add(c);
+    }
+  
+  public Course findCourseByName(String name){
+      for(Course c:this.courseList)
+       {
+           if(c.getCourseName()== name)
+           {
+               return c;
+           }
+       }
+        return null;
+  }
     
 }

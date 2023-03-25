@@ -6,6 +6,7 @@ package UI.Admin;
 
 import Business.Business;
 import Business.UserAccount;
+import UI.ProfessorActions.CoursesJPanel;
 
 /**
  *

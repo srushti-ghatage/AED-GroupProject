@@ -55,4 +55,16 @@ public class Student {
     String studentemail;
     int creditsEarned;
     ArrayList<Course> coursesTaken;   
+
+    /**
+     *
+     * @return
+     */
+    public boolean isIsReadyToGraduate() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    public boolean isIsReadyToGraduate() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
