@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author 18573
+ * @author SrushtiGhatage
  */
 public class ProfessorDirectory {
 
@@ -36,7 +36,10 @@ public class ProfessorDirectory {
         this.professorList.add(p);
         return p;
     }
-    
+    public void addProf(Professor p)
+    {
+       this.professorList.add(p);
+    }
     public Professor findProfessorByID(int id){
        for(Professor p:this.professorList)
        {
@@ -48,4 +51,34 @@ public class ProfessorDirectory {
         return null;
         
     }
+     public Professor findProfessorByUsername(String uname){
+         System.out.println("findProfessorByUsername"+uname);
+       for(Professor p:this.professorList)
+       {
+           System.out.println("findProfessorByUsername for"+p.getUserName());
+           if(p.getUserName().equalsIgnoreCase(uname))
+           {
+               System.out.println("found"+p.getUserName());
+               return p;
+           }
+       }
+        return null;
+        
+    }
+      public Professor findProfessorByCourse(Course course){
+       for(Professor p:this.professorList)
+       {
+           for(Course c: p.getProfessorCourses()){
+         
+           
+           if(c.getCourseNumber()== course.getCourseNumber())
+           {
+               return p;
+           }
+       }
+       }
+        return null;
+        
+    }
+  
 }

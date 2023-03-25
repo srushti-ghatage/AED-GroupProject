@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import Courses.Course;
 /**
  *
- * @author 18573
+ * @author SrushtiGhatage
  */
 public class Professor {
 
@@ -35,6 +35,22 @@ public class Professor {
     public void setReputationIndex(int reputationIndex) {
         this.reputationIndex = reputationIndex;
     }
+    
+    public int getProfessorId() {
+        return professorId;
+    }
+
+    public void setProfessorId(int professorId) {
+        this.professorId = professorId;
+    }
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
 
     public Professor() {
         
@@ -43,14 +59,9 @@ public class Professor {
      String professorName;
      int reputationIndex;
      int professorId;
+     String userName;
 
-    public int getProfessorId() {
-        return professorId;
-    }
-
-    public void setProfessorId(int professorId) {
-        this.professorId = professorId;
-    }
-     
     
+     
+ 
 }

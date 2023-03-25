@@ -4,12 +4,13 @@
  */
 package Student;
 
+import Courses.Course;
+import Professor.Professor;
 import java.util.ArrayList;
-import Student.Student;
 
 /**
  *
- * @author 18573
+ * @author SrushtiGhatage
  */
 public class StudentDirectory {
 

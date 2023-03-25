@@ -13,7 +13,7 @@ import javax.swing.JFrame;
 
 /**
  *
- * @author 18573
+ * @author SrushtiGhatage
  */
 public class UserAccount {
 
@@ -79,7 +79,6 @@ public class UserAccount {
     }
     public JFrame getWorkArea(String role, Business business, UserAccount useraccount){
         if(role.equals("admin")){
-            System.out.println("LOL");
             return new AdminJFrame(business,useraccount);
         }
         if(role.equals("student")){

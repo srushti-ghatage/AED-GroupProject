@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author megha
+ * @author SrushtiGhatage
  */
 public class MainJFrame extends javax.swing.JFrame {
 
@@ -28,7 +28,8 @@ public class MainJFrame extends javax.swing.JFrame {
     }
     public MainJFrame(Business business, UserAccount useraccount) {
         initComponents();
-        this.business = Business.getBusinessInstance();
+        this.setVisible(true);
+        this.business = business;
         this.useraccountdirectory = business.getUserAccountDirectory();
     }
 
@@ -142,7 +143,7 @@ public class MainJFrame extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(114, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -154,11 +155,15 @@ public class MainJFrame extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void fieldusernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fieldusernameActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_fieldusernameActionPerformed
+
     private void btnsubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsubmitActionPerformed
         // TODO add your handling code here:
         String username = fieldusername.getText();
         String password = fieldpassword.getText();
-        String role = (String) cmbboxrole.getSelectedItem();
+      String role = (String) cmbboxrole.getSelectedItem();
 
         System.out.println("role selected is"+role);
         if(this.useraccountdirectory.accountExists(username, password, role))
@@ -172,13 +177,9 @@ public class MainJFrame extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btnsubmitActionPerformed
 
-    private void fieldusernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fieldusernameActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_fieldusernameActionPerformed
-
     private void cmbboxroleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbboxroleActionPerformed
         // TODO add your handling code here:
-
+        
     }//GEN-LAST:event_cmbboxroleActionPerformed
 
     /**

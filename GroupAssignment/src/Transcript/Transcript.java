@@ -6,7 +6,7 @@ package Transcript;
 
 /**
  *
- * @author 18573
+ * @author SrushtiGhatage
  */
 public class Transcript {
     

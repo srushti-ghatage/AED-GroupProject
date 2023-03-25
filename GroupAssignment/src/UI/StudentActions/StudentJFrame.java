@@ -6,15 +6,20 @@ package UI.StudentActions;
 
 import Business.Business;
 import Business.UserAccount;
+import Student.Student;
+import UI.Admin.ProfessorJPanel;
+import UI.MainJFrame;
+import javax.swing.JOptionPane;
 
 /**
  *
- * @author 18573
+ * @author SrushtiGhatage
  */
 public class StudentJFrame extends javax.swing.JFrame {
 
     private Business business;
      private UserAccount useraccount;
+     Student s;
     /**
      * Creates new form StudentJFrame
      */
@@ -23,8 +28,10 @@ public class StudentJFrame extends javax.swing.JFrame {
     }
     public StudentJFrame(Business business, UserAccount useraccount) {
         initComponents();
+        this.setVisible(true);
         this.business = business;
         this.useraccount = useraccount;
+        s = this.business.getStudentDirectory().findStudentByUsername(this.useraccount.getUsername());
     }
 
     /**
@@ -40,22 +47,82 @@ public class StudentJFrame extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         btnlogout = new javax.swing.JButton();
         btncourses = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
+        btnfees = new javax.swing.JButton();
+        btnfeedback = new javax.swing.JButton();
+        btnTranscript = new javax.swing.JButton();
+        btnApplyGrad = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jSplitPane1.setOrientation(javax.swing.JSplitPane.VERTICAL_SPLIT);
 
-        btnlogout.setText("LOGOUT");
+        jPanel1.setBackground(new java.awt.Color(153, 153, 153));
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Student Window", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 3, 12))); // NOI18N
 
-        btncourses.setText("COURSELIST");
+        btnlogout.setBackground(new java.awt.Color(0, 0, 102));
+        btnlogout.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnlogout.setForeground(new java.awt.Color(255, 255, 255));
+        btnlogout.setText("LOGOUT");
+        btnlogout.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        btnlogout.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnlogoutActionPerformed(evt);
+            }
+        });
+
+        btncourses.setBackground(new java.awt.Color(0, 0, 102));
+        btncourses.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btncourses.setForeground(new java.awt.Color(255, 255, 255));
+        btncourses.setText("COURSE LIST");
+        btncourses.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         btncourses.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btncoursesActionPerformed(evt);
             }
         });
 
-        jButton1.setText("jButton1");
+        btnfees.setBackground(new java.awt.Color(0, 0, 102));
+        btnfees.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnfees.setForeground(new java.awt.Color(255, 255, 255));
+        btnfees.setText("FEES");
+        btnfees.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        btnfees.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnfeesActionPerformed(evt);
+            }
+        });
+
+        btnfeedback.setBackground(new java.awt.Color(0, 0, 102));
+        btnfeedback.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnfeedback.setForeground(new java.awt.Color(255, 255, 255));
+        btnfeedback.setText("FEEDBACK");
+        btnfeedback.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        btnfeedback.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnfeedbackActionPerformed(evt);
+            }
+        });
+
+        btnTranscript.setBackground(new java.awt.Color(0, 51, 102));
+        btnTranscript.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnTranscript.setForeground(new java.awt.Color(255, 255, 255));
+        btnTranscript.setText("TRANSCRIPT");
+        btnTranscript.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnTranscriptActionPerformed(evt);
+            }
+        });
+
+        btnApplyGrad.setBackground(new java.awt.Color(0, 0, 102));
+        btnApplyGrad.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnApplyGrad.setForeground(new java.awt.Color(255, 255, 255));
+        btnApplyGrad.setText("APPLY TO GRADUATE");
+        btnApplyGrad.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnApplyGradActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -63,25 +130,49 @@ public class StudentJFrame extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(14, 14, 14)
-                .addComponent(btnlogout)
+                .addComponent(btnlogout, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(btncourses)
+                .addComponent(btncourses, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnfees, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(30, 30, 30)
+                .addComponent(btnfeedback, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jButton1)
-                .addContainerGap(289, Short.MAX_VALUE))
+                .addComponent(btnTranscript)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnApplyGrad)
+                .addGap(27, 27, 27))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(33, 33, 33)
+                .addGap(31, 31, 31)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnlogout)
-                    .addComponent(btncourses)
-                    .addComponent(jButton1))
-                .addContainerGap(44, Short.MAX_VALUE))
+                    .addComponent(btnlogout, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btncourses, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnfees, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnfeedback, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnTranscript)
+                    .addComponent(btnApplyGrad))
+                .addContainerGap(14, Short.MAX_VALUE))
         );
 
         jSplitPane1.setTopComponent(jPanel1);
+
+        jPanel2.setBackground(new java.awt.Color(153, 153, 153));
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 660, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 397, Short.MAX_VALUE)
+        );
+
+        jSplitPane1.setRightComponent(jPanel2);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -95,7 +186,7 @@ public class StudentJFrame extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jSplitPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 502, Short.MAX_VALUE)
+                .addComponent(jSplitPane1)
                 .addContainerGap())
         );
 
@@ -104,7 +195,40 @@ public class StudentJFrame extends javax.swing.JFrame {
 
     private void btncoursesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncoursesActionPerformed
         // TODO add your handling code here:
+        jSplitPane1.setRightComponent(new SearchCoursesJPanel(this.business,this.useraccount));
     }//GEN-LAST:event_btncoursesActionPerformed
+
+    private void btnfeesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnfeesActionPerformed
+        // TODO add your handling code here:
+        jSplitPane1.setRightComponent(new FeesJPanel(this.business,this.useraccount));
+    }//GEN-LAST:event_btnfeesActionPerformed
+
+    private void btnfeedbackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnfeedbackActionPerformed
+        // TODO add your handling code here:
+        jSplitPane1.setRightComponent(new FeedbackJPanel(this.business,this.useraccount));
+    }//GEN-LAST:event_btnfeedbackActionPerformed
+
+    private void btnlogoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnlogoutActionPerformed
+        // TODO add your handling code here:
+        this.setVisible(false);
+        new MainJFrame(this.business,this.useraccount);
+    }//GEN-LAST:event_btnlogoutActionPerformed
+
+    private void btnApplyGradActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnApplyGradActionPerformed
+        // TODO add your handling code here:
+        if(s.getCoursesTaken().size()>7){
+            s.setIsReadyToGraduate(true);
+            JOptionPane.showMessageDialog(null, "Application for garduation is successfull");
+        }
+        else{
+            JOptionPane.showMessageDialog(null, "Cannot apply for graduation, credit insufficient.");
+        }
+    }//GEN-LAST:event_btnApplyGradActionPerformed
+
+    private void btnTranscriptActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTranscriptActionPerformed
+        // TODO add your handling code here:
+        jSplitPane1.setRightComponent(new CourseListJPanel(this.business,this.useraccount));
+    }//GEN-LAST:event_btnTranscriptActionPerformed
 
     /**
      * @param args the command line arguments
@@ -142,10 +266,14 @@ public class StudentJFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnApplyGrad;
+    private javax.swing.JButton btnTranscript;
     private javax.swing.JButton btncourses;
+    private javax.swing.JButton btnfeedback;
+    private javax.swing.JButton btnfees;
     private javax.swing.JButton btnlogout;
-    private javax.swing.JButton jButton1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JSplitPane jSplitPane1;
     // End of variables declaration//GEN-END:variables
 }

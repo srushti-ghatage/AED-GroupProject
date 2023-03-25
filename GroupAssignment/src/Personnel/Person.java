@@ -6,7 +6,7 @@ package Personnel;
 
 /**
  *
- * @author 18573
+ * @SrushtiGhatage
  */
 public class Person {
     

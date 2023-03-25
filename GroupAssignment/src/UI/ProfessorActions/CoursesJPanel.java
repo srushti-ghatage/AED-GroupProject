@@ -6,13 +6,18 @@ package UI.ProfessorActions;
 
 import Business.Business;
 import Business.UserAccount;
+import Business.UserAccountDirectory;
+import Courses.Course;
+import Courses.CourseCatalog;
+import Professor.Professor;
+import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author 18573
+ * @author SrushtiGhatage
  */
 public class CoursesJPanel extends javax.swing.JPanel {
-
     
     /**
      * Creates new form CoursesJPanel
@@ -23,11 +28,15 @@ public class CoursesJPanel extends javax.swing.JPanel {
     }
     private Business business;
      private UserAccount useraccount;
+     DefaultTableModel tableModel;
+     Professor p;
      
      public CoursesJPanel(Business business, UserAccount useraccount) {
         initComponents();
         this.business = business;
         this.useraccount = useraccount;
+        this.tableModel= (DefaultTableModel) jTable1.getModel();
+       
     }
 
     /**
@@ -45,29 +54,38 @@ public class CoursesJPanel extends javax.swing.JPanel {
         btnaddcourse = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
         txtcoursename = new javax.swing.JTextField();
         txtcoursecredit = new javax.swing.JTextField();
         txtcourseprice = new javax.swing.JTextField();
-        txtcoursePname = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        cmbboxCterm = new javax.swing.JComboBox<>();
+        jLabel6 = new javax.swing.JLabel();
+        txtCnumber = new javax.swing.JTextField();
+        jLabel7 = new javax.swing.JLabel();
+        txtClocation = new javax.swing.JTextField();
+        jLabel8 = new javax.swing.JLabel();
+        txtClang = new javax.swing.JTextField();
+        cmbboxCschedule = new javax.swing.JComboBox<>();
 
         setBackground(new java.awt.Color(255, 255, 102));
 
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel1.setText("Course Name");
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
             },
             new String [] {
-                "Course Name", "Course Credits", "Course Price", "Course Professor Name"
+                "Course Name", "Course Credits", "Course Price", "Course Number", "Course Term"
             }
         ) {
             Class[] types = new Class [] {
-                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
+                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
             };
 
             public Class getColumnClass(int columnIndex) {
@@ -76,85 +94,263 @@ public class CoursesJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(jTable1);
 
+        btnaddcourse.setBackground(new java.awt.Color(102, 102, 102));
+        btnaddcourse.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnaddcourse.setForeground(new java.awt.Color(255, 255, 255));
         btnaddcourse.setText("ADD COURSE");
+        btnaddcourse.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        btnaddcourse.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnaddcourseActionPerformed(evt);
+            }
+        });
 
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel2.setText("Course Credit");
 
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel3.setText("Course Price");
 
-        jLabel4.setText("Course Professor name");
+        txtcoursename.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+
+        txtcoursecredit.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        txtcoursecredit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtcoursecreditActionPerformed(evt);
+            }
+        });
+
+        txtcourseprice.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel5.setText("Course Schedule");
+
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel4.setText("Course Term");
+
+        cmbboxCterm.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        cmbboxCterm.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Fall", "Spring", "Summer", "Winter" }));
+
+        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel6.setText("Course Number");
+
+        txtCnumber.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+
+        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel7.setText("Course Location");
+
+        txtClocation.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+
+        jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel8.setText("Course Language");
+
+        txtClang.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+
+        cmbboxCschedule.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        cmbboxCschedule.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0800-1130", "1200-1530", "1600-1930" }));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(37, 37, 37)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(52, 52, 52)
-                        .addComponent(btnaddcourse)
-                        .addGap(0, 0, Short.MAX_VALUE))
+                        .addComponent(jLabel8)
+                        .addGap(18, 18, 18)
+                        .addComponent(txtClang))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(37, 37, 37)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel4)
-                                .addGap(18, 18, 18)
-                                .addComponent(txtcoursePname, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel1)
                                     .addComponent(jLabel2)
-                                    .addComponent(jLabel3))
-                                .addGap(41, 41, 41)
+                                    .addComponent(jLabel3)
+                                    .addComponent(jLabel4))
+                                .addGap(12, 12, 12))
+                            .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.TRAILING))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(17, 17, 17)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(txtcourseprice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txtcoursename, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txtcoursecredit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 68, Short.MAX_VALUE)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
+                                    .addComponent(txtcoursename)
+                                    .addComponent(txtcoursecredit)
+                                    .addComponent(txtcourseprice)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(cmbboxCterm, javax.swing.GroupLayout.Alignment.TRAILING, 0, 116, Short.MAX_VALUE)
+                                    .addComponent(txtCnumber)))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel5)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(cmbboxCschedule, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel7)
+                        .addGap(18, 18, 18)
+                        .addComponent(txtClocation)))
+                .addGap(34, 34, 34)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 308, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(19, 19, 19))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(97, 97, 97)
+                .addComponent(btnaddcourse)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(btnaddcourse)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(43, 43, 43)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel1)
-                            .addComponent(txtcoursename, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(txtcoursename, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel2)
                             .addComponent(txtcoursecredit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(23, 23, 23)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGap(20, 20, 20)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel3)
                             .addComponent(txtcourseprice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(26, 26, 26)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(23, 23, 23)
+                                .addComponent(jLabel5))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(20, 20, 20)
+                                .addComponent(cmbboxCschedule, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel4)
-                            .addComponent(txtcoursePname, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(21, 21, 21)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 274, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 9, Short.MAX_VALUE)
-                .addComponent(btnaddcourse)
-                .addGap(144, 144, 144))
+                            .addComponent(cmbboxCterm, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtCnumber, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel6))
+                        .addGap(28, 28, 28)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel7)
+                            .addComponent(txtClocation, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel8)
+                            .addComponent(txtClang, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 394, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(22, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void btnaddcourseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnaddcourseActionPerformed
+        // TODO add your handling code here:
+        if(validateInput()){
+         p = this.business.getProfessorDirectory().findProfessorByUsername(this.useraccount.getUsername());
+        System.out.println("CoursesJPanel Constructor"+p.getProfessorName());
+         System.out.println("CoursesJPanel username"+this.useraccount.getUsername());
+        String name = txtcoursename.getText();
+        Course c = new Course();
+        c.setCourseNumber(txtCnumber.getText());
+        c.setCourseName(name);
+        c.setCourseNumberOfCredits(txtcoursecredit.getText());
+        c.setCourseTerm(cmbboxCterm.getSelectedItem().toString());
+        c.setCourseLanguage(txtClang.getText());
+        c.setCourseLocation(txtClocation.getText());
+        c.setProfessorName(p.getProfessorName());
+        c.setCourseSchedule(cmbboxCschedule.getSelectedItem().toString());
+        c.setCoursePrice(txtcourseprice.getText());
+        
+        CourseCatalog cc = this.business.getCourseDirectory();
+        if(p.getProfessorCourses().size()>1){
+            JOptionPane.showMessageDialog(null,"Cannot add more than 2 courses");
+        }
+        else{
+            p.getProfessorCourses().add(c);
+            cc.addCourse(c);
+        populate();
+        JOptionPane.showMessageDialog(null,"Courses added successfully");
+        }
+        
+        }
+    }//GEN-LAST:event_btnaddcourseActionPerformed
+
+    private void txtcoursecreditActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtcoursecreditActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtcoursecreditActionPerformed
+public void populate(){
+        tableModel.setRowCount(0);
+        
+        for(Course c: this.business.getCourseDirectory().getCourseList()){
+            
+            Object[] row= new Object[5];
+            
+            row[0]= c.getCourseNumber();
+            row[1]= c.getCourseName();
+            row[2]= c.getCoursePrice();
+            row[3]= c.getCourseNumberOfCredits();
+            row[4]= c.getCourseTerm();
+           
+            tableModel.addRow(row);
+        }
+    
+    }
+boolean validateInput(){
+    if( txtcoursename.getText().equals("")){
+        JOptionPane.showMessageDialog(null,"Course name should not be empty");
+        return false;
+    }
+     if( txtClang.getText().equals("")){
+         JOptionPane.showMessageDialog(null,"Course language field should not be empty");
+        return false;
+    }
+      if( txtClocation.getText().equals("")){
+          JOptionPane.showMessageDialog(null,"Course location field should not be empty");
+        return false;
+    }
+       if( txtCnumber.getText().equals("")){
+           JOptionPane.showMessageDialog(null,"Course number field should not be empty");
+        return false;
+    }
+        if( txtcoursecredit.getText().equals("")){
+            JOptionPane.showMessageDialog(null,"Course credit field should not be empty");
+        return false;
+    }
+        if( txtcourseprice.getText().equals("")){
+            JOptionPane.showMessageDialog(null,"Course price field should not be empty");
+        return false;
+    }
+        if( cmbboxCschedule.getSelectedItem().equals("")){
+            JOptionPane.showMessageDialog(null,"Course schedule field should not be empty");
+        return false;
+    }
+        if( cmbboxCterm.getSelectedItem().equals("")){
+            JOptionPane.showMessageDialog(null,"Course Term field should not be empty");
+        return false;
+    }
+       
+    return true;
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnaddcourse;
+    private javax.swing.JComboBox<String> cmbboxCschedule;
+    private javax.swing.JComboBox<String> cmbboxCterm;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
-    private javax.swing.JTextField txtcoursePname;
+    private javax.swing.JTextField txtClang;
+    private javax.swing.JTextField txtClocation;
+    private javax.swing.JTextField txtCnumber;
     private javax.swing.JTextField txtcoursecredit;
     private javax.swing.JTextField txtcoursename;
     private javax.swing.JTextField txtcourseprice;

@@ -14,7 +14,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author megha
+ * @author SrushtiGhatage
  */
 public class StudentListJPanel extends javax.swing.JPanel {
 
@@ -55,17 +55,24 @@ public class StudentListJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         btnsubmit = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         tblcertification = new javax.swing.JTable();
-        btnhomepage = new javax.swing.JButton();
         cmbboxstdid = new javax.swing.JComboBox<>();
         lblcredit = new javax.swing.JLabel();
         lblstdname = new javax.swing.JLabel();
         btnselect = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+
+        setBackground(new java.awt.Color(153, 255, 255));
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel1.setText("Student Name");
+
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel2.setText("Student ID");
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel3.setText("Credit");
@@ -102,12 +109,6 @@ public class StudentListJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblcertification);
 
-        btnhomepage.setBackground(new java.awt.Color(102, 102, 102));
-        btnhomepage.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        btnhomepage.setForeground(new java.awt.Color(255, 255, 255));
-        btnhomepage.setText("HOME PAGE");
-        btnhomepage.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
         cmbboxstdid.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
 
         lblcredit.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -124,12 +125,6 @@ public class StudentListJPanel extends javax.swing.JPanel {
                 btnselectActionPerformed(evt);
             }
         });
-
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel1.setText("Student Name");
-
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel2.setText("Student ID");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -155,15 +150,9 @@ public class StudentListJPanel extends javax.swing.JPanel {
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                             .addGap(100, 100, 100)
                             .addComponent(btnselect, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 368, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(48, 48, 48)
-                        .addComponent(btnhomepage)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 368, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -180,18 +169,16 @@ public class StudentListJPanel extends javax.swing.JPanel {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel1)
                             .addComponent(lblstdname, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(40, 40, 40)
+                        .addGap(43, 43, 43)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel3)
                             .addComponent(lblcredit, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(31, 31, 31)
                         .addComponent(btnsubmit, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(btnhomepage)
-                        .addGap(18, 18, 18)
+                        .addGap(42, 42, 42)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 395, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(66, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -200,7 +187,7 @@ public class StudentListJPanel extends javax.swing.JPanel {
         s.setIsApprovedForGraduation(true);
         populate();
     }//GEN-LAST:event_btnsubmitActionPerformed
-    
+
     public void populate(){
         tableModel.setRowCount(0);
         
@@ -217,10 +204,10 @@ public class StudentListJPanel extends javax.swing.JPanel {
     }
     private void btnselectActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnselectActionPerformed
         // TODO add your handling code here:
-
+        
         populateStudentData();
     }//GEN-LAST:event_btnselectActionPerformed
-    
+
     public void populateStudentData(){
       
         s = this.business.getStudentDirectory().findStudentByID(Integer.parseInt((String) cmbboxstdid.getSelectedItem()));
@@ -229,7 +216,6 @@ public class StudentListJPanel extends javax.swing.JPanel {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnhomepage;
     private javax.swing.JButton btnselect;
     private javax.swing.JButton btnsubmit;
     private javax.swing.JComboBox<String> cmbboxstdid;

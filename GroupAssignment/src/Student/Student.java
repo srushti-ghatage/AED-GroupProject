@@ -20,11 +20,11 @@ public class Student {
         this.studentname = studentname;
     }
 
-    public String getStudentPersonId() {
+    public int getStudentPersonId() {
         return studentPersonId;
     }
 
-    public void setStudentPersonId(String studentPersonId) {
+    public void setStudentPersonId(int studentPersonId) {
         this.studentPersonId = studentPersonId;
     }
 
@@ -50,21 +50,35 @@ public class Student {
     public void setCoursesTaken(ArrayList<Course> coursesTaken) {
         this.coursesTaken = coursesTaken;
     }
+    public boolean isIsApprovedForGraduation() {
+        return isApprovedForGraduation;
+    }
+
+    public void setIsApprovedForGraduation(boolean isApprovedForGraduation) {
+        this.isApprovedForGraduation = isApprovedForGraduation;
+    }
+    
+    public boolean isIsReadyToGraduate() {
+        return isReadyToGraduate;
+    }
+
+    public void setIsReadyToGraduate(boolean isReadyToGraduate) {
+        this.isReadyToGraduate = isReadyToGraduate;
+    }
+     public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
     String studentname;
-    String studentPersonId;
+    int studentPersonId;
     String studentemail;
     int creditsEarned;
     ArrayList<Course> coursesTaken;   
-
-    /**
-     *
-     * @return
-     */
-    public boolean isIsReadyToGraduate() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public boolean isIsReadyToGraduate() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
+    boolean isApprovedForGraduation; 
+    boolean isReadyToGraduate;
+    String userName;
 }

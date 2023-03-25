@@ -8,19 +8,24 @@ import java.util.ArrayList;
 
 /**
  *
- * @author 18573
+ * @author SrushtiGhatage
  */
 public class UserAccountDirectory {
     ArrayList <UserAccount> userAccountList;
    
     public UserAccountDirectory(){
-        this.userAccountList= new ArrayList<UserAccount>();
+       this.userAccountList= new ArrayList<UserAccount>();
 
     }  
     public UserAccount createUserAccount(String username, String password, String role){
         UserAccount user= new UserAccount("",username, password, role);
        
         userAccountList.add(user);
+        for(UserAccount u: userAccountList){
+            System.out.println("createUserAccountADDED"+u.getUsername());
+                System.out.println("createUserAccountADDED"+u.getRole());    System.out.println("createUserAccountADDED"+u.getPassword());
+                
+        }
         return user;
     }
    
@@ -43,9 +48,18 @@ public class UserAccountDirectory {
     }
    
     public Boolean accountExists(String username, String password, String role){
+         System.out.println("fouaccountExistsnd"+username);
+             System.out.println("fouaccountExistsnd"+password);
+                 System.out.println("fouaccountExistsnd"+role);
         for(UserAccount u: this.userAccountList){
+                    System.out.println("inlist"+u.getUsername());
+             System.out.println("inlist"+u.getPassword());
+                         System.out.println("inlist"+u.getRole());
+                 System.out.println("fouaccountExistsnd"+role);
             if(u.getUsername().equals(username) && u.getPassword().equals(password) && u.getRole().equals(role)){
-                   return true;
+                 
+                   System.out.println("found"+u.getUsername());
+                     return true;
                }
         }
         return false;
