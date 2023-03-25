@@ -4,11 +4,17 @@
  */
 package Courses;
 
+import Professor.Professor;
+import java.util.ArrayList;
+
 /**
  *
- * @author 18573
+ * @author megha
  */
 public class Course {
+
+    public Course() {
+    }
 
     public String getCourseRegion() {
         return courseRegion;
@@ -57,7 +63,60 @@ public class Course {
     public void setCoursePrice(String coursePrice) {
         this.coursePrice = coursePrice;
     }
+     public ArrayList<Course> getCourses() {
+        return courses;
+    }
 
+    public void setCourses(ArrayList<Course> courses) {
+        this.courses = courses;
+    }
+
+
+      public String getCourseName() {
+        return courseName;
+    }
+
+    public void setCourseName(String courseName) {
+        this.courseName = courseName;
+    }
+       public String getCourseTerm() {
+        return courseTerm;
+    }
+
+    public void setCourseTerm(String courseTerm) {
+        this.courseTerm = courseTerm;
+    }
+    
+    public String getProfessorName() {
+        return professorName;
+    }
+
+    public void setProfessorName(String professorName) {
+        this.professorName = professorName;
+    }
+    
+    public int getReputationIndex() {
+        return reputationIndex;
+    }
+
+    public void setReputationIndex(int reputationIndex) {
+        this.reputationIndex = reputationIndex;
+    }
+     public String getCourseSchedule() {
+        return courseSchedule;
+    }
+
+    public void setCourseSchedule(String courseSchedule) {
+        this.courseSchedule = courseSchedule;
+    }
+      public String getCourseLocation() {
+        return courseLocation;
+    }
+
+    public void setCourseLocation(String courseLocation) {
+        this.courseLocation = courseLocation;
+    }
+    
     public Course (String courseRegion, String courseLanguage, String courseTopic, String courseNumber, String courseNumberOfCredits, String coursePrice) {
         this.courseRegion = courseRegion;
         this.courseLanguage = courseLanguage;
@@ -72,4 +131,12 @@ public class Course {
     String courseNumber;
     String courseNumberOfCredits;
     String coursePrice;
+    ArrayList <Course> courses;
+    String professorName;
+    String courseName;
+    String courseTerm;
+    int reputationIndex;
+    String courseSchedule;
+    String courseLocation;
+    
 }
