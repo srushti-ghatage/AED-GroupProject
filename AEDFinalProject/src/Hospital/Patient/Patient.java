@@ -2,40 +2,39 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Hospital.Doctor;
+package Hospital.Patient;
 
 /**
  *
  * @author SrushtiGhatage
  */
-public class Doctor {
-    private String doctorId;
-    private String name;
+public class Patient {
+      
+    private String role;
+    private String patientId;
+    private String docId;
     private String username;
+    private String name;
     private Integer age;
     private String gender;
-    private String role;
     private String emailId;
     private Long phno;
     private String password;
-    private Integer experience;
-    private String specialization;
-    private String hospital;
-
-    public String getDoctorId() {
-        return doctorId;
+    
+    public String getRole() {
+        return role;
     }
 
-    public void setDoctorId(String doctorId) {
-        this.doctorId = doctorId;
+    public void setRole(String role) {
+        this.role = role;
     }
 
-    public String getName() {
-        return name;
+    public String getPatientId() {
+        return patientId;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setPatientId(String patientId) {
+        this.patientId = patientId;
     }
 
     public String getUsername() {
@@ -44,6 +43,14 @@ public class Doctor {
 
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public Integer getAge() {
@@ -60,14 +67,6 @@ public class Doctor {
 
     public void setGender(String gender) {
         this.gender = gender;
-    }
-
-    public String getRole() {
-        return role;
-    }
-
-    public void setRole(String role) {
-        this.role = role;
     }
 
     public String getEmailId() {
@@ -94,33 +93,19 @@ public class Doctor {
         this.password = password;
     }
 
-    public Integer getExperience() {
-        return experience;
+    public String getDocId() {
+        return docId;
     }
 
-    public void setExperience(Integer experience) {
-        this.experience = experience;
-    }
-
-    public String getSpecialization() {
-        return specialization;
-    }
-
-    public void setSpecialization(String specialization) {
-        this.specialization = specialization;
-    }
-
-    public String getHospital() {
-        return hospital;
-    }
-
-    public void setHospital(String hospital) {
-        this.hospital = hospital;
+    public void setDocId(String docId) {
+        this.docId = docId;
     }
     
+    
+  
     @Override
     public String toString(){
-        String n = String.valueOf(doctorId);
+        String n = String.valueOf(patientId);
         return n;
     }
 }
