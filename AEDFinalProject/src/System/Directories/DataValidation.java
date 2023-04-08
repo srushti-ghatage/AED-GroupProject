@@ -10,4 +10,10 @@ package System.Directories;
  */
 public class DataValidation {
     
+     public boolean lengthCheck(String val){
+        if(val.length()<=0||val.length()>30){
+            return false;
+        }
+        return true;
+    }
 }
