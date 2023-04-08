@@ -4,10 +4,17 @@
  */
 package Hospital.Encounter;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author SrushtiGhatage
  */
 public class EncounterDirectory {
+     private ArrayList<Encounter> hospitalEncounterList;
+    
+    public EncounterDirectory() {
+    hospitalEncounterList = new ArrayList<Encounter>();
+    }
     
 }
