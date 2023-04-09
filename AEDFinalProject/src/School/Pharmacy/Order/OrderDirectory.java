@@ -23,6 +23,29 @@ public class OrderDirectory {
         return orderList;
     }
 
-   
+    public void setOrderList(ArrayList<Order> orderList) {
+        this.orderList = orderList;
+    }
+    
+    public Order addOrder(){
+        Order o = new Order();
+        orderList.add(o);
+        return o;
+    }
+    
+    public void deleteOrder(Order m){
+        orderList.remove(m);
+    }
+    
+    public boolean uiqueNgoOrderId(String id) {
+
+        for (Order d : orderList) {
+
+            if (id.equals(d.getOrderid())) {
+                return false;
+            }
+        }
+       return true;
+      }
     
 }
