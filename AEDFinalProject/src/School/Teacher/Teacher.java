@@ -2,15 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package School.Principal;
-
+package School.Teacher;
 
 /**
  *
  * @author megha
  */
-public class Principal{
-    
+public class Teacher {
     private String teacherId;
     private String name;
     private String username;
@@ -27,8 +25,8 @@ public class Principal{
         return teacherId;
     }
 
-    public void setTeacherId(String teacherId) {
-        this.teacherId = teacherId;
+    public void setTeacherId(String ngoManagerId) {
+        this.teacherId = ngoManagerId;
     }
 
     public String getName() {
@@ -116,5 +114,6 @@ public class Principal{
         String n = String.valueOf(teacherId);
         return n;
     }
+    
     
 }
