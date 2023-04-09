@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author chinm
+ * @author megha
  */
 public class FinalResultDirectory {
      private ArrayList<FinalResult> resultList;
