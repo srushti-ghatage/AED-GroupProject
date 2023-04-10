@@ -4,10 +4,17 @@
  */
 package Hospital.Patient;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author SrushtiGhatage
  */
 public class PatientDirectory {
+    private ArrayList<Patient> patientList;
+    
+    public PatientDirectory() {
+        patientList = new ArrayList<Patient>();   
+    }
     
 }
