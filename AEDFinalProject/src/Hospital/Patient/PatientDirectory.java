@@ -16,5 +16,16 @@ public class PatientDirectory {
     public PatientDirectory() {
         patientList = new ArrayList<Patient>();   
     }
-    
+     public ArrayList<Patient> getPatientList() {
+        return patientList;
+    }
+
+    public void setPatientList(ArrayList<Patient> patientList) {
+        this.patientList = patientList;
+    }
+    public Patient addPatient(){
+        Patient newpatient = new Patient();
+        patientList.add(newpatient);
+        return newpatient;
+    }
 }
