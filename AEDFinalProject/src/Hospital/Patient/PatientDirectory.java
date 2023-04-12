@@ -52,5 +52,25 @@ public class PatientDirectory {
         }
             return true; 
     } 
+     public boolean uniquePatientUsername(String username){
+        for (Patient d: patientList) {
+
+            if (username.equals(d.getUsername())) {
+                return false;
+            }
+        }
+            return true;
+    }
+
     
+      public String[] patUsernameArray(){
+        String[] patUsername = new String[patientList.size()+1];
+        
+        int count = 0;
+        for (Patient d: patientList){
+            patUsername[count] = d.getUsername();
+            count++; 
+        }
+        return patUsername;
+    }
 }
