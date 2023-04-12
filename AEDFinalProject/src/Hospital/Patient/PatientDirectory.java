@@ -28,4 +28,29 @@ public class PatientDirectory {
         patientList.add(newpatient);
         return newpatient;
     }
+     public void deletePatient(Patient m){
+        patientList.remove(m);
+    }
+    
+    public Patient findPatient(String username, String password){
+        for(Patient n: patientList){
+            if(n.getUsername().equals(username) && n.getPassword().equals(password)){
+                return n;
+            }
+            
+        }
+        return null;
+    }
+    
+    public boolean uiquePatientId(String id) {
+
+        for (Patient d : patientList) {
+
+            if (id.equals(d.getPatientId())) {
+                return false;
+            }
+        }
+            return true; 
+    } 
+    
 }
