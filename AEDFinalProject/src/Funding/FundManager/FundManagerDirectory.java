@@ -25,4 +25,19 @@ public class FundManagerDirectory {
     public void setFundManagerList(ArrayList<FundManager> fundManagerList) {
         this.fundManagerList = fundManagerList;
     }
+     public FundManager addFundManager(){
+        FundManager f = new FundManager();
+        fundManagerList.add(f);
+        return f;
+    }
+    
+    public void deleteFundManager(FundManager f){
+        fundManagerList.remove(f);
+    }
+    
+    public FundManager findFundManager(String username, String password){
+        for(FundManager f: fundManagerList){
+            if(f.getUsername().equals(username) && f.getPassword().equals(password)){
+                return f;
+            }
 }
