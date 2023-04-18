@@ -40,4 +40,29 @@ public class FundManagerDirectory {
             if(f.getUsername().equals(username) && f.getPassword().equals(password)){
                 return f;
             }
+                 
+        }
+        return null;
+    }
+    
+    public boolean uniqueFundManId(String id) {
+
+        for (FundManager d : fundManagerList) {
+
+            if (id.equals(d.getFundManagerId())) {
+                return false;
+            }
+        }
+            return true; 
+    } 
+    
+    public boolean uniqueFundManUsername(String username){
+        for (FundManager d: fundManagerList) {
+
+            if (username.equals(d.getUsername())) {
+                return false;
+            }
+        }
+            return true;
+    }
 }
