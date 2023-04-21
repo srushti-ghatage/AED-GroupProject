@@ -380,7 +380,7 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
 
         panelWork.add(panelHome, "card2");
 
-        panelEncounter.setBackground(new java.awt.Color(255, 255, 255));
+        panelEncounter.setBackground(new java.awt.Color(204, 255, 255));
 
         lblTitleEncounter.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         lblTitleEncounter.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -1572,7 +1572,7 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(SplitPaneMedAdmin, javax.swing.GroupLayout.DEFAULT_SIZE, 750, Short.MAX_VALUE)
+            .addComponent(SplitPaneMedAdmin)
         );
     }// </editor-fold>//GEN-END:initComponents
 
