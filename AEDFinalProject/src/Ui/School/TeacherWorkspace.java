@@ -212,6 +212,8 @@ public class TeacherWorkspace extends javax.swing.JPanel {
 
         panelWork.add(panelHome, "card2");
 
+        panelStudent.setBackground(new java.awt.Color(204, 255, 255));
+
         lblTitle3.setFont(new java.awt.Font("Rockwell", 1, 36)); // NOI18N
         lblTitle3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitle3.setText("Student");
