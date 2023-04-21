@@ -162,6 +162,7 @@ public class DeliveryManWorkspace extends javax.swing.JPanel {
                 .addContainerGap(575, Short.MAX_VALUE))
         );
 
+        lblTitle6.setBackground(new java.awt.Color(204, 255, 255));
         lblTitle6.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         lblTitle6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitle6.setText("NGO Orders");

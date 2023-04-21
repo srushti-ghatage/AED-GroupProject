@@ -105,6 +105,7 @@ public class NgoLoginPage extends javax.swing.JPanel {
         });
         add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, 80, 40));
 
+        jLabel2.setBackground(new java.awt.Color(204, 255, 255));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UiImagesssss/hands together.jpg"))); // NOI18N
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 1280, 750));
