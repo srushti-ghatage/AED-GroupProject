@@ -205,7 +205,7 @@ public class CaretakerWorkspace extends javax.swing.JPanel {
 
         panelWork.add(panelHome, "card2");
 
-        panelChildren.setBackground(new java.awt.Color(255, 255, 255));
+        panelChildren.setBackground(new java.awt.Color(204, 255, 255));
         panelChildren.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblTitle9.setFont(new java.awt.Font("Rockwell", 1, 36)); // NOI18N
