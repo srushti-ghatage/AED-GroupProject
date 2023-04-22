@@ -835,6 +835,8 @@ public class HospitalAdminWorkspace extends javax.swing.JPanel {
 
         panelWork.add(panelEncounter, "card5");
 
+        panelAppointment.setBackground(new java.awt.Color(204, 255, 255));
+
         tableAppointment.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
@@ -877,6 +879,7 @@ public class HospitalAdminWorkspace extends javax.swing.JPanel {
         txtChildComment.setRows(5);
         jScrollPane5.setViewportView(txtChildComment);
 
+        lblTitle7.setBackground(new java.awt.Color(204, 255, 255));
         lblTitle7.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         lblTitle7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitle7.setText("NGO Apointments");
