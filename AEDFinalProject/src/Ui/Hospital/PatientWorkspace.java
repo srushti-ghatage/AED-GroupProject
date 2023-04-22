@@ -259,7 +259,7 @@ public class PatientWorkspace extends javax.swing.JPanel {
                 .addGap(139, 139, 139))
         );
 
-        panelHome.setBackground(new java.awt.Color(255, 255, 255));
+        panelHome.setBackground(new java.awt.Color(204, 255, 255));
 
         lblRole.setFont(new java.awt.Font("Rockwell", 1, 18)); // NOI18N
         lblRole.setText("Role:  Patient");
@@ -303,7 +303,7 @@ public class PatientWorkspace extends javax.swing.JPanel {
         panelWork.setLayout(panelWorkLayout);
         panelWorkLayout.setHorizontalGroup(
             panelWorkLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1177, Short.MAX_VALUE)
+            .addGap(0, 1300, Short.MAX_VALUE)
             .addGroup(panelWorkLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(panelWorkLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
