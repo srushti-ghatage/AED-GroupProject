@@ -919,7 +919,7 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
 
         panelWork.add(panelChildren, "card10");
 
-        panelHealth.setBackground(new java.awt.Color(255, 255, 255));
+        panelHealth.setBackground(new java.awt.Color(204, 255, 255));
         panelHealth.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblTitle6.setFont(new java.awt.Font("Rockwell", 1, 36)); // NOI18N
