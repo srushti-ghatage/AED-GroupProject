@@ -488,7 +488,7 @@ public class PrincipalWorkspace extends javax.swing.JPanel {
 
         panelWork.add(panelApplications, "card6");
 
-        panelJobApply.setBackground(new java.awt.Color(255, 255, 255));
+        panelJobApply.setBackground(new java.awt.Color(204, 255, 255));
 
         lblTitle5.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         lblTitle5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -824,11 +824,9 @@ public class PrincipalWorkspace extends javax.swing.JPanel {
                                     .addComponent(lblTeacherName)
                                     .addComponent(lblTeacherAge)
                                     .addComponent(lblTeacherDOB)
-                                    .addComponent(lblTeacherUsername))
-                                .addGap(2, 2, 2))
-                            .addGroup(panelTeacherLayout.createSequentialGroup()
-                                .addComponent(lblTeacherRole)
-                                .addGap(31, 31, 31)))
+                                    .addComponent(lblTeacherUsername)
+                                    .addComponent(lblTeacherRole))
+                                .addGap(2, 2, 2)))
                         .addGap(44, 44, 44)
                         .addGroup(panelTeacherLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(txtTeacherRole, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
