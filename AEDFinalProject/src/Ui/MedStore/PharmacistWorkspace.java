@@ -211,7 +211,7 @@ public class PharmacistWorkspace extends javax.swing.JPanel {
 
         panelWork.add(panelHome, "card2");
 
-        panelBilling.setBackground(new java.awt.Color(204, 255, 255));
+        panelBilling.setBackground(new java.awt.Color(153, 255, 255));
 
         lblTitle4.setFont(new java.awt.Font("Rockwell", 1, 36)); // NOI18N
         lblTitle4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
