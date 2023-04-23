@@ -8,7 +8,7 @@ import Hospital.Doctor.Doctor;
 import Hospital.Encounter.Encounter;
 import Hospital.Patient.Patient;
 import Ngo.NgoManager.NgoManager;
-import System.Directories.DB4OUtil;
+
 import System.Directories.DataValidation;
 import System.Directories.MainSystem;
 import java.awt.CardLayout;
