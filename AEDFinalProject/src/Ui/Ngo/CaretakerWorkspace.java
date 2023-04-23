@@ -17,7 +17,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author megha
+ * @author SrushtiGhatage
  */
 public class CaretakerWorkspace extends javax.swing.JPanel {
 
@@ -58,10 +58,6 @@ public class CaretakerWorkspace extends javax.swing.JPanel {
         btnHealth = new javax.swing.JButton();
         btnChildren = new javax.swing.JButton();
         panelWork = new javax.swing.JPanel();
-        panelHome = new javax.swing.JPanel();
-        lblTitle2 = new javax.swing.JLabel();
-        lblRole = new javax.swing.JLabel();
-        btnLogOut = new javax.swing.JButton();
         panelChildren = new javax.swing.JPanel();
         lblTitle9 = new javax.swing.JLabel();
         ScrollPane7 = new javax.swing.JScrollPane();
@@ -76,8 +72,6 @@ public class CaretakerWorkspace extends javax.swing.JPanel {
         txtChildrenDOB = new javax.swing.JTextField();
         lblChildrenGender = new javax.swing.JLabel();
         cmbChildrenGender = new javax.swing.JComboBox<>();
-        lblChildrenSearch = new javax.swing.JLabel();
-        txtChildrenSearch = new javax.swing.JTextField();
         btnChildrenView = new javax.swing.JButton();
         panelHealth = new javax.swing.JPanel();
         lblTitle6 = new javax.swing.JLabel();
@@ -102,9 +96,15 @@ public class CaretakerWorkspace extends javax.swing.JPanel {
         txtChildAge1 = new javax.swing.JTextField();
         txtChildGender2 = new javax.swing.JTextField();
         btnAppointment = new javax.swing.JButton();
+        panelHome = new javax.swing.JPanel();
+        lblTitle2 = new javax.swing.JLabel();
+        lblRole = new javax.swing.JLabel();
+        btnLogOut = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         panelControl.setBackground(new java.awt.Color(51, 51, 51));
 
+        btnHome.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         btnHome.setText("Home");
         btnHome.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -112,6 +112,7 @@ public class CaretakerWorkspace extends javax.swing.JPanel {
             }
         });
 
+        btnHealth.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         btnHealth.setText("Health");
         btnHealth.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -119,6 +120,7 @@ public class CaretakerWorkspace extends javax.swing.JPanel {
             }
         });
 
+        btnChildren.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         btnChildren.setText("Children");
         btnChildren.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -151,59 +153,12 @@ public class CaretakerWorkspace extends javax.swing.JPanel {
                 .addComponent(btnHealth)
                 .addGap(18, 18, 18)
                 .addComponent(btnChildren)
-                .addContainerGap(550, Short.MAX_VALUE))
+                .addContainerGap(553, Short.MAX_VALUE))
         );
 
         SplitPaneCaretaker.setLeftComponent(panelControl);
 
         panelWork.setLayout(new java.awt.CardLayout());
-
-        panelHome.setBackground(new java.awt.Color(255, 255, 255));
-
-        lblTitle2.setBackground(new java.awt.Color(255, 255, 255));
-        lblTitle2.setFont(new java.awt.Font("Rockwell", 1, 36)); // NOI18N
-        lblTitle2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblTitle2.setText("NGO Caretaker Workspace");
-
-        lblRole.setFont(new java.awt.Font("Segoe UI Emoji", 1, 18)); // NOI18N
-        lblRole.setText("Role: Caretaker");
-
-        btnLogOut.setText("Log Out");
-        btnLogOut.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnLogOutActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout panelHomeLayout = new javax.swing.GroupLayout(panelHome);
-        panelHome.setLayout(panelHomeLayout);
-        panelHomeLayout.setHorizontalGroup(
-            panelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelHomeLayout.createSequentialGroup()
-                .addContainerGap(16, Short.MAX_VALUE)
-                .addGroup(panelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelHomeLayout.createSequentialGroup()
-                        .addComponent(btnLogOut)
-                        .addGap(188, 188, 188))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelHomeLayout.createSequentialGroup()
-                        .addGroup(panelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(lblTitle2, javax.swing.GroupLayout.PREFERRED_SIZE, 1135, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblRole, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(149, 149, 149))))
-        );
-        panelHomeLayout.setVerticalGroup(
-            panelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelHomeLayout.createSequentialGroup()
-                .addGap(66, 66, 66)
-                .addComponent(lblTitle2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lblRole)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnLogOut)
-                .addContainerGap(585, Short.MAX_VALUE))
-        );
-
-        panelWork.add(panelHome, "card2");
 
         panelChildren.setBackground(new java.awt.Color(204, 255, 255));
         panelChildren.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -211,8 +166,9 @@ public class CaretakerWorkspace extends javax.swing.JPanel {
         lblTitle9.setFont(new java.awt.Font("Rockwell", 1, 36)); // NOI18N
         lblTitle9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitle9.setText("NGO Children");
-        panelChildren.add(lblTitle9, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 50, 990, -1));
+        panelChildren.add(lblTitle9, new org.netbeans.lib.awtextra.AbsoluteConstraints(-70, 60, 990, -1));
 
+        tableChildrenCreate.setBackground(new java.awt.Color(255, 255, 204));
         tableChildrenCreate.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
@@ -236,32 +192,36 @@ public class CaretakerWorkspace extends javax.swing.JPanel {
 
         panelChildren.add(ScrollPane7, new org.netbeans.lib.awtextra.AbsoluteConstraints(41, 158, 677, 119));
 
+        lblChildrenName.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblChildrenName.setText("Name:");
-        panelChildren.add(lblChildrenName, new org.netbeans.lib.awtextra.AbsoluteConstraints(41, 406, -1, -1));
-        panelChildren.add(txtChildrenName, new org.netbeans.lib.awtextra.AbsoluteConstraints(119, 403, 230, -1));
+        panelChildren.add(lblChildrenName, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 400, -1, -1));
+        panelChildren.add(txtChildrenName, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 400, 240, 30));
 
+        lblChildrenAge.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblChildrenAge.setText("Age:");
-        panelChildren.add(lblChildrenAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(41, 446, -1, -1));
-        panelChildren.add(txtChildrenAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(119, 443, 230, -1));
+        panelChildren.add(lblChildrenAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 440, -1, -1));
+        panelChildren.add(txtChildrenAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 440, 240, 30));
 
+        lblChildrenId.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblChildrenId.setText("Children Id:");
-        panelChildren.add(lblChildrenId, new org.netbeans.lib.awtextra.AbsoluteConstraints(41, 366, -1, -1));
-        panelChildren.add(txtChildrenId, new org.netbeans.lib.awtextra.AbsoluteConstraints(119, 363, 230, -1));
+        panelChildren.add(lblChildrenId, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 360, -1, -1));
+        panelChildren.add(txtChildrenId, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 352, 240, 30));
 
+        lblChildrenDob.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblChildrenDob.setText("DOB:");
-        panelChildren.add(lblChildrenDob, new org.netbeans.lib.awtextra.AbsoluteConstraints(41, 486, -1, -1));
-        panelChildren.add(txtChildrenDOB, new org.netbeans.lib.awtextra.AbsoluteConstraints(119, 483, 230, -1));
+        panelChildren.add(lblChildrenDob, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 480, -1, -1));
+        panelChildren.add(txtChildrenDOB, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 480, 240, 30));
 
+        lblChildrenGender.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblChildrenGender.setText("Gender:");
-        panelChildren.add(lblChildrenGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(41, 526, -1, -1));
+        panelChildren.add(lblChildrenGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 530, -1, -1));
 
         cmbChildrenGender.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Others" }));
-        panelChildren.add(cmbChildrenGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(119, 523, 230, -1));
+        panelChildren.add(cmbChildrenGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 530, 140, 30));
 
-        lblChildrenSearch.setText("Search:");
-        panelChildren.add(lblChildrenSearch, new org.netbeans.lib.awtextra.AbsoluteConstraints(438, 121, -1, -1));
-        panelChildren.add(txtChildrenSearch, new org.netbeans.lib.awtextra.AbsoluteConstraints(493, 118, 225, -1));
-
+        btnChildrenView.setBackground(new java.awt.Color(0, 51, 51));
+        btnChildrenView.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
+        btnChildrenView.setForeground(new java.awt.Color(255, 255, 255));
         btnChildrenView.setText("View");
         btnChildrenView.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -272,14 +232,15 @@ public class CaretakerWorkspace extends javax.swing.JPanel {
 
         panelWork.add(panelChildren, "card10");
 
-        panelHealth.setBackground(new java.awt.Color(255, 255, 255));
+        panelHealth.setBackground(new java.awt.Color(204, 255, 255));
         panelHealth.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblTitle6.setFont(new java.awt.Font("Rockwell", 1, 36)); // NOI18N
         lblTitle6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitle6.setText("Children Health");
-        panelHealth.add(lblTitle6, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 10, 730, -1));
+        panelHealth.add(lblTitle6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 730, -1));
 
+        tableChildrenHealth.setBackground(new java.awt.Color(255, 255, 204));
         tableChildrenHealth.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
@@ -303,6 +264,9 @@ public class CaretakerWorkspace extends javax.swing.JPanel {
 
         panelHealth.add(ScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(68, 90, 833, 93));
 
+        btnAutofill1.setBackground(new java.awt.Color(0, 51, 51));
+        btnAutofill1.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
+        btnAutofill1.setForeground(new java.awt.Color(255, 255, 255));
         btnAutofill1.setText("Autofill");
         btnAutofill1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -311,6 +275,8 @@ public class CaretakerWorkspace extends javax.swing.JPanel {
         });
         panelHealth.add(btnAutofill1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 190, -1, -1));
 
+        tableChildrenAppoinment.setBackground(new java.awt.Color(255, 255, 204));
+        tableChildrenAppoinment.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         tableChildrenAppoinment.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
@@ -334,26 +300,32 @@ public class CaretakerWorkspace extends javax.swing.JPanel {
 
         panelHealth.add(ScrollPane9, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 220, 833, 93));
 
+        lblApplicationNo1.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblApplicationNo1.setText("Appointment Id:");
         panelHealth.add(lblApplicationNo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(68, 384, -1, -1));
         panelHealth.add(txtApplicationNo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(173, 381, 219, -1));
 
+        lblChildName1.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblChildName1.setText("Name:");
         panelHealth.add(lblChildName1, new org.netbeans.lib.awtextra.AbsoluteConstraints(68, 409, -1, -1));
 
         txtChildName1.setEditable(false);
         panelHealth.add(txtChildName1, new org.netbeans.lib.awtextra.AbsoluteConstraints(173, 409, 219, -1));
 
+        lblChildAge1.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblChildAge1.setText("Age:");
         panelHealth.add(lblChildAge1, new org.netbeans.lib.awtextra.AbsoluteConstraints(68, 440, -1, -1));
 
+        lblChildName8.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblChildName8.setText("Gender:");
         panelHealth.add(lblChildName8, new org.netbeans.lib.awtextra.AbsoluteConstraints(68, 480, -1, -1));
 
+        lblChildName9.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblChildName9.setText("Date:");
         panelHealth.add(lblChildName9, new org.netbeans.lib.awtextra.AbsoluteConstraints(68, 514, -1, -1));
         panelHealth.add(txtAppDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(173, 511, 219, -1));
 
+        lblStatus1.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblStatus1.setText("Status:");
         panelHealth.add(lblStatus1, new org.netbeans.lib.awtextra.AbsoluteConstraints(68, 592, -1, -1));
 
@@ -361,6 +333,7 @@ public class CaretakerWorkspace extends javax.swing.JPanel {
         txtStatus1.setText("Pending");
         panelHealth.add(txtStatus1, new org.netbeans.lib.awtextra.AbsoluteConstraints(173, 586, 219, -1));
 
+        lblChildName10.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblChildName10.setText("Comment:");
         panelHealth.add(lblChildName10, new org.netbeans.lib.awtextra.AbsoluteConstraints(68, 626, -1, -1));
 
@@ -381,6 +354,9 @@ public class CaretakerWorkspace extends javax.swing.JPanel {
         txtChildGender2.setEditable(false);
         panelHealth.add(txtChildGender2, new org.netbeans.lib.awtextra.AbsoluteConstraints(173, 477, 219, -1));
 
+        btnAppointment.setBackground(new java.awt.Color(0, 51, 51));
+        btnAppointment.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
+        btnAppointment.setForeground(new java.awt.Color(255, 255, 255));
         btnAppointment.setText("Book Appointment");
         btnAppointment.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -390,6 +366,37 @@ public class CaretakerWorkspace extends javax.swing.JPanel {
         panelHealth.add(btnAppointment, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 330, -1, -1));
 
         panelWork.add(panelHealth, "card7");
+
+        panelHome.setBackground(new java.awt.Color(255, 255, 255));
+        panelHome.setLayout(null);
+
+        lblTitle2.setBackground(new java.awt.Color(255, 255, 255));
+        lblTitle2.setFont(new java.awt.Font("Rockwell", 1, 36)); // NOI18N
+        lblTitle2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblTitle2.setText("NGO Caretaker Workspace");
+        panelHome.add(lblTitle2);
+        lblTitle2.setBounds(20, 30, 490, 100);
+
+        lblRole.setFont(new java.awt.Font("Segoe UI Emoji", 1, 18)); // NOI18N
+        lblRole.setText("Role: Caretaker");
+        panelHome.add(lblRole);
+        lblRole.setBounds(1012, 115, 139, 21);
+
+        btnLogOut.setText("Log Out");
+        btnLogOut.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLogOutActionPerformed(evt);
+            }
+        });
+        panelHome.add(btnLogOut);
+        btnLogOut.setBounds(1040, 142, 73, 23);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGES/applicantworkspace.gif"))); // NOI18N
+        jLabel1.setText("jLabel1");
+        panelHome.add(jLabel1);
+        jLabel1.setBounds(0, 0, 1150, 800);
+
+        panelWork.add(panelHome, "card2");
 
         SplitPaneCaretaker.setRightComponent(panelWork);
 
@@ -617,6 +624,7 @@ public class CaretakerWorkspace extends javax.swing.JPanel {
     private javax.swing.JButton btnHome;
     private javax.swing.JButton btnLogOut;
     private javax.swing.JComboBox<String> cmbChildrenGender;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JLabel lblApplicationNo1;
     private javax.swing.JLabel lblChildAge1;
@@ -629,7 +637,6 @@ public class CaretakerWorkspace extends javax.swing.JPanel {
     private javax.swing.JLabel lblChildrenGender;
     private javax.swing.JLabel lblChildrenId;
     private javax.swing.JLabel lblChildrenName;
-    private javax.swing.JLabel lblChildrenSearch;
     private javax.swing.JLabel lblRole;
     private javax.swing.JLabel lblStatus1;
     private javax.swing.JLabel lblTitle2;
@@ -653,7 +660,6 @@ public class CaretakerWorkspace extends javax.swing.JPanel {
     private javax.swing.JTextField txtChildrenDOB;
     private javax.swing.JTextField txtChildrenId;
     private javax.swing.JTextField txtChildrenName;
-    private javax.swing.JTextField txtChildrenSearch;
     private javax.swing.JTextField txtStatus1;
     // End of variables declaration//GEN-END:variables
 }

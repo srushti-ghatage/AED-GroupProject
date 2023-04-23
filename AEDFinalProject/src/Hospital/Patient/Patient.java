@@ -6,10 +6,10 @@ package Hospital.Patient;
 
 /**
  *
- * @author SrushtiGhatage
+ * @author megha
  */
 public class Patient {
-      
+    
     private String role;
     private String patientId;
     private String docId;
@@ -108,4 +108,5 @@ public class Patient {
         String n = String.valueOf(patientId);
         return n;
     }
+    
 }

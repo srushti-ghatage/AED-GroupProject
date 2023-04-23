@@ -6,7 +6,7 @@ package Ngo.Budget;
 
 /**
  *
- * @author megha
+ * @author SrushtiGhatage
  */
 public class Budget {
     

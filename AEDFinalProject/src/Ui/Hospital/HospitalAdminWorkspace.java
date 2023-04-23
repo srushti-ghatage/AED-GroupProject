@@ -76,6 +76,7 @@ public class HospitalAdminWorkspace extends javax.swing.JPanel {
         lblRole = new javax.swing.JLabel();
         btnLogOut = new javax.swing.JButton();
         lblTitleHospital = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         panelDoctor = new javax.swing.JPanel();
         lblTitleDoctor = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -254,7 +255,7 @@ public class HospitalAdminWorkspace extends javax.swing.JPanel {
                 .addComponent(btnEncounter)
                 .addGap(18, 18, 18)
                 .addComponent(Appointments)
-                .addContainerGap(472, Short.MAX_VALUE))
+                .addContainerGap(502, Short.MAX_VALUE))
         );
 
         SplitPaneDoctor.setLeftComponent(panelControl);
@@ -280,6 +281,9 @@ public class HospitalAdminWorkspace extends javax.swing.JPanel {
         lblTitleHospital.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitleHospital.setText("HOSPITAL ADMIN HOME");
         panelHome.add(lblTitleHospital, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 50, 891, -1));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGES/hospitalmanagement.gif"))); // NOI18N
+        panelHome.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 110, 880, 650));
 
         panelWork.add(panelHome, "card2");
 
@@ -541,7 +545,7 @@ public class HospitalAdminWorkspace extends javax.swing.JPanel {
                                 .addGroup(panelPatientLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(txtPatientName)
                                     .addComponent(txtPatientAge)
-                                    .addComponent(cbPatientGender, 0, 198, Short.MAX_VALUE)
+                                    .addComponent(cbPatientGender, 0, 223, Short.MAX_VALUE)
                                     .addComponent(txtPatientEmail)
                                     .addComponent(txtPatientPhone)
                                     .addGroup(panelPatientLayout.createSequentialGroup()
@@ -628,7 +632,7 @@ public class HospitalAdminWorkspace extends javax.swing.JPanel {
                 .addGroup(panelPatientLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblPatientUsername1)
                     .addComponent(cmdDoc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(66, Short.MAX_VALUE))
+                .addContainerGap(96, Short.MAX_VALUE))
         );
 
         panelPatientLayout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {btnPatientCreate, btnPatientDelete, btnPatientUpdate, btnPatientView});
@@ -789,7 +793,7 @@ public class HospitalAdminWorkspace extends javax.swing.JPanel {
                     .addComponent(btnEncounterView)
                     .addComponent(btnEncounterUpdate)
                     .addComponent(btnEncounterDelete))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 122, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 152, Short.MAX_VALUE)
                 .addGroup(panelEncounterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panelEncounterLayout.createSequentialGroup()
                         .addGroup(panelEncounterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -835,8 +839,6 @@ public class HospitalAdminWorkspace extends javax.swing.JPanel {
 
         panelWork.add(panelEncounter, "card5");
 
-        panelAppointment.setBackground(new java.awt.Color(204, 255, 255));
-
         tableAppointment.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
@@ -879,7 +881,6 @@ public class HospitalAdminWorkspace extends javax.swing.JPanel {
         txtChildComment.setRows(5);
         jScrollPane5.setViewportView(txtChildComment);
 
-        lblTitle7.setBackground(new java.awt.Color(204, 255, 255));
         lblTitle7.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         lblTitle7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitle7.setText("NGO Apointments");
@@ -959,7 +960,7 @@ public class HospitalAdminWorkspace extends javax.swing.JPanel {
                 .addGroup(panelAppointmentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btnView1)
                     .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 637, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(497, Short.MAX_VALUE))
+                .addContainerGap(522, Short.MAX_VALUE))
         );
         panelAppointmentLayout.setVerticalGroup(
             panelAppointmentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1003,7 +1004,7 @@ public class HospitalAdminWorkspace extends javax.swing.JPanel {
                 .addGroup(panelAppointmentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btnReject)
                     .addComponent(btnAccept))
-                .addContainerGap(172, Short.MAX_VALUE))
+                .addContainerGap(202, Short.MAX_VALUE))
         );
 
         panelWork.add(panelAppointment, "card6");
@@ -2053,6 +2054,7 @@ public class HospitalAdminWorkspace extends javax.swing.JPanel {
     private javax.swing.JComboBox<String> cmbChildGender;
     private javax.swing.JComboBox<String> cmbDoc1;
     private javax.swing.JComboBox<String> cmdDoc;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;

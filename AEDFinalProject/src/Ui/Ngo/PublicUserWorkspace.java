@@ -16,7 +16,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author megha
+ * @author SrushtiGhatage
  */
 public class PublicUserWorkspace extends javax.swing.JPanel {
 
@@ -78,6 +78,7 @@ public class PublicUserWorkspace extends javax.swing.JPanel {
 
         panelControl.setBackground(new java.awt.Color(51, 51, 51));
 
+        btnHome.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         btnHome.setText("Home");
         btnHome.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -85,6 +86,7 @@ public class PublicUserWorkspace extends javax.swing.JPanel {
             }
         });
 
+        btnDonate.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         btnDonate.setText("Donate");
         btnDonate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -110,7 +112,7 @@ public class PublicUserWorkspace extends javax.swing.JPanel {
                 .addComponent(btnHome)
                 .addGap(32, 32, 32)
                 .addComponent(btnDonate)
-                .addContainerGap(545, Short.MAX_VALUE))
+                .addContainerGap(547, Short.MAX_VALUE))
         );
 
         SplitPanePerson.setLeftComponent(panelControl);
@@ -127,19 +129,22 @@ public class PublicUserWorkspace extends javax.swing.JPanel {
 
         lblRole.setFont(new java.awt.Font("Segoe UI Emoji", 1, 14)); // NOI18N
         lblRole.setText("Role: Person (Public)");
-        panelHome.add(lblRole, new org.netbeans.lib.awtextra.AbsoluteConstraints(998, 106, 139, -1));
+        panelHome.add(lblRole, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 180, 139, -1));
 
+        btnLogOut.setBackground(new java.awt.Color(0, 51, 51));
+        btnLogOut.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
+        btnLogOut.setForeground(new java.awt.Color(255, 255, 255));
         btnLogOut.setText("Log Out");
         btnLogOut.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnLogOutActionPerformed(evt);
             }
         });
-        panelHome.add(btnLogOut, new org.netbeans.lib.awtextra.AbsoluteConstraints(998, 128, -1, -1));
+        panelHome.add(btnLogOut, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 200, -1, -1));
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UiImagesssss/NGO manager.png"))); // NOI18N
-        panelHome.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, 1160, 580));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGES/public user workspace.gif"))); // NOI18N
+        panelHome.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1190, 690));
 
         panelWork.add(panelHome, "card2");
 

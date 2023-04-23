@@ -9,7 +9,7 @@ package Funding.Donation;
  * @author SrushtiGhatage
  */
 public class Donation {
-     private String ngo;
+    private String ngo;
     private String name;
     private Integer amt;
     private String comment;
@@ -52,4 +52,5 @@ public class Donation {
         String n = String.valueOf(name);
         return n;
     }
+    
 }

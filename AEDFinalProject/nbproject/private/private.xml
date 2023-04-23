@@ -3,7 +3,53 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/18573/AED-GroupProject/AEDFinalProject/src/Hospital/Doctor/Doctor.java</file>
+            <file>file:/C:/Users/18573/Downloads/AED-Final-Project-main%20(2)/AED-Final-Project-main/src/Funding/Donation/Donation.java</file>
+            <file>file:/C:/Users/18573/Downloads/AED-Final-Project-main%20(2)/AED-Final-Project-main/src/Ui/Ngo/PublicUserRegister.java</file>
+            <file>file:/C:/Users/18573/Downloads/AED-Final-Project-main%20(2)/AED-Final-Project-main/src/JobApp/Applicant/ApplicantDirectory.java</file>
+            <file>file:/C:/Users/18573/Downloads/AED-Final-Project-main%20(2)/AED-Final-Project-main/src/Ui/MedStore/PharmacistWorkspace.java</file>
+            <file>file:/C:/Users/18573/Downloads/AED-Final-Project-main%20(2)/AED-Final-Project-main/src/Hospital/Encounter/EncounterDirectory.java</file>
+            <file>file:/C:/Users/18573/Downloads/AED-Final-Project-main%20(2)/AED-Final-Project-main/src/Hospital/Doctor/Doctor.java</file>
+            <file>file:/C:/Users/18573/Downloads/AED-Final-Project-main%20(2)/AED-Final-Project-main/src/Funding/Donation/DonationDirectory.java</file>
+            <file>file:/C:/Users/18573/Downloads/AED-Final-Project-main%20(2)/AED-Final-Project-main/src/School/Application/Application.java</file>
+            <file>file:/C:/Users/18573/Downloads/AED-Final-Project-main%20(2)/AED-Final-Project-main/src/Hospital/Encounter/Appointment.java</file>
+            <file>file:/C:/Users/18573/Downloads/AED-Final-Project-main%20(2)/AED-Final-Project-main/src/Funding/FundManager/FundManagerDirectory.java</file>
+            <file>file:/C:/Users/18573/Downloads/AED-Final-Project-main%20(2)/AED-Final-Project-main/src/JobApp/Applicant/TeacherApply.java</file>
+            <file>file:/C:/Users/18573/Downloads/AED-Final-Project-main%20(2)/AED-Final-Project-main/src/Ngo/NgoManager/NgoManagerDirectory.java</file>
+            <file>file:/C:/Users/18573/Downloads/AED-Final-Project-main%20(2)/AED-Final-Project-main/src/School/Pharmacy/Order/Order.java</file>
+            <file>file:/C:/Users/18573/Downloads/AED-Final-Project-main%20(2)/AED-Final-Project-main/src/Ngo/Order/NgoOrderDirectory.java</file>
+            <file>file:/C:/Users/18573/Downloads/AED-Final-Project-main%20(2)/AED-Final-Project-main/src/School/FinalResult/FinalResult.java</file>
+            <file>file:/C:/Users/18573/Downloads/AED-Final-Project-main%20(2)/AED-Final-Project-main/src/Email/SendMail.java</file>
+            <file>file:/C:/Users/18573/Downloads/AED-Final-Project-main%20(2)/AED-Final-Project-main/src/School/Pharmacy/Order/OrderDirectory.java</file>
+            <file>file:/C:/Users/18573/Downloads/AED-Final-Project-main%20(2)/AED-Final-Project-main/src/Ui/School/ApplicantWorkspace.java</file>
+            <file>file:/C:/Users/18573/Downloads/AED-Final-Project-main%20(2)/AED-Final-Project-main/src/Ngo/NgoManager/NgoManager.java</file>
+            <file>file:/C:/Users/18573/Downloads/AED-Final-Project-main%20(2)/AED-Final-Project-main/src/Hospital/Doctor/DoctorDirectory.java</file>
+            <file>file:/C:/Users/18573/Downloads/AED-Final-Project-main%20(2)/AED-Final-Project-main/src/Hospital/Patient/Patient.java</file>
+            <file>file:/C:/Users/18573/Downloads/AED-Final-Project-main%20(2)/AED-Final-Project-main/src/Ngo/Children/ChildrenDirectory.java</file>
+            <file>file:/C:/Users/18573/Downloads/AED-Final-Project-main%20(2)/AED-Final-Project-main/src/Ui/School/PrincipalWorkspace.java</file>
+            <file>file:/C:/Users/18573/Downloads/AED-Final-Project-main%20(2)/AED-Final-Project-main/src/Hospital/Encounter/AppointmentDirectory.java</file>
+            <file>file:/C:/Users/18573/Downloads/AED-Final-Project-main%20(2)/AED-Final-Project-main/src/Ngo/Budget/Budget.java</file>
+            <file>file:/C:/Users/18573/Downloads/AED-Final-Project-main%20(2)/AED-Final-Project-main/src/Ngo/CareTaker/CaretakerDirectory.java</file>
+            <file>file:/C:/Users/18573/Downloads/AED-Final-Project-main%20(2)/AED-Final-Project-main/src/Ngo/CareTaker/Caretaker.java</file>
+            <file>file:/C:/Users/18573/Downloads/AED-Final-Project-main%20(2)/AED-Final-Project-main/src/Funding/PublicUser/PublicUserDirectory.java</file>
+            <file>file:/C:/Users/18573/Downloads/AED-Final-Project-main%20(2)/AED-Final-Project-main/src/JobApp/Applicant/TeacherApplyDirectory.java</file>
+            <file>file:/C:/Users/18573/Downloads/AED-Final-Project-main%20(2)/AED-Final-Project-main/src/Ui/School/ApplicantRegister.java</file>
+            <file>file:/C:/Users/18573/Downloads/AED-Final-Project-main%20(2)/AED-Final-Project-main/src/JobApp/Applicant/Applicant.java</file>
+            <file>file:/C:/Users/18573/Downloads/AED-Final-Project-main%20(2)/AED-Final-Project-main/src/School/Pharmacy/Medicine/Medicine.java</file>
+            <file>file:/C:/Users/18573/Downloads/AED-Final-Project-main%20(2)/AED-Final-Project-main/src/School/Pharmacy/Medicine/MedicineDirectory.java</file>
+            <file>file:/C:/Users/18573/Downloads/AED-Final-Project-main%20(2)/AED-Final-Project-main/src/Ui/Main/HMS.java</file>
+            <file>file:/C:/Users/18573/Downloads/AED-Final-Project-main%20(2)/AED-Final-Project-main/src/Funding/FundManager/FundManager.java</file>
+            <file>file:/C:/Users/18573/Downloads/AED-Final-Project-main%20(2)/AED-Final-Project-main/src/Funding/PublicUser/PublicUser.java</file>
+            <file>file:/C:/Users/18573/Downloads/AED-Final-Project-main%20(2)/AED-Final-Project-main/src/Ngo/Order/NgoOrder.java</file>
+            <file>file:/C:/Users/18573/Downloads/AED-Final-Project-main%20(2)/AED-Final-Project-main/src/Hospital/Patient/PatientDirectory.java</file>
+            <file>file:/C:/Users/18573/Downloads/AED-Final-Project-main%20(2)/AED-Final-Project-main/src/Hospital/Encounter/Encounter.java</file>
+            <file>file:/C:/Users/18573/Downloads/AED-Final-Project-main%20(2)/AED-Final-Project-main/src/Ngo/Budget/BudgetDirectory.java</file>
+            <file>file:/C:/Users/18573/Downloads/AED-Final-Project-main%20(2)/AED-Final-Project-main/src/School/Application/ApplicationDirectory.java</file>
+            <file>file:/C:/Users/18573/Downloads/AED-Final-Project-main%20(2)/AED-Final-Project-main/src/Ui/Ngo/CaretakerWorkspace.java</file>
+            <file>file:/C:/Users/18573/Downloads/AED-Final-Project-main%20(2)/AED-Final-Project-main/src/School/Pharmacy/DeliveryMan/DeliveryMan.java</file>
+            <file>file:/C:/Users/18573/Downloads/AED-Final-Project-main%20(2)/AED-Final-Project-main/src/School/Pharmacy/Pharmacist/Pharmacist.java</file>
+            <file>file:/C:/Users/18573/Downloads/AED-Final-Project-main%20(2)/AED-Final-Project-main/src/School/FinalResult/FinalResultDirectory.java</file>
+            <file>file:/C:/Users/18573/Downloads/AED-Final-Project-main%20(2)/AED-Final-Project-main/src/Ngo/Children/Children.java</file>
+            <file>file:/C:/Users/18573/Downloads/AED-Final-Project-main%20(2)/AED-Final-Project-main/src/School/Pharmacy/DeliveryMan/DeliveryManDirectory.java</file>
         </group>
     </open-files>
 </project-private>

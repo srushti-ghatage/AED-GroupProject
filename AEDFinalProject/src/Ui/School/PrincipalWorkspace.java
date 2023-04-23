@@ -21,7 +21,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author megha
+ * @author SrushtiGhatage
  */
 public class PrincipalWorkspace extends javax.swing.JPanel {
 
@@ -70,6 +70,7 @@ public class PrincipalWorkspace extends javax.swing.JPanel {
         lblTitle2 = new javax.swing.JLabel();
         lblRole = new javax.swing.JLabel();
         btnLogOut = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
         panelMarks = new javax.swing.JPanel();
         panelApplications = new javax.swing.JPanel();
         ScrollPane6 = new javax.swing.JScrollPane();
@@ -166,6 +167,7 @@ public class PrincipalWorkspace extends javax.swing.JPanel {
 
         panelControl.setBackground(new java.awt.Color(51, 51, 51));
 
+        btnHome.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         btnHome.setText("Home");
         btnHome.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -173,6 +175,7 @@ public class PrincipalWorkspace extends javax.swing.JPanel {
             }
         });
 
+        btnTeacher.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         btnTeacher.setText("Teacher");
         btnTeacher.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -180,6 +183,7 @@ public class PrincipalWorkspace extends javax.swing.JPanel {
             }
         });
 
+        btnApplication.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         btnApplication.setText("Applications");
         btnApplication.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -187,6 +191,7 @@ public class PrincipalWorkspace extends javax.swing.JPanel {
             }
         });
 
+        btnJobApp.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         btnJobApp.setText("Job Applications");
         btnJobApp.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -221,7 +226,7 @@ public class PrincipalWorkspace extends javax.swing.JPanel {
                 .addComponent(btnJobApp)
                 .addGap(134, 134, 134)
                 .addComponent(btnTeacher)
-                .addContainerGap(381, Short.MAX_VALUE))
+                .addContainerGap(391, Short.MAX_VALUE))
         );
 
         SplitPanePrincipal.setLeftComponent(panelControl);
@@ -229,44 +234,34 @@ public class PrincipalWorkspace extends javax.swing.JPanel {
         panelWork.setLayout(new java.awt.CardLayout());
 
         panelHome.setBackground(new java.awt.Color(255, 255, 255));
+        panelHome.setLayout(null);
 
         lblTitle2.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         lblTitle2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitle2.setText("School");
+        panelHome.add(lblTitle2);
+        lblTitle2.setBounds(0, 6, 1300, 32);
 
         lblRole.setFont(new java.awt.Font("Segoe UI Emoji", 1, 14)); // NOI18N
         lblRole.setText("Role: Principal");
+        panelHome.add(lblRole);
+        lblRole.setBounds(1091, 95, 139, 16);
 
+        btnLogOut.setBackground(new java.awt.Color(0, 51, 51));
+        btnLogOut.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
+        btnLogOut.setForeground(new java.awt.Color(255, 255, 255));
         btnLogOut.setText("Log Out");
         btnLogOut.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnLogOutActionPerformed(evt);
             }
         });
+        panelHome.add(btnLogOut);
+        btnLogOut.setBounds(1091, 117, 90, 30);
 
-        javax.swing.GroupLayout panelHomeLayout = new javax.swing.GroupLayout(panelHome);
-        panelHome.setLayout(panelHomeLayout);
-        panelHomeLayout.setHorizontalGroup(
-            panelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(lblTitle2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelHomeLayout.createSequentialGroup()
-                .addContainerGap(957, Short.MAX_VALUE)
-                .addGroup(panelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnLogOut)
-                    .addComponent(lblRole, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(70, 70, 70))
-        );
-        panelHomeLayout.setVerticalGroup(
-            panelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelHomeLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lblTitle2)
-                .addGap(57, 57, 57)
-                .addComponent(lblRole)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnLogOut)
-                .addContainerGap(610, Short.MAX_VALUE))
-        );
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGES/principal workspace.gif"))); // NOI18N
+        panelHome.add(jLabel1);
+        jLabel1.setBounds(310, 100, 1010, 500);
 
         panelWork.add(panelHome, "card2");
 
@@ -283,8 +278,9 @@ public class PrincipalWorkspace extends javax.swing.JPanel {
 
         panelWork.add(panelMarks, "card4");
 
-        panelApplications.setBackground(new java.awt.Color(255, 255, 255));
+        panelApplications.setBackground(new java.awt.Color(204, 255, 255));
 
+        tableApplication.setBackground(new java.awt.Color(255, 255, 204));
         tableApplication.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null},
@@ -306,34 +302,45 @@ public class PrincipalWorkspace extends javax.swing.JPanel {
         });
         ScrollPane6.setViewportView(tableApplication);
 
+        lblApplicationNo.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblApplicationNo.setText("Application No:");
 
+        lblChildName.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblChildName.setText("Name:");
 
+        lblChildAge.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblChildAge.setText("Age:");
 
+        lblChildName2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblChildName2.setText("DOB:");
 
+        lblChildName3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblChildName3.setText("Gender:");
 
         cmbChildGender.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Others" }));
 
+        lblChildName4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblChildName4.setText("School:");
 
         txtChildSchool.setEditable(false);
         txtChildSchool.setText("School");
 
+        lblChildName5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblChildName5.setText("Comment:");
 
         txtChildComment.setColumns(20);
         txtChildComment.setRows(5);
         jScrollPane1.setViewportView(txtChildComment);
 
+        lblStatus.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblStatus.setText("Status:");
 
         txtStatus.setEditable(false);
         txtStatus.setText("Pending");
 
+        btnReject.setBackground(new java.awt.Color(0, 51, 51));
+        btnReject.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
+        btnReject.setForeground(new java.awt.Color(255, 255, 255));
         btnReject.setText("Reject");
         btnReject.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -345,6 +352,9 @@ public class PrincipalWorkspace extends javax.swing.JPanel {
         lblTitle7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitle7.setText("Applications");
 
+        btnView.setBackground(new java.awt.Color(0, 51, 51));
+        btnView.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
+        btnView.setForeground(new java.awt.Color(255, 255, 255));
         btnView.setText("View");
         btnView.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -352,12 +362,17 @@ public class PrincipalWorkspace extends javax.swing.JPanel {
             }
         });
 
+        lblChildName6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblChildName6.setText("Class:");
 
+        lblChildName7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblChildName7.setText("NGO:");
 
         txtNgo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Yes", "No" }));
 
+        btnAccept.setBackground(new java.awt.Color(0, 51, 51));
+        btnAccept.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
+        btnAccept.setForeground(new java.awt.Color(255, 255, 255));
         btnAccept.setText("Accept");
         btnAccept.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -438,7 +453,7 @@ public class PrincipalWorkspace extends javax.swing.JPanel {
                 .addComponent(ScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(btnView)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 74, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 76, Short.MAX_VALUE)
                 .addGroup(panelApplicationsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panelApplicationsLayout.createSequentialGroup()
                         .addGroup(panelApplicationsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -494,6 +509,7 @@ public class PrincipalWorkspace extends javax.swing.JPanel {
         lblTitle5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitle5.setText("Job Application");
 
+        tableJobApp.setBackground(new java.awt.Color(255, 255, 204));
         tableJobApp.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
@@ -515,58 +531,73 @@ public class PrincipalWorkspace extends javax.swing.JPanel {
         });
         jScrollPane2.setViewportView(tableJobApp);
 
+        lblUsername.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblUsername.setText("Username:");
 
         txtUsername.setEditable(false);
 
+        lblUsername1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblUsername1.setText("Application Id:");
 
         txtAppId.setEditable(false);
 
+        lblUsername2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblUsername2.setText("Name:");
 
         txtName.setEditable(false);
 
         txtQua.setEditable(false);
 
+        lblQua.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblQua.setText("Qualification:");
 
+        lblAge.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblAge.setText("Age:");
 
         txtAge.setEditable(false);
 
+        lblAge1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblAge1.setText("Gender:");
 
         txtGender.setEditable(false);
 
+        lblQua1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblQua1.setText("Experience:");
 
         txtEx.setEditable(false);
 
+        lblQua2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblQua2.setText("Comment:");
 
         txtComm.setColumns(20);
         txtComm.setRows(5);
         jScrollPane3.setViewportView(txtComm);
 
+        lblSub.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblSub.setText("Subject:");
 
         txtSubject.setEditable(false);
 
+        lblSchool.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblSchool.setText("School:");
 
         txtSchool.setEditable(false);
         txtSchool.setText("School");
 
+        lblStatus1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblStatus1.setText("Status:");
 
         txtStatus1.setEditable(false);
         txtStatus1.setText("Pending");
 
+        lblEmailid.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblEmailid.setText("Email-Id:");
 
         txtEmailId.setEditable(false);
 
+        btnAccept1.setBackground(new java.awt.Color(0, 51, 51));
+        btnAccept1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnAccept1.setForeground(new java.awt.Color(255, 255, 255));
         btnAccept1.setText("Accept");
         btnAccept1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -574,6 +605,9 @@ public class PrincipalWorkspace extends javax.swing.JPanel {
             }
         });
 
+        btnReject1.setBackground(new java.awt.Color(0, 51, 51));
+        btnReject1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnReject1.setForeground(new java.awt.Color(255, 255, 255));
         btnReject1.setText("Reject");
         btnReject1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -581,6 +615,9 @@ public class PrincipalWorkspace extends javax.swing.JPanel {
             }
         });
 
+        btnView1.setBackground(new java.awt.Color(0, 51, 51));
+        btnView1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnView1.setForeground(new java.awt.Color(255, 255, 255));
         btnView1.setText("View");
         btnView1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -641,7 +678,7 @@ public class PrincipalWorkspace extends javax.swing.JPanel {
                         .addComponent(btnAccept1)
                         .addGap(34, 34, 34)
                         .addComponent(btnReject1)))
-                .addContainerGap(559, Short.MAX_VALUE))
+                .addContainerGap(556, Short.MAX_VALUE))
         );
         panelJobApplyLayout.setVerticalGroup(
             panelJobApplyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -714,6 +751,8 @@ public class PrincipalWorkspace extends javax.swing.JPanel {
 
         panelWork.add(panelJobApply, "card3");
 
+        panelTeacher.setBackground(new java.awt.Color(204, 255, 255));
+
         lblTitle1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         lblTitle1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitle1.setText("Teacher");
@@ -729,6 +768,7 @@ public class PrincipalWorkspace extends javax.swing.JPanel {
             }
         });
 
+        tableTeacher.setBackground(new java.awt.Color(255, 255, 204));
         tableTeacher.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
@@ -819,14 +859,11 @@ public class PrincipalWorkspace extends javax.swing.JPanel {
                     .addGroup(panelTeacherLayout.createSequentialGroup()
                         .addGroup(panelTeacherLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(lblNgoManagerId, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(panelTeacherLayout.createSequentialGroup()
-                                .addGroup(panelTeacherLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lblTeacherName)
-                                    .addComponent(lblTeacherAge)
-                                    .addComponent(lblTeacherDOB)
-                                    .addComponent(lblTeacherUsername)
-                                    .addComponent(lblTeacherRole))
-                                .addGap(2, 2, 2)))
+                            .addComponent(lblTeacherName)
+                            .addComponent(lblTeacherAge)
+                            .addComponent(lblTeacherDOB)
+                            .addComponent(lblTeacherUsername)
+                            .addComponent(lblTeacherRole))
                         .addGap(44, 44, 44)
                         .addGroup(panelTeacherLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(txtTeacherRole, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1480,6 +1517,7 @@ public class PrincipalWorkspace extends javax.swing.JPanel {
     private javax.swing.JButton btnView1;
     private javax.swing.JComboBox<String> cmbChildGender;
     private javax.swing.JComboBox<String> cmbTeacherGender;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;

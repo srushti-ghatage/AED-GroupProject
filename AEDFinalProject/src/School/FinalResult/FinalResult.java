@@ -6,7 +6,7 @@ package School.FinalResult;
 
 /**
  *
- * @author megha
+ * @author SrushtiGhatage
  */
 public class FinalResult {
     

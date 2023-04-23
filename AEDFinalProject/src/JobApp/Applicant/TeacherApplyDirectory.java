@@ -8,10 +8,11 @@ import java.util.ArrayList;
 
 /**
  *
- * @author SrushtiGhatage
+ * @author megha
  */
 public class TeacherApplyDirectory {
-      private ArrayList<TeacherApply> appList;
+    
+    private ArrayList<TeacherApply> appList;
 
     public TeacherApplyDirectory() {
         appList = new ArrayList<TeacherApply>();
@@ -46,4 +47,6 @@ public class TeacherApplyDirectory {
         }
             return true; 
     } 
+ 
+
 }

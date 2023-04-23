@@ -6,10 +6,11 @@ package JobApp.Applicant;
 
 /**
  *
- * @author SrushtiGhatage
+ * @author megha
  */
 public class TeacherApply {
-      private String appId;
+    
+    private String appId;
     private String name;
     private String username;
     private Integer age;
@@ -131,6 +132,6 @@ public class TeacherApply {
     @Override
     public String toString(){
         String n = String.valueOf(appId);
-          return null;
-    }       
+        return n;
+    }
 }

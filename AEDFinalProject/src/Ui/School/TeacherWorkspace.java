@@ -20,7 +20,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author megha
+ * @author SrushtiGhatage
  */
 public class TeacherWorkspace extends javax.swing.JPanel {
 
@@ -66,6 +66,7 @@ public class TeacherWorkspace extends javax.swing.JPanel {
         lblTitle2 = new javax.swing.JLabel();
         lblRole = new javax.swing.JLabel();
         btnLogOut = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
         panelStudent = new javax.swing.JPanel();
         lblTitle3 = new javax.swing.JLabel();
         lblStudentName = new javax.swing.JLabel();
@@ -172,12 +173,18 @@ public class TeacherWorkspace extends javax.swing.JPanel {
 
         panelWork.setLayout(new java.awt.CardLayout());
 
+        panelHome.setLayout(null);
+
         lblTitle2.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         lblTitle2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitle2.setText("School");
+        panelHome.add(lblTitle2);
+        lblTitle2.setBounds(0, 6, 1300, 32);
 
         lblRole.setFont(new java.awt.Font("Segoe UI Emoji", 1, 14)); // NOI18N
         lblRole.setText("Role: Teacher");
+        panelHome.add(lblRole);
+        lblRole.setBounds(1091, 95, 139, 16);
 
         btnLogOut.setText("Log Out");
         btnLogOut.addActionListener(new java.awt.event.ActionListener() {
@@ -185,34 +192,14 @@ public class TeacherWorkspace extends javax.swing.JPanel {
                 btnLogOutActionPerformed(evt);
             }
         });
+        panelHome.add(btnLogOut);
+        btnLogOut.setBounds(1091, 117, 73, 23);
 
-        javax.swing.GroupLayout panelHomeLayout = new javax.swing.GroupLayout(panelHome);
-        panelHome.setLayout(panelHomeLayout);
-        panelHomeLayout.setHorizontalGroup(
-            panelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(lblTitle2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelHomeLayout.createSequentialGroup()
-                .addContainerGap(544, Short.MAX_VALUE)
-                .addGroup(panelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnLogOut)
-                    .addComponent(lblRole, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(70, 70, 70))
-        );
-        panelHomeLayout.setVerticalGroup(
-            panelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelHomeLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lblTitle2)
-                .addGap(57, 57, 57)
-                .addComponent(lblRole)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnLogOut)
-                .addContainerGap(575, Short.MAX_VALUE))
-        );
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGES/teaher workspace.gif"))); // NOI18N
+        panelHome.add(jLabel1);
+        jLabel1.setBounds(60, 50, 990, 640);
 
         panelWork.add(panelHome, "card2");
-
-        panelStudent.setBackground(new java.awt.Color(204, 255, 255));
 
         lblTitle3.setFont(new java.awt.Font("Rockwell", 1, 36)); // NOI18N
         lblTitle3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -1043,6 +1030,7 @@ public class TeacherWorkspace extends javax.swing.JPanel {
     private javax.swing.JButton btnUpdateRes;
     private javax.swing.JComboBox<String> cmbResult;
     private javax.swing.JComboBox<String> cmbStudentGender;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JLabel lblEnglish;

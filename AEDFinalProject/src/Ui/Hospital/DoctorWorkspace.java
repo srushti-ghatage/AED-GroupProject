@@ -8,7 +8,7 @@ import Hospital.Doctor.Doctor;
 import Hospital.Encounter.Encounter;
 import Hospital.Patient.Patient;
 import Ngo.NgoManager.NgoManager;
-
+import System.Directories.DB4OUtil;
 import System.Directories.DataValidation;
 import System.Directories.MainSystem;
 import java.awt.CardLayout;
@@ -125,6 +125,7 @@ public class DoctorWorkspace extends javax.swing.JPanel {
         txtDocUsername = new javax.swing.JTextField();
         btnEncounterCreate = new javax.swing.JButton();
         btnEncounterUpdate = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         panelControl.setBackground(new java.awt.Color(51, 51, 51));
 
@@ -421,6 +422,9 @@ public class DoctorWorkspace extends javax.swing.JPanel {
             }
         });
         panelEncounter.add(btnEncounterUpdate, new org.netbeans.lib.awtextra.AbsoluteConstraints(186, 258, -1, -1));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGES/doctorworkspace.gif"))); // NOI18N
+        panelEncounter.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 110, 870, 570));
 
         javax.swing.GroupLayout panelWorkLayout = new javax.swing.GroupLayout(panelWork);
         panelWork.setLayout(panelWorkLayout);
@@ -973,6 +977,7 @@ public class DoctorWorkspace extends javax.swing.JPanel {
     private javax.swing.JButton btnPatientUpdate;
     private javax.swing.JButton btnPatientView;
     private javax.swing.JComboBox<String> cbPatientGender;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;

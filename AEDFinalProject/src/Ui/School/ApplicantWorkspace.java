@@ -74,6 +74,7 @@ public class ApplicantWorkspace extends javax.swing.JPanel {
         btnLogOut = new javax.swing.JButton();
         jScrollPane3 = new javax.swing.JScrollPane();
         jTextArea2 = new javax.swing.JTextArea();
+        jLabel2 = new javax.swing.JLabel();
         panelJobApply = new javax.swing.JPanel();
         lblTitle3 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -117,6 +118,7 @@ public class ApplicantWorkspace extends javax.swing.JPanel {
 
         panelControl.setBackground(new java.awt.Color(51, 51, 51));
 
+        btnSendmail.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         btnSendmail.setText("Send Mail");
         btnSendmail.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -124,6 +126,7 @@ public class ApplicantWorkspace extends javax.swing.JPanel {
             }
         });
 
+        btnHome.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         btnHome.setText("Home");
         btnHome.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -131,6 +134,7 @@ public class ApplicantWorkspace extends javax.swing.JPanel {
             }
         });
 
+        btnJobApply.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         btnJobApply.setText("Job Apply");
         btnJobApply.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -159,7 +163,7 @@ public class ApplicantWorkspace extends javax.swing.JPanel {
                 .addComponent(btnSendmail)
                 .addGap(18, 18, 18)
                 .addComponent(btnJobApply)
-                .addContainerGap(508, Short.MAX_VALUE))
+                .addContainerGap(511, Short.MAX_VALUE))
         );
 
         SplitPaneApplicant.setLeftComponent(panelControl);
@@ -167,13 +171,18 @@ public class ApplicantWorkspace extends javax.swing.JPanel {
         panelWork.setLayout(new java.awt.CardLayout());
 
         panelHome.setBackground(new java.awt.Color(255, 255, 255));
+        panelHome.setLayout(null);
 
         lblTitle2.setFont(new java.awt.Font("Rockwell", 1, 36)); // NOI18N
         lblTitle2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitle2.setText("School Job Apply");
+        panelHome.add(lblTitle2);
+        lblTitle2.setBounds(228, 45, 538, 43);
 
         lblRole.setFont(new java.awt.Font("Segoe UI Emoji", 1, 14)); // NOI18N
         lblRole.setText("Role: Applicant");
+        panelHome.add(lblRole);
+        lblRole.setBounds(947, 106, 139, 16);
 
         btnLogOut.setText("Log Out");
         btnLogOut.addActionListener(new java.awt.event.ActionListener() {
@@ -181,54 +190,32 @@ public class ApplicantWorkspace extends javax.swing.JPanel {
                 btnLogOutActionPerformed(evt);
             }
         });
+        panelHome.add(btnLogOut);
+        btnLogOut.setBounds(947, 128, 73, 23);
 
+        jTextArea2.setBackground(new java.awt.Color(255, 255, 204));
         jTextArea2.setColumns(20);
         jTextArea2.setRows(5);
         jTextArea2.setText("Job Description:\n\n");
         jScrollPane3.setViewportView(jTextArea2);
 
-        javax.swing.GroupLayout panelHomeLayout = new javax.swing.GroupLayout(panelHome);
-        panelHome.setLayout(panelHomeLayout);
-        panelHomeLayout.setHorizontalGroup(
-            panelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelHomeLayout.createSequentialGroup()
-                .addContainerGap(947, Short.MAX_VALUE)
-                .addGroup(panelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnLogOut)
-                    .addComponent(lblRole, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(70, 70, 70))
-            .addGroup(panelHomeLayout.createSequentialGroup()
-                .addGroup(panelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panelHomeLayout.createSequentialGroup()
-                        .addGap(228, 228, 228)
-                        .addComponent(lblTitle2, javax.swing.GroupLayout.PREFERRED_SIZE, 538, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(panelHomeLayout.createSequentialGroup()
-                        .addGap(304, 304, 304)
-                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 570, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        panelHomeLayout.setVerticalGroup(
-            panelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelHomeLayout.createSequentialGroup()
-                .addGap(45, 45, 45)
-                .addComponent(lblTitle2)
-                .addGap(18, 18, 18)
-                .addComponent(lblRole)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnLogOut)
-                .addGap(41, 41, 41)
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 237, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(321, Short.MAX_VALUE))
-        );
+        panelHome.add(jScrollPane3);
+        jScrollPane3.setBounds(70, 170, 570, 237);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGES/applicantworkspace.gif"))); // NOI18N
+        jLabel2.setText("jLabel2");
+        panelHome.add(jLabel2);
+        jLabel2.setBounds(-10, 0, 1180, 760);
 
         panelWork.add(panelHome, "card2");
 
-        panelJobApply.setBackground(new java.awt.Color(255, 255, 255));
+        panelJobApply.setBackground(new java.awt.Color(204, 255, 255));
 
         lblTitle3.setFont(new java.awt.Font("Rockwell", 1, 36)); // NOI18N
         lblTitle3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitle3.setText("Job Application");
 
+        tableJobApp.setBackground(new java.awt.Color(255, 255, 204));
         tableJobApp.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null},
@@ -250,34 +237,45 @@ public class ApplicantWorkspace extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tableJobApp);
 
+        lblUsername.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblUsername.setText("Username:");
 
         txtUsername.setEditable(false);
 
+        lblUsername1.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblUsername1.setText("Application Id:");
 
+        lblUsername2.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblUsername2.setText("Name:");
 
         txtName.setEditable(false);
 
+        lblQua.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblQua.setText("Qualification:");
 
+        lblAge.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblAge.setText("Age:");
 
         txtAge.setEditable(false);
 
+        lblAge1.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblAge1.setText("Gender:");
 
         txtGender.setEditable(false);
 
+        lblQua1.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblQua1.setText("Experience:");
 
+        lblQua2.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblQua2.setText("Comment:");
 
         txtComm.setColumns(20);
         txtComm.setRows(5);
         jScrollPane2.setViewportView(txtComm);
 
+        btnApply.setBackground(new java.awt.Color(0, 51, 51));
+        btnApply.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
+        btnApply.setForeground(new java.awt.Color(255, 255, 255));
         btnApply.setText("Apply");
         btnApply.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -285,18 +283,22 @@ public class ApplicantWorkspace extends javax.swing.JPanel {
             }
         });
 
+        lblSub.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblSub.setText("Subject:");
 
+        lblSchool.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblSchool.setText("School:");
 
         txtSchool.setEditable(false);
         txtSchool.setText("School");
 
+        lblStatus.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblStatus.setText("Status:");
 
         txtStatus.setEditable(false);
         txtStatus.setText("Pending");
 
+        lblEmailid.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblEmailid.setText("Email-Id:");
 
         txtEmailId.setEditable(false);
@@ -359,7 +361,7 @@ public class ApplicantWorkspace extends javax.swing.JPanel {
                 .addComponent(lblTitle3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 92, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 93, Short.MAX_VALUE)
                 .addGroup(panelJobApplyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panelJobApplyLayout.createSequentialGroup()
                         .addGroup(panelJobApplyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -417,12 +419,16 @@ public class ApplicantWorkspace extends javax.swing.JPanel {
 
         panelWork.add(panelJobApply, "card3");
 
-        panelMail.setBackground(new java.awt.Color(255, 255, 255));
+        panelMail.setBackground(new java.awt.Color(204, 255, 255));
+        panelMail.setForeground(new java.awt.Color(255, 255, 255));
 
+        lblTo.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblTo.setText("To:");
 
+        lblSub1.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblSub1.setText("Subject:");
 
+        lblMes.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblMes.setText("Message:");
 
         txtTo.addActionListener(new java.awt.event.ActionListener() {
@@ -441,6 +447,9 @@ public class ApplicantWorkspace extends javax.swing.JPanel {
         txtMess.setRows(5);
         jScrollPane4.setViewportView(txtMess);
 
+        btnSend.setBackground(new java.awt.Color(0, 51, 51));
+        btnSend.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
+        btnSend.setForeground(new java.awt.Color(255, 255, 255));
         btnSend.setText("Send");
         btnSend.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -456,24 +465,25 @@ public class ApplicantWorkspace extends javax.swing.JPanel {
         panelMail.setLayout(panelMailLayout);
         panelMailLayout.setHorizontalGroup(
             panelMailLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelMailLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(btnSend)
-                .addGap(318, 318, 318))
-            .addGroup(panelMailLayout.createSequentialGroup()
-                .addGap(215, 215, 215)
-                .addGroup(panelMailLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(lblMes)
-                    .addGroup(panelMailLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(lblSub1)
-                        .addComponent(lblTo)))
-                .addGap(42, 42, 42)
-                .addGroup(panelMailLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(txtTo, javax.swing.GroupLayout.PREFERRED_SIZE, 213, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtSub, javax.swing.GroupLayout.PREFERRED_SIZE, 213, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(616, Short.MAX_VALUE))
             .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(panelMailLayout.createSequentialGroup()
+                .addGroup(panelMailLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panelMailLayout.createSequentialGroup()
+                        .addGap(215, 215, 215)
+                        .addGroup(panelMailLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(lblMes)
+                            .addGroup(panelMailLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(lblSub1)
+                                .addComponent(lblTo)))
+                        .addGap(42, 42, 42)
+                        .addGroup(panelMailLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtTo, javax.swing.GroupLayout.PREFERRED_SIZE, 213, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtSub, javax.swing.GroupLayout.PREFERRED_SIZE, 213, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(panelMailLayout.createSequentialGroup()
+                        .addGap(263, 263, 263)
+                        .addComponent(btnSend)))
+                .addContainerGap(607, Short.MAX_VALUE))
         );
         panelMailLayout.setVerticalGroup(
             panelMailLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -492,9 +502,9 @@ public class ApplicantWorkspace extends javax.swing.JPanel {
                 .addGroup(panelMailLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblMes)
                     .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 249, Short.MAX_VALUE)
+                .addGap(67, 67, 67)
                 .addComponent(btnSend)
-                .addGap(105, 105, 105))
+                .addContainerGap(288, Short.MAX_VALUE))
         );
 
         panelWork.add(panelMail, "card6");
@@ -718,6 +728,7 @@ public class ApplicantWorkspace extends javax.swing.JPanel {
     private javax.swing.JButton btnSend;
     private javax.swing.JButton btnSendmail;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;

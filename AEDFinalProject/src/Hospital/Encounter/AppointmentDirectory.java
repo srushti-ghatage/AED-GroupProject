@@ -8,10 +8,10 @@ import java.util.ArrayList;
 
 /**
  *
- * @author SrushtiGhatage
+ * @author megha
  */
 public class AppointmentDirectory {
-     private ArrayList<Appointment> hosAppList;
+    private ArrayList<Appointment> hosAppList;
 
     public AppointmentDirectory() {
         hosAppList = new ArrayList<Appointment>();

@@ -6,7 +6,7 @@ package Pharmacy.DeliveryMan;
 
 /**
  *
- * @author megha
+ * @author SrushtiGhatage
  */
 public class DeliveryMan {
     

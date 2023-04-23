@@ -11,7 +11,7 @@ import java.util.ArrayList;
  * @author SrushtiGhatage
  */
 public class FundManagerDirectory {
-      private ArrayList<FundManager> fundManagerList;
+    private ArrayList<FundManager> fundManagerList;
 
     public FundManagerDirectory() {
         fundManagerList = new ArrayList<FundManager>();
@@ -25,7 +25,8 @@ public class FundManagerDirectory {
     public void setFundManagerList(ArrayList<FundManager> fundManagerList) {
         this.fundManagerList = fundManagerList;
     }
-     public FundManager addFundManager(){
+    
+    public FundManager addFundManager(){
         FundManager f = new FundManager();
         fundManagerList.add(f);
         return f;
@@ -40,7 +41,7 @@ public class FundManagerDirectory {
             if(f.getUsername().equals(username) && f.getPassword().equals(password)){
                 return f;
             }
-                 
+            
         }
         return null;
     }

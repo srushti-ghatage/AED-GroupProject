@@ -4,17 +4,31 @@
  */
 package Ui.Main;
 
+import System.Directories.DB4OUtil;
+import System.Directories.MainSystem;
+import Ui.LoginPage.SchoolLoginPage;
+import Ui.LoginPage.TeacherAppLoginPage;
+import java.awt.CardLayout;
+import javax.swing.JPanel;
+
 /**
  *
- * @author SrushtiGhatage
+ * @author megha
  */
 public class SMS extends javax.swing.JPanel {
 
     /**
      * Creates new form SMS
      */
-    public SMS() {
+    private MainSystem system;
+    private JPanel cardPanel;
+    private DB4OUtil dB4OUtil;
+    
+    public SMS(JPanel cardPanel, MainSystem system, DB4OUtil dB4OUtil) {
         initComponents();
+        this.cardPanel=cardPanel;
+        this.system = system;
+        this.dB4OUtil = dB4OUtil;
     }
 
     /**
@@ -26,19 +40,83 @@ public class SMS extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        btnBack = new javax.swing.JButton();
+        btnSchool = new javax.swing.JButton();
+        btnApplications = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+
+        setBackground(new java.awt.Color(255, 255, 255));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        btnBack.setBackground(new java.awt.Color(0, 51, 51));
+        btnBack.setFont(new java.awt.Font("Rockwell", 1, 14)); // NOI18N
+        btnBack.setForeground(new java.awt.Color(255, 255, 255));
+        btnBack.setText("Back");
+        btnBack.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBackActionPerformed(evt);
+            }
+        });
+        add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(36, 33, -1, -1));
+
+        btnSchool.setBackground(new java.awt.Color(0, 51, 51));
+        btnSchool.setFont(new java.awt.Font("Rockwell", 1, 14)); // NOI18N
+        btnSchool.setForeground(new java.awt.Color(255, 255, 255));
+        btnSchool.setText("School");
+        btnSchool.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSchoolActionPerformed(evt);
+            }
+        });
+        add(btnSchool, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 70, 210, -1));
+
+        btnApplications.setBackground(new java.awt.Color(0, 51, 51));
+        btnApplications.setFont(new java.awt.Font("Rockwell", 1, 14)); // NOI18N
+        btnApplications.setForeground(new java.awt.Color(255, 255, 255));
+        btnApplications.setText("Teacher Applications");
+        btnApplications.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnApplicationsActionPerformed(evt);
+            }
+        });
+        add(btnApplications, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 70, -1, -1));
+
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGES/childrenplaying.gif"))); // NOI18N
+        jLabel1.setText("jLabel1");
+        jLabel1.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1300, 750));
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
+        // TODO add your handling code here:
+        CardLayout cardLayout = (CardLayout) cardPanel.getLayout();
+        cardPanel.remove(this);
+        cardLayout.previous(cardPanel);
+
+    }//GEN-LAST:event_btnBackActionPerformed
+
+    private void btnSchoolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSchoolActionPerformed
+        // TODO add your handling code here:
+        SchoolLoginPage schoolloginJPanel = new SchoolLoginPage(cardPanel, system, dB4OUtil);
+        CardLayout cardLayout = (CardLayout) cardPanel.getLayout();
+        cardPanel.add("loginJPanel",schoolloginJPanel);
+        cardLayout.next(cardPanel);
+    }//GEN-LAST:event_btnSchoolActionPerformed
+
+    private void btnApplicationsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnApplicationsActionPerformed
+        // TODO add your handling code here:
+        TeacherAppLoginPage apploginJPanel = new TeacherAppLoginPage(cardPanel, system, dB4OUtil);
+        CardLayout cardLayout = (CardLayout) cardPanel.getLayout();
+        cardPanel.add("loginJPanel",apploginJPanel);
+        cardLayout.next(cardPanel);
+    }//GEN-LAST:event_btnApplicationsActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnApplications;
+    private javax.swing.JButton btnBack;
+    private javax.swing.JButton btnSchool;
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
