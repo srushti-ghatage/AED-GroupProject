@@ -23,7 +23,7 @@ import javax.swing.table.TableRowSorter;
 
 /**
  *
- * @author megha
+ * @author SrushtiGhatage
  */
 public class SchoolAdminWorkspace extends javax.swing.JPanel {
 
@@ -72,6 +72,7 @@ public class SchoolAdminWorkspace extends javax.swing.JPanel {
         lblTitle2 = new javax.swing.JLabel();
         lblRole = new javax.swing.JLabel();
         btnLogOut = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
         panelTeacher = new javax.swing.JPanel();
         lblTitle1 = new javax.swing.JLabel();
         lblTeacherName = new javax.swing.JLabel();
@@ -306,12 +307,18 @@ public class SchoolAdminWorkspace extends javax.swing.JPanel {
 
         panelWork.setLayout(new java.awt.CardLayout());
 
+        panelHome.setLayout(null);
+
         lblTitle2.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         lblTitle2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitle2.setText("School");
+        panelHome.add(lblTitle2);
+        lblTitle2.setBounds(0, 6, 1300, 32);
 
         lblRole.setFont(new java.awt.Font("Segoe UI Emoji", 1, 14)); // NOI18N
         lblRole.setText("Role: School Admin");
+        panelHome.add(lblRole);
+        lblRole.setBounds(1091, 95, 139, 16);
 
         btnLogOut.setText("Log Out");
         btnLogOut.addActionListener(new java.awt.event.ActionListener() {
@@ -319,30 +326,12 @@ public class SchoolAdminWorkspace extends javax.swing.JPanel {
                 btnLogOutActionPerformed(evt);
             }
         });
+        panelHome.add(btnLogOut);
+        btnLogOut.setBounds(1091, 117, 73, 23);
 
-        javax.swing.GroupLayout panelHomeLayout = new javax.swing.GroupLayout(panelHome);
-        panelHome.setLayout(panelHomeLayout);
-        panelHomeLayout.setHorizontalGroup(
-            panelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(lblTitle2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelHomeLayout.createSequentialGroup()
-                .addContainerGap(957, Short.MAX_VALUE)
-                .addGroup(panelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnLogOut)
-                    .addComponent(lblRole, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(70, 70, 70))
-        );
-        panelHomeLayout.setVerticalGroup(
-            panelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelHomeLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lblTitle2)
-                .addGap(57, 57, 57)
-                .addComponent(lblRole)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnLogOut)
-                .addContainerGap(610, Short.MAX_VALUE))
-        );
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGES/schooladminworkspace.gif"))); // NOI18N
+        panelHome.add(jLabel1);
+        jLabel1.setBounds(280, 120, 900, 580);
 
         panelWork.add(panelHome, "card2");
 
@@ -2332,6 +2321,7 @@ public class SchoolAdminWorkspace extends javax.swing.JPanel {
     private javax.swing.JComboBox<String> cmbPrincipalGender;
     private javax.swing.JComboBox<String> cmbStudentGender;
     private javax.swing.JComboBox<String> cmbTeacherGender;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;

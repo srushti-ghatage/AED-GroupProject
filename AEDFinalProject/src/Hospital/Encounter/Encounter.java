@@ -6,10 +6,10 @@ package Hospital.Encounter;
 
 /**
  *
- * @author SrushtiGhatage
+ * @author megha
  */
 public class Encounter {
-     private String encounterNo;
+    private String encounterNo;
     private String hospital;
     private String doctorUserName;
     private String status;
@@ -142,5 +142,6 @@ public class Encounter {
         String n = String.valueOf(encounterNo);
         return n;
     }
-    
 }
+
+

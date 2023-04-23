@@ -6,16 +6,65 @@ package Ui.Main;
 
 /**
  *
- * @author SrushtiGhatage
+ * @author megha
  */
+
+
+
+import System.Directories.DB4OUtil;
+import System.Directories.MainSystem;
+import java.awt.CardLayout;
+//import javax.swing.JPanel;
+
+
+
 public class MainJFrame extends javax.swing.JFrame {
 
     /**
      * Creates new form MainJFrame
      */
+//    private NgoManagerDirectory ngoManagerList;
+//    private MainSystem system;
+//    private final String FILENAME = "NgoManagerDataBank.db4o";
+    private MainSystem system;
+    private DB4OUtil db4oUtil = DB4OUtil.getInstance();
+    
     public MainJFrame() {
         initComponents();
+//        ngoManagerList = ngoManager();
+        system = db4oUtil.retrieveSystem();
+//        System.out.println(system);
+        initializeApp();
+        
+        
     }
+    
+    private void initializeApp(){
+        HomePage panelMainHome = new HomePage(cardPanel, system, db4oUtil);
+        CardLayout cardLayout = (CardLayout) cardPanel.getLayout();
+        cardPanel.add("panelMainHome", panelMainHome);
+        cardLayout.next(cardPanel);
+        
+    }
+    
+//    private NgoManagerDirectory ngoManager(){
+//        ObjectContainer db = Db4oEmbedded.openFile(Db4oEmbedded.newConfiguration(), FILENAME);
+//        ObjectSet result = db.queryByExample(NgoManagerDirectory.class);
+//        NgoManagerDirectory nm;
+//        if (result.isEmpty()){
+//            nm = new NgoManagerDirectory();  // If there's no MainSystem in the record, create a new one
+//        }
+//        else{
+//            nm = (NgoManagerDirectory) result.get(result.size() - 1);
+//        }
+//        db.close();
+//        return nm;
+//         
+//    }
+    
+     
+    
+//    private NgoManagerDirectory 
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -26,17 +75,23 @@ public class MainJFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        cardPanel = new javax.swing.JPanel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        cardPanel.setMinimumSize(new java.awt.Dimension(400, 300));
+        cardPanel.setPreferredSize(new java.awt.Dimension(800, 700));
+        cardPanel.setLayout(new java.awt.CardLayout());
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(cardPanel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addComponent(cardPanel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -68,6 +123,7 @@ public class MainJFrame extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(MainJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -78,5 +134,6 @@ public class MainJFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel cardPanel;
     // End of variables declaration//GEN-END:variables
 }

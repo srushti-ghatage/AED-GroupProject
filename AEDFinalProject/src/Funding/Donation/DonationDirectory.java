@@ -4,10 +4,37 @@
  */
 package Funding.Donation;
 
+import java.util.ArrayList;
+
 /**
  *
- * @author 18573
+ * @author SrushtiGhatage
  */
 public class DonationDirectory {
+    
+    private ArrayList<Donation> donationList;
+
+    public DonationDirectory() {
+        donationList = new ArrayList<Donation>();
+        
+    }
+
+    public ArrayList<Donation> getDonationList() {
+        return donationList;
+    }
+
+    public void setDonationList(ArrayList<Donation> donationList) {
+        this.donationList = donationList;
+    }
+    
+    public Donation addDonation(){
+        Donation f = new Donation();
+        donationList.add(f);
+        return f;
+    }
+    
+    public void deleteDonation(Donation f){
+        donationList.remove(f);
+    }
     
 }

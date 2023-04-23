@@ -17,7 +17,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author SrushtiGhatage
+ * @author megha
  */
 public class NgoLoginPage extends javax.swing.JPanel {
 
@@ -105,10 +105,9 @@ public class NgoLoginPage extends javax.swing.JPanel {
         });
         add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, 80, 40));
 
-        jLabel2.setBackground(new java.awt.Color(204, 255, 255));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UiImagesssss/hands together.jpg"))); // NOI18N
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 1280, 750));
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGES/ngo.gif"))); // NOI18N
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-590, -70, 1390, 750));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
@@ -121,7 +120,48 @@ public class NgoLoginPage extends javax.swing.JPanel {
 
     private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
         // TODO add your handling code here:
-      
+        
+        String username = txtUsername.getText();
+        String password = txtPass.getText();
+        String role = String.valueOf(cmbRole.getSelectedItem());
+        NgoManager ngoManager = system.getNgoManagerList().findNgoManager(username, password);
+        Caretaker caretaker = system.getCareTakerList().findCaretaker(username, password);
+        
+//        try{
+//            if(role.equals("NGO Admin")){
+            if(role.equals("NGO Admin")&&(username.equals("Admin") && password.equals("pass"))){
+                    NgoAdminWorkspace adminJPanel = new NgoAdminWorkspace(cardPanel, system, dB4OUtil);
+                    CardLayout cardLayout = (CardLayout) cardPanel.getLayout();
+                    cardPanel.add("adminJPanel",adminJPanel);
+                    cardLayout.next(cardPanel);
+                }
+//            }
+//            else if(role.equals("NGO Manager")){
+            else if(role.equals("NGO Manager") &&(username.equals(ngoManager.getUsername()) && password.equals(ngoManager.getPassword()))){
+                    NgoManagerWorkspace ngoManJPanel = new NgoManagerWorkspace(ngoManager,cardPanel, system, dB4OUtil);
+                    CardLayout cardLayout = (CardLayout) cardPanel.getLayout();
+                    cardPanel.add("ngoManagerJPanel",ngoManJPanel);
+                    cardLayout.next(cardPanel);
+                }
+//            }
+//            else if(role.equals("Caretaker")){
+            else if(role.equals("Caretaker")&&(username.equals(caretaker.getUsername()) && password.equals(caretaker.getPassword()))){
+                    CaretakerWorkspace caretakerJPanel = new CaretakerWorkspace(caretaker,cardPanel, system, dB4OUtil);
+                    CardLayout cardLayout = (CardLayout) cardPanel.getLayout();
+                    cardPanel.add("caretakerJPanel",caretakerJPanel);
+                    cardLayout.next(cardPanel);
+                }
+//            }
+            else {
+                JOptionPane.showMessageDialog(this, "Please enter the correct username and password and role.");
+            }
+//        }
+//        catch(NullPointerException n){
+//            JOptionPane.showMessageDialog(this, n.getMessage());
+//        }
+        
+        txtUsername.setText("");
+        txtPass.setText("");
     }//GEN-LAST:event_btnLoginActionPerformed
 
 

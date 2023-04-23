@@ -3,32 +3,36 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package Hospital.Patient;
-
+import Ngo.CareTaker.Caretaker;
 import java.util.ArrayList;
 
 /**
  *
- * @author SrushtiGhatage
+ * @author megha
  */
 public class PatientDirectory {
-    private ArrayList<Patient> patientList;
+    
+     private ArrayList<Patient> patientList;
     
     public PatientDirectory() {
         patientList = new ArrayList<Patient>();   
     }
-     public ArrayList<Patient> getPatientList() {
+
+    public ArrayList<Patient> getPatientList() {
         return patientList;
     }
 
     public void setPatientList(ArrayList<Patient> patientList) {
         this.patientList = patientList;
     }
+    
     public Patient addPatient(){
         Patient newpatient = new Patient();
         patientList.add(newpatient);
         return newpatient;
     }
-     public void deletePatient(Patient m){
+    
+    public void deletePatient(Patient m){
         patientList.remove(m);
     }
     
@@ -52,7 +56,8 @@ public class PatientDirectory {
         }
             return true; 
     } 
-     public boolean uniquePatientUsername(String username){
+    
+    public boolean uniquePatientUsername(String username){
         for (Patient d: patientList) {
 
             if (username.equals(d.getUsername())) {

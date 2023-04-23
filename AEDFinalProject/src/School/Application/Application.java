@@ -6,7 +6,7 @@ package School.Application;
 
 /**
  *
- * @author megha
+ * @author SrushtiGhatage
  */
 public class Application {
     

@@ -8,10 +8,11 @@ package JobApp.Applicant;
 
 /**
  *
- * @author SrushtiGhatage
+ * @author megha
  */
 public class Applicant{
-      private String name;
+    
+    private String name;
     private String username;
     private Integer age;
     private String dob;
@@ -98,5 +99,4 @@ public class Applicant{
         String n = String.valueOf(name);
         return n;
     }
-  
 }

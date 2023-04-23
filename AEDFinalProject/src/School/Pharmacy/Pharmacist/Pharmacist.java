@@ -6,7 +6,7 @@ package Pharmacy.Pharmacist;
 
 /**
  *
- * @author megha
+ * @author SrushtiGhatage
  */
 public class Pharmacist {
     private String caretakerId;

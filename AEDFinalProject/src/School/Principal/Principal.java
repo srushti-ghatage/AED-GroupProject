@@ -4,10 +4,11 @@
  */
 package School.Principal;
 
+import School.Teacher.Teacher;
 
 /**
  *
- * @author megha
+ * @author chinm
  */
 public class Principal{
     

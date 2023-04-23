@@ -9,11 +9,11 @@ import java.util.ArrayList;
 
 /**
  *
- * @author SrushtiGhatage
+ * @author megha
  */
 public class ApplicantDirectory {
     
-     private ArrayList<Applicant> appList;
+    private ArrayList<Applicant> appList;
 
     public ApplicantDirectory() {
         appList = new ArrayList<Applicant>();
