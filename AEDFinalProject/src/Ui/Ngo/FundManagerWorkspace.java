@@ -154,7 +154,7 @@ public class FundManagerWorkspace extends javax.swing.JPanel {
 
         panelWork.add(panelHome, "card2");
 
-        panelPublicFund.setBackground(new java.awt.Color(255, 255, 255));
+        panelPublicFund.setBackground(new java.awt.Color(255, 255, 204));
         panelPublicFund.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         tablePublicFund.setModel(new javax.swing.table.DefaultTableModel(
