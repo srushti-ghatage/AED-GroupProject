@@ -23,7 +23,7 @@ import javax.swing.table.TableRowSorter;
 
 /**
  *
- * @author SrushtiGhatage
+ * @author megha
  */
 public class SchoolAdminWorkspace extends javax.swing.JPanel {
 

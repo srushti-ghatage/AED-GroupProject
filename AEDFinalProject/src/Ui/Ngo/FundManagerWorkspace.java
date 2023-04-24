@@ -84,7 +84,6 @@ public class FundManagerWorkspace extends javax.swing.JPanel {
 
         panelControl.setBackground(new java.awt.Color(51, 51, 51));
 
-        btnHome.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         btnHome.setText("Home");
         btnHome.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -92,7 +91,6 @@ public class FundManagerWorkspace extends javax.swing.JPanel {
             }
         });
 
-        btnBudget.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         btnBudget.setText("Budget");
         btnBudget.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -100,7 +98,6 @@ public class FundManagerWorkspace extends javax.swing.JPanel {
             }
         });
 
-        btnFund.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         btnFund.setText("Public Fund");
         btnFund.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -129,7 +126,7 @@ public class FundManagerWorkspace extends javax.swing.JPanel {
                 .addComponent(btnBudget)
                 .addGap(18, 18, 18)
                 .addComponent(btnFund)
-                .addContainerGap(481, Short.MAX_VALUE))
+                .addContainerGap(478, Short.MAX_VALUE))
         );
 
         SplitPaneFundManager.setLeftComponent(panelControl);
@@ -143,7 +140,7 @@ public class FundManagerWorkspace extends javax.swing.JPanel {
         lblTitle2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitle2.setText("NGO Fund Manager");
         panelHome.add(lblTitle2);
-        lblTitle2.setBounds(10, 20, 480, 100);
+        lblTitle2.setBounds(280, 70, 639, 43);
 
         lblRole.setFont(new java.awt.Font("Segoe UI Emoji", 1, 18)); // NOI18N
         lblRole.setText("Role: Fund Manager");
@@ -161,14 +158,13 @@ public class FundManagerWorkspace extends javax.swing.JPanel {
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGES/fund manager workspace.gif"))); // NOI18N
         panelHome.add(jLabel1);
-        jLabel1.setBounds(0, 0, 940, 560);
+        jLabel1.setBounds(190, 70, 940, 560);
 
         panelWork.add(panelHome, "card2");
 
-        panelPublicFund.setBackground(new java.awt.Color(204, 255, 255));
+        panelPublicFund.setBackground(new java.awt.Color(255, 255, 255));
         panelPublicFund.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        tablePublicFund.setBackground(new java.awt.Color(255, 255, 204));
         tablePublicFund.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null},
@@ -195,36 +191,33 @@ public class FundManagerWorkspace extends javax.swing.JPanel {
         lblTitle3.setFont(new java.awt.Font("Rockwell", 1, 36)); // NOI18N
         lblTitle3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitle3.setText("Public Funds");
-        panelPublicFund.add(lblTitle3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 50, 350, 90));
+        panelPublicFund.add(lblTitle3, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 60, 575, -1));
 
         panelWork.add(panelPublicFund, "card4");
 
-        panelBudget.setBackground(new java.awt.Color(204, 255, 255));
+        panelBudget.setBackground(new java.awt.Color(255, 255, 255));
         panelBudget.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblTitle8.setFont(new java.awt.Font("Rockwell", 1, 36)); // NOI18N
         lblTitle8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitle8.setText("Budget");
-        panelBudget.add(lblTitle8, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 30, 370, 70));
+        panelBudget.add(lblTitle8, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 50, 740, -1));
 
         lblTotal.setFont(new java.awt.Font("Rockwell", 1, 24)); // NOI18N
         lblTotal.setText("Total ($):");
         panelBudget.add(lblTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(62, 135, -1, -1));
         panelBudget.add(txtTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(207, 139, 294, 29));
 
-        lblEducation.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblEducation.setText("Education:");
-        panelBudget.add(lblEducation, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 290, -1, -1));
+        panelBudget.add(lblEducation, new org.netbeans.lib.awtextra.AbsoluteConstraints(122, 289, -1, -1));
         panelBudget.add(txtEducation, new org.netbeans.lib.awtextra.AbsoluteConstraints(207, 286, 166, -1));
 
-        lblHealth.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblHealth.setText("Health:");
-        panelBudget.add(lblHealth, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 330, -1, -1));
+        panelBudget.add(lblHealth, new org.netbeans.lib.awtextra.AbsoluteConstraints(122, 329, -1, -1));
         panelBudget.add(txtHealth, new org.netbeans.lib.awtextra.AbsoluteConstraints(207, 326, 166, -1));
 
-        lblFood.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblFood.setText("Essential Items:");
-        panelBudget.add(lblFood, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 370, -1, -1));
+        panelBudget.add(lblFood, new org.netbeans.lib.awtextra.AbsoluteConstraints(122, 369, -1, -1));
         panelBudget.add(txtFood, new org.netbeans.lib.awtextra.AbsoluteConstraints(208, 366, 166, -1));
 
         lblExpenditure.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -236,25 +229,20 @@ public class FundManagerWorkspace extends javax.swing.JPanel {
         panelBudget.add(lblIncome, new org.netbeans.lib.awtextra.AbsoluteConstraints(63, 437, -1, -1));
         panelBudget.add(txtDonation, new org.netbeans.lib.awtextra.AbsoluteConstraints(207, 491, 166, -1));
 
-        lblDonation.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblDonation.setText("Donations:");
-        panelBudget.add(lblDonation, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 490, -1, -1));
+        panelBudget.add(lblDonation, new org.netbeans.lib.awtextra.AbsoluteConstraints(122, 494, -1, -1));
         panelBudget.add(txtOther, new org.netbeans.lib.awtextra.AbsoluteConstraints(207, 531, 166, -1));
 
-        lblOthers.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblOthers.setText("Others:");
-        panelBudget.add(lblOthers, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 530, -1, -1));
+        panelBudget.add(lblOthers, new org.netbeans.lib.awtextra.AbsoluteConstraints(122, 534, -1, -1));
 
-        btnUpdate.setBackground(new java.awt.Color(0, 51, 51));
-        btnUpdate.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        btnUpdate.setForeground(new java.awt.Color(255, 255, 255));
         btnUpdate.setText("Update");
         btnUpdate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnUpdateActionPerformed(evt);
             }
         });
-        panelBudget.add(btnUpdate, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 590, -1, -1));
+        panelBudget.add(btnUpdate, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 620, -1, -1));
 
         panelWork.add(panelBudget, "card9");
 

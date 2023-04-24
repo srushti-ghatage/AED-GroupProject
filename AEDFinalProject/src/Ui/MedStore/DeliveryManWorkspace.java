@@ -16,7 +16,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author SrushtiGhatage
+ * @author megha
  */
 public class DeliveryManWorkspace extends javax.swing.JPanel {
 
@@ -54,6 +54,10 @@ public class DeliveryManWorkspace extends javax.swing.JPanel {
         btnNgoOrders = new javax.swing.JButton();
         btnHome = new javax.swing.JButton();
         panelWork = new javax.swing.JPanel();
+        panelHome = new javax.swing.JPanel();
+        lblTitle2 = new javax.swing.JLabel();
+        lblRole = new javax.swing.JLabel();
+        btnLogOut = new javax.swing.JButton();
         panelNgoOrders = new javax.swing.JPanel();
         lblTitle6 = new javax.swing.JLabel();
         jScrollPane4 = new javax.swing.JScrollPane();
@@ -72,14 +76,9 @@ public class DeliveryManWorkspace extends javax.swing.JPanel {
         txtQty = new javax.swing.JTextField();
         txtShopkeerId = new javax.swing.JComboBox<>();
         txtDeliveryManId = new javax.swing.JComboBox<>();
-        panelHome = new javax.swing.JPanel();
-        lblTitle2 = new javax.swing.JLabel();
-        lblRole = new javax.swing.JLabel();
-        btnLogOut = new javax.swing.JButton();
 
         panelControl.setBackground(new java.awt.Color(51, 51, 51));
 
-        btnNgoOrders.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         btnNgoOrders.setText("NGO Orders");
         btnNgoOrders.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -87,7 +86,6 @@ public class DeliveryManWorkspace extends javax.swing.JPanel {
             }
         });
 
-        btnHome.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         btnHome.setText("Home");
         btnHome.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -114,92 +112,15 @@ public class DeliveryManWorkspace extends javax.swing.JPanel {
             .addGroup(panelControlLayout.createSequentialGroup()
                 .addGap(229, 229, 229)
                 .addComponent(btnNgoOrders)
-                .addContainerGap(1034, Short.MAX_VALUE))
+                .addContainerGap(471, Short.MAX_VALUE))
             .addGroup(panelControlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(panelControlLayout.createSequentialGroup()
                     .addGap(187, 187, 187)
                     .addComponent(btnHome)
-                    .addContainerGap(1076, Short.MAX_VALUE)))
+                    .addContainerGap(513, Short.MAX_VALUE)))
         );
 
         jSplitPane1.setLeftComponent(panelControl);
-
-        panelNgoOrders.setBackground(new java.awt.Color(204, 255, 255));
-
-        lblTitle6.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        lblTitle6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblTitle6.setText("NGO Orders");
-
-        tableNgoOrder.setAutoCreateRowSorter(true);
-        tableNgoOrder.setBackground(new java.awt.Color(255, 255, 204));
-        tableNgoOrder.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        tableNgoOrder.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null}
-            },
-            new String [] {
-                "Order Id", "Shopkeeper Id", "Delivery Man Id", "Item", "Quantity", "Status"
-            }
-        ) {
-            Class[] types = new Class [] {
-                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.String.class
-            };
-
-            public Class getColumnClass(int columnIndex) {
-                return types [columnIndex];
-            }
-        });
-        jScrollPane4.setViewportView(tableNgoOrder);
-
-        jLabel1.setBackground(new java.awt.Color(0, 51, 51));
-        jLabel1.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        jLabel1.setText("Shopkeeper Id:");
-
-        jLabel2.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        jLabel2.setText("DeliveryMan Id:");
-
-        jLabel3.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        jLabel3.setText("Order Id:");
-
-        jLabel4.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        jLabel4.setText("Item:");
-
-        jLabel5.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        jLabel5.setText("Status:");
-
-        txtOrderId.setEditable(false);
-
-        txtStatus.setEditable(false);
-
-        btnViewOrder.setBackground(new java.awt.Color(0, 51, 51));
-        btnViewOrder.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        btnViewOrder.setForeground(new java.awt.Color(255, 255, 255));
-        btnViewOrder.setText("View");
-        btnViewOrder.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnViewOrderActionPerformed(evt);
-            }
-        });
-
-        btnDelivered.setBackground(new java.awt.Color(0, 51, 51));
-        btnDelivered.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        btnDelivered.setForeground(new java.awt.Color(255, 255, 255));
-        btnDelivered.setText("Delivered");
-        btnDelivered.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnDeliveredActionPerformed(evt);
-            }
-        });
-
-        txtItem.setEditable(false);
-
-        jLabel7.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        jLabel7.setText("Quantity:");
-
-        txtQty.setEditable(false);
 
         panelHome.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -210,9 +131,6 @@ public class DeliveryManWorkspace extends javax.swing.JPanel {
         lblRole.setFont(new java.awt.Font("Segoe UI Emoji", 1, 14)); // NOI18N
         lblRole.setText("Role: Med Store Admin");
 
-        btnLogOut.setBackground(new java.awt.Color(0, 51, 51));
-        btnLogOut.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        btnLogOut.setForeground(new java.awt.Color(255, 255, 255));
         btnLogOut.setText("Log Out");
         btnLogOut.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -244,20 +162,77 @@ public class DeliveryManWorkspace extends javax.swing.JPanel {
                 .addContainerGap(575, Short.MAX_VALUE))
         );
 
+        lblTitle6.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        lblTitle6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblTitle6.setText("NGO Orders");
+
+        tableNgoOrder.setAutoCreateRowSorter(true);
+        tableNgoOrder.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null}
+            },
+            new String [] {
+                "Order Id", "Shopkeeper Id", "Delivery Man Id", "Item", "Quantity", "Status"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.String.class
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+        });
+        jScrollPane4.setViewportView(tableNgoOrder);
+
+        jLabel1.setText("Shopkeeper Id:");
+
+        jLabel2.setText("DeliveryMan Id:");
+
+        jLabel3.setText("Order Id:");
+
+        jLabel4.setText("Item:");
+
+        jLabel5.setText("Status:");
+
+        txtOrderId.setEditable(false);
+
+        txtStatus.setEditable(false);
+
+        btnViewOrder.setText("View");
+        btnViewOrder.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnViewOrderActionPerformed(evt);
+            }
+        });
+
+        btnDelivered.setText("Delivered");
+        btnDelivered.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDeliveredActionPerformed(evt);
+            }
+        });
+
+        txtItem.setEditable(false);
+
+        jLabel7.setText("Quantity:");
+
+        txtQty.setEditable(false);
+
         javax.swing.GroupLayout panelNgoOrdersLayout = new javax.swing.GroupLayout(panelNgoOrders);
         panelNgoOrders.setLayout(panelNgoOrdersLayout);
         panelNgoOrdersLayout.setHorizontalGroup(
             panelNgoOrdersLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(lblTitle6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(panelNgoOrdersLayout.createSequentialGroup()
-                .addGap(133, 133, 133)
-                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 761, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelNgoOrdersLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(btnViewOrder)
+                .addGap(663, 663, 663))
             .addGroup(panelNgoOrdersLayout.createSequentialGroup()
                 .addGroup(panelNgoOrdersLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panelNgoOrdersLayout.createSequentialGroup()
-                        .addGap(0, 409, Short.MAX_VALUE)
-                        .addComponent(btnViewOrder))
                     .addGroup(panelNgoOrdersLayout.createSequentialGroup()
                         .addGap(315, 315, 315)
                         .addComponent(btnDelivered))
@@ -277,10 +252,11 @@ public class DeliveryManWorkspace extends javax.swing.JPanel {
                             .addComponent(txtItem)
                             .addComponent(txtQty)
                             .addComponent(txtShopkeerId, 0, 189, Short.MAX_VALUE)
-                            .addComponent(txtDeliveryManId, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(panelHome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(394, 394, 394))
+                            .addComponent(txtDeliveryManId, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(panelNgoOrdersLayout.createSequentialGroup()
+                        .addGap(97, 97, 97)
+                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 761, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(215, Short.MAX_VALUE))
         );
         panelNgoOrdersLayout.setVerticalGroup(
             panelNgoOrdersLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -289,40 +265,35 @@ public class DeliveryManWorkspace extends javax.swing.JPanel {
                 .addComponent(lblTitle6)
                 .addGap(51, 51, 51)
                 .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(panelNgoOrdersLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panelNgoOrdersLayout.createSequentialGroup()
-                        .addGap(391, 391, 391)
-                        .addComponent(btnViewOrder)
-                        .addGap(41, 41, 41)
-                        .addGroup(panelNgoOrdersLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel1)
-                            .addComponent(txtShopkeerId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(panelNgoOrdersLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel2)
-                            .addComponent(txtDeliveryManId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(panelNgoOrdersLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel3)
-                            .addComponent(txtOrderId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(panelNgoOrdersLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel4)
-                            .addComponent(txtItem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(38, 38, 38)
-                        .addGroup(panelNgoOrdersLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel7)
-                            .addComponent(txtQty, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(panelNgoOrdersLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel5)
-                            .addComponent(txtStatus, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addComponent(btnDelivered))
-                    .addGroup(panelNgoOrdersLayout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(panelHome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(343, Short.MAX_VALUE))
+                .addGap(82, 82, 82)
+                .addComponent(btnViewOrder)
+                .addGap(41, 41, 41)
+                .addGroup(panelNgoOrdersLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(txtShopkeerId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(panelNgoOrdersLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(txtDeliveryManId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(panelNgoOrdersLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(txtOrderId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(panelNgoOrdersLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(txtItem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(38, 38, 38)
+                .addGroup(panelNgoOrdersLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel7)
+                    .addComponent(txtQty, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(panelNgoOrdersLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5)
+                    .addComponent(txtStatus, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(btnDelivered)
+                .addContainerGap(109, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout panelWorkLayout = new javax.swing.GroupLayout(panelWork);
@@ -333,12 +304,22 @@ public class DeliveryManWorkspace extends javax.swing.JPanel {
                 .addContainerGap()
                 .addComponent(panelNgoOrders, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(panelWorkLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(panelWorkLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(panelHome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
         panelWorkLayout.setVerticalGroup(
             panelWorkLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelWorkLayout.createSequentialGroup()
                 .addComponent(panelNgoOrders, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(0, 6, Short.MAX_VALUE))
+            .addGroup(panelWorkLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(panelWorkLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(panelHome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
 
         jSplitPane1.setRightComponent(panelWork);

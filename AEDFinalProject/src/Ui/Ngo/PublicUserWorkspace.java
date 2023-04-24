@@ -78,7 +78,6 @@ public class PublicUserWorkspace extends javax.swing.JPanel {
 
         panelControl.setBackground(new java.awt.Color(51, 51, 51));
 
-        btnHome.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         btnHome.setText("Home");
         btnHome.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -86,7 +85,6 @@ public class PublicUserWorkspace extends javax.swing.JPanel {
             }
         });
 
-        btnDonate.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         btnDonate.setText("Donate");
         btnDonate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -112,7 +110,7 @@ public class PublicUserWorkspace extends javax.swing.JPanel {
                 .addComponent(btnHome)
                 .addGap(32, 32, 32)
                 .addComponent(btnDonate)
-                .addContainerGap(547, Short.MAX_VALUE))
+                .addContainerGap(545, Short.MAX_VALUE))
         );
 
         SplitPanePerson.setLeftComponent(panelControl);
@@ -131,9 +129,6 @@ public class PublicUserWorkspace extends javax.swing.JPanel {
         lblRole.setText("Role: Person (Public)");
         panelHome.add(lblRole, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 180, 139, -1));
 
-        btnLogOut.setBackground(new java.awt.Color(0, 51, 51));
-        btnLogOut.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        btnLogOut.setForeground(new java.awt.Color(255, 255, 255));
         btnLogOut.setText("Log Out");
         btnLogOut.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

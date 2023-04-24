@@ -6,7 +6,7 @@ package School.Teacher;
 
 /**
  *
- * @author megha
+ * @author SrushtiGhatage
  */
 public class Teacher {
     private String teacherId;

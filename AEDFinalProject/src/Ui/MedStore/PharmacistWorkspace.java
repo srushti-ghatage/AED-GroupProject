@@ -20,7 +20,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author SrushtiGhatage
+ * @author megha
  */
 public class PharmacistWorkspace extends javax.swing.JPanel {
 
@@ -113,7 +113,6 @@ public class PharmacistWorkspace extends javax.swing.JPanel {
 
         panelControl.setBackground(new java.awt.Color(51, 51, 51));
 
-        btnHome.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         btnHome.setText("Home");
         btnHome.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -121,7 +120,6 @@ public class PharmacistWorkspace extends javax.swing.JPanel {
             }
         });
 
-        btnBilling.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         btnBilling.setText("Billing");
         btnBilling.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -129,7 +127,6 @@ public class PharmacistWorkspace extends javax.swing.JPanel {
             }
         });
 
-        btnNgoOrders.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         btnNgoOrders.setText("NGO Orders");
         btnNgoOrders.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -156,7 +153,7 @@ public class PharmacistWorkspace extends javax.swing.JPanel {
         panelControlLayout.setVerticalGroup(
             panelControlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelControlLayout.createSequentialGroup()
-                .addContainerGap(392, Short.MAX_VALUE)
+                .addContainerGap(390, Short.MAX_VALUE)
                 .addComponent(btnNgoOrders)
                 .addGap(18, 18, 18)
                 .addComponent(btnBilling)
@@ -165,7 +162,7 @@ public class PharmacistWorkspace extends javax.swing.JPanel {
                 .addGroup(panelControlLayout.createSequentialGroup()
                     .addGap(187, 187, 187)
                     .addComponent(btnHome)
-                    .addContainerGap(541, Short.MAX_VALUE)))
+                    .addContainerGap(540, Short.MAX_VALUE)))
         );
 
         jSplitPane1.setLeftComponent(panelControl);
@@ -196,17 +193,16 @@ public class PharmacistWorkspace extends javax.swing.JPanel {
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGES/pharmacistworkspace.gif"))); // NOI18N
         panelHome.add(jLabel6);
-        jLabel6.setBounds(150, 0, 1000, 760);
+        jLabel6.setBounds(330, 0, 1000, 760);
 
         panelWork.add(panelHome, "card2");
 
-        panelBilling.setBackground(new java.awt.Color(204, 255, 255));
+        panelBilling.setBackground(new java.awt.Color(255, 255, 255));
 
         lblTitle4.setFont(new java.awt.Font("Rockwell", 1, 36)); // NOI18N
         lblTitle4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitle4.setText("Medical Billing");
 
-        tableEncounter.setBackground(new java.awt.Color(255, 255, 204));
         tableEncounter.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null},
@@ -228,7 +224,6 @@ public class PharmacistWorkspace extends javax.swing.JPanel {
         });
         jScrollPane5.setViewportView(tableEncounter);
 
-        tableItem.setBackground(new java.awt.Color(255, 255, 204));
         tableItem.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null},
@@ -250,22 +245,18 @@ public class PharmacistWorkspace extends javax.swing.JPanel {
         });
         jScrollPane6.setViewportView(tableItem);
 
-        lblPatientUsername1.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblPatientUsername1.setText("Item Name:");
 
         txtItemName1.setEditable(false);
 
-        lblPatientName2.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblPatientName2.setText("Cost:");
 
         txtItemCost1.setEditable(false);
 
-        lblPatientAge1.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblPatientAge1.setText("Expiry Date:");
 
         txtItemExDate1.setEditable(false);
 
-        lblPatientEmail2.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblPatientEmail2.setText("Quantity:");
 
         txtItemQuantity1.addActionListener(new java.awt.event.ActionListener() {
@@ -274,9 +265,6 @@ public class PharmacistWorkspace extends javax.swing.JPanel {
             }
         });
 
-        btnSelectItem.setBackground(new java.awt.Color(0, 51, 51));
-        btnSelectItem.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        btnSelectItem.setForeground(new java.awt.Color(255, 255, 255));
         btnSelectItem.setText("Select");
         btnSelectItem.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -284,7 +272,6 @@ public class PharmacistWorkspace extends javax.swing.JPanel {
             }
         });
 
-        lblOrderId.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblOrderId.setText("Order Id:");
 
         txtItemOrderId.addActionListener(new java.awt.event.ActionListener() {
@@ -297,9 +284,6 @@ public class PharmacistWorkspace extends javax.swing.JPanel {
         txtReceipt.setRows(5);
         jScrollPane7.setViewportView(txtReceipt);
 
-        btnPrintBill.setBackground(new java.awt.Color(0, 51, 51));
-        btnPrintBill.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        btnPrintBill.setForeground(new java.awt.Color(255, 255, 255));
         btnPrintBill.setText("Print");
         btnPrintBill.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -320,57 +304,58 @@ public class PharmacistWorkspace extends javax.swing.JPanel {
             panelBillingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(lblTitle4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(panelBillingLayout.createSequentialGroup()
+                .addGap(216, 216, 216)
+                .addComponent(btnBillOrder)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelBillingLayout.createSequentialGroup()
+                .addContainerGap(1092, Short.MAX_VALUE)
+                .addComponent(btnPrintBill)
+                .addGap(136, 136, 136))
+            .addGroup(panelBillingLayout.createSequentialGroup()
+                .addGap(137, 137, 137)
                 .addGroup(panelBillingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panelBillingLayout.createSequentialGroup()
-                        .addGap(216, 216, 216)
-                        .addComponent(btnBillOrder))
-                    .addGroup(panelBillingLayout.createSequentialGroup()
-                        .addGap(137, 137, 137)
                         .addGroup(panelBillingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(btnSelectItem)
-                            .addGroup(panelBillingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addGroup(panelBillingLayout.createSequentialGroup()
-                                    .addGroup(panelBillingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(lblPatientUsername1)
-                                        .addComponent(lblPatientName2)
-                                        .addComponent(lblPatientAge1)
-                                        .addComponent(lblPatientEmail2)
-                                        .addComponent(lblOrderId))
-                                    .addGap(47, 47, 47)
-                                    .addGroup(panelBillingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(txtItemOrderId, javax.swing.GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE)
-                                        .addComponent(txtItemName1)
-                                        .addComponent(txtItemCost1)
-                                        .addComponent(txtItemExDate1)
-                                        .addComponent(txtItemQuantity1))
-                                    .addGap(181, 181, 181)
-                                    .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(panelBillingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(jScrollPane6)
-                                    .addComponent(jScrollPane5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 659, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-                .addContainerGap(504, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelBillingLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(btnPrintBill)
-                .addGap(593, 593, 593))
+                            .addGroup(panelBillingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(jScrollPane6)
+                                .addComponent(jScrollPane5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 659, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(panelBillingLayout.createSequentialGroup()
+                        .addGroup(panelBillingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblPatientUsername1)
+                            .addComponent(lblPatientName2)
+                            .addComponent(lblPatientAge1)
+                            .addComponent(lblPatientEmail2)
+                            .addComponent(lblOrderId))
+                        .addGap(47, 47, 47)
+                        .addGroup(panelBillingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(txtItemOrderId, javax.swing.GroupLayout.DEFAULT_SIZE, 670, Short.MAX_VALUE)
+                            .addComponent(txtItemName1, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtItemCost1, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtItemExDate1, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtItemQuantity1, javax.swing.GroupLayout.Alignment.LEADING))
+                        .addGap(85, 85, 85)
+                        .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(65, 65, 65))))
         );
         panelBillingLayout.setVerticalGroup(
             panelBillingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelBillingLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(lblTitle4)
-                .addGap(22, 22, 22)
-                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnSelectItem)
                 .addGroup(panelBillingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panelBillingLayout.createSequentialGroup()
+                        .addGap(50, 50, 50)
+                        .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btnSelectItem)
                         .addGap(38, 38, 38)
-                        .addGroup(panelBillingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(lblOrderId)
-                            .addComponent(txtItemOrderId, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(panelBillingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtItemOrderId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblOrderId))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(panelBillingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(panelBillingLayout.createSequentialGroup()
@@ -381,34 +366,31 @@ public class PharmacistWorkspace extends javax.swing.JPanel {
                                 .addGroup(panelBillingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(txtItemCost1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(lblPatientName2))
-                                .addGap(19, 19, 19)
+                                .addGap(40, 40, 40)
                                 .addGroup(panelBillingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(txtItemExDate1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(lblPatientAge1))
-                                .addGap(49, 49, 49))
+                                .addGap(52, 52, 52))
                             .addGroup(panelBillingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                 .addComponent(txtItemQuantity1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(lblPatientEmail2))))
                     .addGroup(panelBillingLayout.createSequentialGroup()
-                        .addGap(23, 23, 23)
+                        .addGap(351, 351, 351)
                         .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(18, 18, 18)
-                .addComponent(btnPrintBill)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 13, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 19, Short.MAX_VALUE)
                 .addComponent(btnBillOrder)
-                .addGap(78, 78, 78))
+                .addGap(21, 21, 21)
+                .addComponent(btnPrintBill)
+                .addGap(34, 34, 34))
         );
 
         panelWork.add(panelBilling, "card7");
-
-        panelNgoOrders.setBackground(new java.awt.Color(204, 255, 255));
 
         lblTitle6.setFont(new java.awt.Font("Rockwell", 1, 36)); // NOI18N
         lblTitle6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitle6.setText("NGO Orders");
 
         tableNgoOrder.setAutoCreateRowSorter(true);
-        tableNgoOrder.setBackground(new java.awt.Color(255, 255, 204));
         tableNgoOrder.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null},
@@ -430,19 +412,14 @@ public class PharmacistWorkspace extends javax.swing.JPanel {
         });
         jScrollPane4.setViewportView(tableNgoOrder);
 
-        jLabel1.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         jLabel1.setText("Shopkeeper Id:");
 
-        jLabel2.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         jLabel2.setText("DeliveryMan Id:");
 
-        jLabel3.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         jLabel3.setText("Order Id:");
 
-        jLabel4.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         jLabel4.setText("Item:");
 
-        jLabel5.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         jLabel5.setText("Status:");
 
         txtOrderId.setEditable(false);
@@ -454,9 +431,6 @@ public class PharmacistWorkspace extends javax.swing.JPanel {
 
         txtStatus.setEditable(false);
 
-        btnOutForDelivery.setBackground(new java.awt.Color(0, 51, 51));
-        btnOutForDelivery.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        btnOutForDelivery.setForeground(new java.awt.Color(255, 255, 255));
         btnOutForDelivery.setText("Out For Delivery");
         btnOutForDelivery.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -464,9 +438,6 @@ public class PharmacistWorkspace extends javax.swing.JPanel {
             }
         });
 
-        btnViewOrder.setBackground(new java.awt.Color(0, 102, 102));
-        btnViewOrder.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        btnViewOrder.setForeground(new java.awt.Color(255, 255, 255));
         btnViewOrder.setText("View");
         btnViewOrder.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -474,9 +445,6 @@ public class PharmacistWorkspace extends javax.swing.JPanel {
             }
         });
 
-        btnUpdateOrder.setBackground(new java.awt.Color(0, 51, 51));
-        btnUpdateOrder.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        btnUpdateOrder.setForeground(new java.awt.Color(255, 255, 255));
         btnUpdateOrder.setText("Update");
         btnUpdateOrder.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -484,9 +452,6 @@ public class PharmacistWorkspace extends javax.swing.JPanel {
             }
         });
 
-        btnCancelOrder.setBackground(new java.awt.Color(0, 51, 51));
-        btnCancelOrder.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        btnCancelOrder.setForeground(new java.awt.Color(255, 255, 255));
         btnCancelOrder.setText("Cancel Order");
         btnCancelOrder.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -494,9 +459,6 @@ public class PharmacistWorkspace extends javax.swing.JPanel {
             }
         });
 
-        btnDelivered.setBackground(new java.awt.Color(0, 51, 51));
-        btnDelivered.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        btnDelivered.setForeground(new java.awt.Color(255, 255, 255));
         btnDelivered.setText("Delivered");
         btnDelivered.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -506,7 +468,6 @@ public class PharmacistWorkspace extends javax.swing.JPanel {
 
         txtItem.setEditable(false);
 
-        jLabel7.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         jLabel7.setText("Quantity:");
 
         txtQty.setEditable(false);
@@ -587,7 +548,7 @@ public class PharmacistWorkspace extends javax.swing.JPanel {
                 .addGroup(panelNgoOrdersLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
                     .addComponent(txtStatus, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 118, Short.MAX_VALUE)
                 .addGroup(panelNgoOrdersLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnOutForDelivery)
                     .addComponent(btnUpdateOrder)

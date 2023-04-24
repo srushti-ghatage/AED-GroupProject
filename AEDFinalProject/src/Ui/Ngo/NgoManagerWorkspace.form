@@ -78,13 +78,13 @@
                       <Component id="btnCaretaker" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="btnChildren" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="305" max="32767" attributes="0"/>
+                      <EmptySpace pref="300" max="32767" attributes="0"/>
                   </Group>
                   <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="114" max="-2" attributes="0"/>
                           <Component id="btnHome" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="614" max="32767" attributes="0"/>
+                          <EmptySpace pref="613" max="32767" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -93,9 +93,6 @@
           <SubComponents>
             <Component class="javax.swing.JButton" name="btnHome">
               <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Rockwell" size="12" style="1"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Home"/>
               </Properties>
               <Events>
@@ -104,9 +101,6 @@
             </Component>
             <Component class="javax.swing.JButton" name="btnEducation">
               <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Rockwell" size="12" style="1"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Education"/>
               </Properties>
               <Events>
@@ -115,9 +109,6 @@
             </Component>
             <Component class="javax.swing.JButton" name="btnCaretaker">
               <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Rockwell" size="12" style="1"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Caretaker"/>
               </Properties>
               <Events>
@@ -126,9 +117,6 @@
             </Component>
             <Component class="javax.swing.JButton" name="btnChildren">
               <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Rockwell" size="12" style="1"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Children"/>
               </Properties>
               <Events>
@@ -137,9 +125,6 @@
             </Component>
             <Component class="javax.swing.JButton" name="btnEssentialItems">
               <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Rockwell" size="12" style="1"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Orders"/>
               </Properties>
               <Events>
@@ -148,9 +133,6 @@
             </Component>
             <Component class="javax.swing.JButton" name="btnHealth">
               <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Rockwell" size="12" style="1"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Health"/>
               </Properties>
               <Events>
@@ -213,15 +195,6 @@
                 </Component>
                 <Component class="javax.swing.JButton" name="btnLogOut">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="0" type="rgb"/>
-                    </Property>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Log Out"/>
                   </Properties>
                   <Events>
@@ -251,7 +224,7 @@
             <Container class="javax.swing.JPanel" name="panelEducation">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ff" green="ff" red="cc" type="rgb"/>
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -292,9 +265,6 @@
                   <SubComponents>
                     <Component class="javax.swing.JTable" name="tableChildrenApp">
                       <Properties>
-                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="cc" green="ff" red="ff" type="rgb"/>
-                        </Property>
                         <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                           <Table columnCount="5" rowCount="4">
                             <Column editable="true" title="Application Id" type="java.lang.String"/>
@@ -313,9 +283,6 @@
                 </Container>
                 <Component class="javax.swing.JLabel" name="lblChildName">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Name:"/>
                   </Properties>
                   <Constraints>
@@ -336,9 +303,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblApplicationNo">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Application No:"/>
                   </Properties>
                   <Constraints>
@@ -366,9 +330,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblChildAge">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Age:"/>
                   </Properties>
                   <Constraints>
@@ -379,9 +340,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblChildName2">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="DOB:"/>
                   </Properties>
                   <Constraints>
@@ -402,9 +360,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblChildName3">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Gender:"/>
                   </Properties>
                   <Constraints>
@@ -415,9 +370,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblChildName4">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="School:"/>
                   </Properties>
                   <Constraints>
@@ -439,9 +391,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblChildName5">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Comment:"/>
                   </Properties>
                   <Constraints>
@@ -472,9 +421,6 @@
                 </Container>
                 <Component class="javax.swing.JLabel" name="lblStatus">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Status:"/>
                   </Properties>
                   <Constraints>
@@ -508,12 +454,6 @@
                   <SubComponents>
                     <Component class="javax.swing.JTable" name="tableChildrenEducation">
                       <Properties>
-                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="cc" green="ff" red="ff" type="rgb"/>
-                        </Property>
-                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                          <Font name="Rockwell" size="12" style="1"/>
-                        </Property>
                         <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                           <Table columnCount="5" rowCount="4">
                             <Column editable="true" title="Children Id" type="java.lang.String"/>
@@ -532,9 +472,6 @@
                 </Container>
                 <Component class="javax.swing.JLabel" name="jLabel1">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="NGO Children List:"/>
                   </Properties>
                   <Constraints>
@@ -545,9 +482,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel2">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Student Applications:"/>
                   </Properties>
                   <Constraints>
@@ -558,9 +492,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblChildName6">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Class:"/>
                   </Properties>
                   <Constraints>
@@ -578,9 +509,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel3">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="NGO:"/>
                   </Properties>
                   <Constraints>
@@ -602,15 +530,6 @@
                 </Component>
                 <Component class="javax.swing.JButton" name="btnAutofill">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="0" type="rgb"/>
-                    </Property>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Autofill"/>
                   </Properties>
                   <Events>
@@ -634,15 +553,6 @@
                 </Component>
                 <Component class="javax.swing.JButton" name="btnApply">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="0" type="rgb"/>
-                    </Property>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Apply"/>
                   </Properties>
                   <Events>
@@ -671,7 +581,7 @@
             <Container class="javax.swing.JPanel" name="panelCareTaker">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ff" green="ff" red="cc" type="rgb"/>
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -698,6 +608,23 @@
                     </Constraint>
                   </Constraints>
                 </Component>
+                <Component class="javax.swing.JLabel" name="lblCaretakerSearch">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Search:"/>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                      <AbsoluteConstraints x="443" y="101" width="-1" height="-1"/>
+                    </Constraint>
+                  </Constraints>
+                </Component>
+                <Component class="javax.swing.JTextField" name="txtCaretakerSearch">
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                      <AbsoluteConstraints x="498" y="98" width="225" height="-1"/>
+                    </Constraint>
+                  </Constraints>
+                </Component>
                 <Container class="javax.swing.JScrollPane" name="ScrollPaneNgoManager1">
                   <AuxValues>
                     <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
@@ -712,9 +639,6 @@
                   <SubComponents>
                     <Component class="javax.swing.JTable" name="tableCaretaker">
                       <Properties>
-                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="cc" green="ff" red="ff" type="rgb"/>
-                        </Property>
                         <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                           <Table columnCount="5" rowCount="4">
                             <Column editable="true" title="ID" type="java.lang.String"/>
@@ -736,15 +660,6 @@
                 </Container>
                 <Component class="javax.swing.JButton" name="btnCaretakerView">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="0" type="rgb"/>
-                    </Property>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="View"/>
                   </Properties>
                   <Events>
@@ -758,15 +673,6 @@
                 </Component>
                 <Component class="javax.swing.JButton" name="btnCaretakerDelete">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="0" type="rgb"/>
-                    </Property>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Delete"/>
                   </Properties>
                   <Events>
@@ -780,9 +686,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblCaretakerId">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Caretaker Id:"/>
                   </Properties>
                   <Constraints>
@@ -803,9 +706,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblCaretakerEmailId">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Email-Id:"/>
                   </Properties>
                   <Constraints>
@@ -826,9 +726,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblCaretakerName">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Name:"/>
                   </Properties>
                   <Constraints>
@@ -846,9 +743,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblCaretakerPhno">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Phone No:"/>
                   </Properties>
                   <Constraints>
@@ -866,9 +760,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblCaretakerUsername">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Username:"/>
                   </Properties>
                   <Constraints>
@@ -886,9 +777,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblCaretakerPassword">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Password:"/>
                   </Properties>
                   <Constraints>
@@ -913,9 +801,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblCaretakerAge">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Age:"/>
                   </Properties>
                   <Constraints>
@@ -926,9 +811,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblCaretakerDOB">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="DOB:"/>
                   </Properties>
                   <Constraints>
@@ -946,9 +828,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblCaretakerGender">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Gender:"/>
                   </Properties>
                   <Constraints>
@@ -978,9 +857,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblCaretakerRole">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Role:"/>
                   </Properties>
                   <Constraints>
@@ -1002,15 +878,6 @@
                 </Component>
                 <Component class="javax.swing.JButton" name="btnCaretakerUpdate">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="0" type="rgb"/>
-                    </Property>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Update"/>
                   </Properties>
                   <Events>
@@ -1024,15 +891,6 @@
                 </Component>
                 <Component class="javax.swing.JButton" name="btnCaretakerCreate">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="0" type="rgb"/>
-                    </Property>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Create"/>
                   </Properties>
                   <Events>
@@ -1061,7 +919,7 @@
             <Container class="javax.swing.JPanel" name="panelFundManager">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ff" green="ff" red="cc" type="rgb"/>
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -1085,6 +943,23 @@
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                       <AbsoluteConstraints x="0" y="6" width="1170" height="-1"/>
+                    </Constraint>
+                  </Constraints>
+                </Component>
+                <Component class="javax.swing.JLabel" name="lblFundManagerSearch">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Search:"/>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                      <AbsoluteConstraints x="443" y="101" width="-1" height="-1"/>
+                    </Constraint>
+                  </Constraints>
+                </Component>
+                <Component class="javax.swing.JTextField" name="txtFundManagerSearch">
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                      <AbsoluteConstraints x="498" y="98" width="225" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -1123,15 +998,6 @@
                 </Container>
                 <Component class="javax.swing.JButton" name="btnFundManagerView">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="0" type="rgb"/>
-                    </Property>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="View"/>
                   </Properties>
                   <Events>
@@ -1145,15 +1011,6 @@
                 </Component>
                 <Component class="javax.swing.JButton" name="btnFundManagerDelete">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="0" type="rgb"/>
-                    </Property>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Delete"/>
                   </Properties>
                   <Events>
@@ -1167,69 +1024,57 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblFundManagerId">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Fund Manager Id:"/>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="50" y="330" width="-1" height="-1"/>
+                      <AbsoluteConstraints x="53" y="334" width="-1" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
                 <Component class="javax.swing.JTextField" name="txtFundManagerId">
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="180" y="330" width="206" height="-1"/>
+                      <AbsoluteConstraints x="152" y="331" width="206" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblFundManagerName">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Name:"/>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="50" y="370" width="-1" height="-1"/>
+                      <AbsoluteConstraints x="52" y="373" width="-1" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
                 <Component class="javax.swing.JTextField" name="txtFundManagerName">
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="180" y="360" width="206" height="-1"/>
+                      <AbsoluteConstraints x="152" y="365" width="206" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblFundManagerEmailId">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Email-Id:"/>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="50" y="590" width="-1" height="-1"/>
+                      <AbsoluteConstraints x="53" y="592" width="-1" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
                 <Component class="javax.swing.JTextField" name="txtFundManagerEmailId">
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="180" y="590" width="206" height="-1"/>
+                      <AbsoluteConstraints x="150" y="590" width="206" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblFundManagerPhno">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Phone No:"/>
                   </Properties>
                   <Constraints>
@@ -1241,15 +1086,12 @@
                 <Component class="javax.swing.JTextField" name="txtFundManagerPhno">
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="180" y="630" width="206" height="-1"/>
+                      <AbsoluteConstraints x="150" y="630" width="206" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblFundManagerPassword">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Password:"/>
                   </Properties>
                   <Constraints>
@@ -1261,22 +1103,19 @@
                 <Component class="javax.swing.JPasswordField" name="txtFundManagerPassword">
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="180" y="670" width="206" height="-1"/>
+                      <AbsoluteConstraints x="150" y="670" width="206" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
                 <Component class="javax.swing.JTextField" name="txtFundManagerUsername">
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="180" y="400" width="206" height="-1"/>
+                      <AbsoluteConstraints x="152" y="399" width="206" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblFundManagerUsername">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Username:"/>
                   </Properties>
                   <Constraints>
@@ -1287,29 +1126,23 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblFundManagerAge">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Age:"/>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="50" y="450" width="-1" height="-1"/>
+                      <AbsoluteConstraints x="52" y="449" width="-1" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
                 <Component class="javax.swing.JTextField" name="txtFundManagerAge">
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="180" y="440" width="206" height="-1"/>
+                      <AbsoluteConstraints x="152" y="441" width="206" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblFundManagerDOB">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="DOB:"/>
                   </Properties>
                   <Constraints>
@@ -1321,20 +1154,17 @@
                 <Component class="javax.swing.JTextField" name="txtFundManagerDOB">
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="180" y="480" width="206" height="-1"/>
+                      <AbsoluteConstraints x="152" y="481" width="206" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblFundManagerGender">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Gender:"/>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="50" y="520" width="-1" height="-1"/>
+                      <AbsoluteConstraints x="53" y="524" width="-1" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -1356,20 +1186,17 @@
                   </AuxValues>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="180" y="520" width="210" height="-1"/>
+                      <AbsoluteConstraints x="150" y="520" width="210" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblFundManagerRole">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Role:"/>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="50" y="560" width="-1" height="20"/>
+                      <AbsoluteConstraints x="53" y="564" width="-1" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -1378,26 +1205,14 @@
                     <Property name="editable" type="boolean" value="false"/>
                     <Property name="text" type="java.lang.String" value="Fund Manager"/>
                   </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtFundManagerRoleActionPerformed"/>
-                  </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="180" y="560" width="206" height="-1"/>
+                      <AbsoluteConstraints x="149" y="561" width="206" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
                 <Component class="javax.swing.JButton" name="btnFundManagerCreate">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="0" type="rgb"/>
-                    </Property>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Create"/>
                   </Properties>
                   <Events>
@@ -1411,15 +1226,6 @@
                 </Component>
                 <Component class="javax.swing.JButton" name="btnFundMangerUpdate">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="0" type="rgb"/>
-                    </Property>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Update"/>
                   </Properties>
                   <Events>
@@ -1448,7 +1254,7 @@
             <Container class="javax.swing.JPanel" name="panelFoodInv">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ff" green="ff" red="cc" type="rgb"/>
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -1489,9 +1295,6 @@
                   <SubComponents>
                     <Component class="javax.swing.JTable" name="tableNgoOrder">
                       <Properties>
-                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="cc" green="ff" red="ff" type="rgb"/>
-                        </Property>
                         <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                           <Table columnCount="4" rowCount="4">
                             <Column editable="true" title="Order Id" type="java.lang.String"/>
@@ -1509,9 +1312,6 @@
                 </Container>
                 <Component class="javax.swing.JLabel" name="jLabel4">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Order Id:"/>
                   </Properties>
                   <Constraints>
@@ -1529,9 +1329,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel5">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Item:"/>
                   </Properties>
                   <Constraints>
@@ -1542,9 +1339,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel6">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Status:"/>
                   </Properties>
                   <Constraints>
@@ -1566,9 +1360,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel7">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Quantity:"/>
                   </Properties>
                   <Constraints>
@@ -1601,15 +1392,6 @@
                 </Component>
                 <Component class="javax.swing.JButton" name="btnPlaceOrder">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="0" type="rgb"/>
-                    </Property>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Place Order"/>
                   </Properties>
                   <Events>
@@ -1638,7 +1420,7 @@
             <Container class="javax.swing.JPanel" name="panelChildren">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ff" green="ff" red="cc" type="rgb"/>
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -1679,12 +1461,6 @@
                   <SubComponents>
                     <Component class="javax.swing.JTable" name="tableChildrenCreate">
                       <Properties>
-                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="cc" green="ff" red="ff" type="rgb"/>
-                        </Property>
-                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                          <Font name="Rockwell" size="12" style="1"/>
-                        </Property>
                         <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                           <Table columnCount="5" rowCount="4">
                             <Column editable="true" title="Children Id" type="java.lang.String"/>
@@ -1693,35 +1469,6 @@
                             <Column editable="true" title="DOB" type="java.lang.String"/>
                             <Column editable="true" title="Gender" type="java.lang.String"/>
                           </Table>
-                        </Property>
-                        <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
-                          <TableColumnModel selectionModel="0">
-                            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                              <Title/>
-                              <Editor/>
-                              <Renderer/>
-                            </Column>
-                            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                              <Title/>
-                              <Editor/>
-                              <Renderer/>
-                            </Column>
-                            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                              <Title/>
-                              <Editor/>
-                              <Renderer/>
-                            </Column>
-                            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                              <Title/>
-                              <Editor/>
-                              <Renderer/>
-                            </Column>
-                            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                              <Title/>
-                              <Editor/>
-                              <Renderer/>
-                            </Column>
-                          </TableColumnModel>
                         </Property>
                         <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
                           <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
@@ -1732,9 +1479,6 @@
                 </Container>
                 <Component class="javax.swing.JLabel" name="lblChildrenName">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Name:"/>
                   </Properties>
                   <Constraints>
@@ -1752,9 +1496,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblChildrenAge">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Age:"/>
                   </Properties>
                   <Constraints>
@@ -1772,9 +1513,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblChildrenId">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Children Id:"/>
                   </Properties>
                   <Constraints>
@@ -1792,9 +1530,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblChildrenDob">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="DOB:"/>
                   </Properties>
                   <Constraints>
@@ -1812,9 +1547,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblChildrenGender">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Gender:"/>
                   </Properties>
                   <Constraints>
@@ -1842,17 +1574,25 @@
                     </Constraint>
                   </Constraints>
                 </Component>
+                <Component class="javax.swing.JLabel" name="lblChildrenSearch">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Search:"/>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                      <AbsoluteConstraints x="438" y="93" width="-1" height="-1"/>
+                    </Constraint>
+                  </Constraints>
+                </Component>
+                <Component class="javax.swing.JTextField" name="txtChildrenSearch">
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                      <AbsoluteConstraints x="493" y="90" width="225" height="-1"/>
+                    </Constraint>
+                  </Constraints>
+                </Component>
                 <Component class="javax.swing.JButton" name="btnChildrenView">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="0" type="rgb"/>
-                    </Property>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="View"/>
                   </Properties>
                   <Events>
@@ -1866,15 +1606,6 @@
                 </Component>
                 <Component class="javax.swing.JButton" name="btnChildrenDelete">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="0" type="rgb"/>
-                    </Property>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Delete"/>
                   </Properties>
                   <Events>
@@ -1888,9 +1619,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblChildrenRole">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Role:"/>
                   </Properties>
                   <Constraints>
@@ -1912,9 +1640,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblChildrenCaretaker">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Caretaker:"/>
                   </Properties>
                   <Constraints>
@@ -1940,15 +1665,6 @@
                 </Component>
                 <Component class="javax.swing.JButton" name="btnChildrenCreate">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="0" type="rgb"/>
-                    </Property>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Create"/>
                   </Properties>
                   <Events>
@@ -1962,15 +1678,6 @@
                 </Component>
                 <Component class="javax.swing.JButton" name="btnChildrenUpdate">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="0" type="rgb"/>
-                    </Property>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Update"/>
                   </Properties>
                   <Events>
@@ -1999,7 +1706,7 @@
             <Container class="javax.swing.JPanel" name="panelHealth">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ff" green="ff" red="cc" type="rgb"/>
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -2040,9 +1747,6 @@
                   <SubComponents>
                     <Component class="javax.swing.JTable" name="tableChildrenHealth">
                       <Properties>
-                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="cc" green="ff" red="ff" type="rgb"/>
-                        </Property>
                         <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                           <Table columnCount="5" rowCount="4">
                             <Column editable="true" title="Children Id" type="java.lang.String"/>
@@ -2061,15 +1765,6 @@
                 </Container>
                 <Component class="javax.swing.JButton" name="btnAutofill1">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="0" type="rgb"/>
-                    </Property>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Autofill"/>
                   </Properties>
                   <Events>
@@ -2095,9 +1790,6 @@
                   <SubComponents>
                     <Component class="javax.swing.JTable" name="tableChildrenAppoinment">
                       <Properties>
-                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="cc" green="ff" red="ff" type="rgb"/>
-                        </Property>
                         <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                           <Table columnCount="5" rowCount="4">
                             <Column editable="true" title="Appointment Id" type="java.lang.String"/>
@@ -2153,9 +1845,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblChildAge1">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Age:"/>
                   </Properties>
                   <Constraints>
@@ -2166,9 +1855,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblChildName8">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Gender:"/>
                   </Properties>
                   <Constraints>
@@ -2179,9 +1865,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblChildName9">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Date:"/>
                   </Properties>
                   <Constraints>
@@ -2199,9 +1882,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblStatus1">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Status:"/>
                   </Properties>
                   <Constraints>
@@ -2223,9 +1903,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblChildName10">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Comment:"/>
                   </Properties>
                   <Constraints>

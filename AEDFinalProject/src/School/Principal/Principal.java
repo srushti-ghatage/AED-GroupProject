@@ -8,7 +8,7 @@ import School.Teacher.Teacher;
 
 /**
  *
- * @author chinm
+ * @author SrushtiGhatage
  */
 public class Principal{
     

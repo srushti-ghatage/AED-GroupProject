@@ -138,7 +138,7 @@ public class FundingLoginPage extends javax.swing.JPanel {
 
         try{
 //            if(role.equals("Fund Manager")){
-            if(role.equals("Fund Manager")&&(username.equals("Admin") && password.equals("pass"))){
+            if(role.equals("Fund Manager")&&(username.equals(fundManager.getUsername()) && password.equals(fundManager.getPassword()))){
                     FundManagerWorkspace ngoManJPanel = new FundManagerWorkspace(fundManager,cardPanel, system, dB4OUtil);
                     CardLayout cardLayout = (CardLayout) cardPanel.getLayout();
                     cardPanel.add("FundManagerJPanel",ngoManJPanel);

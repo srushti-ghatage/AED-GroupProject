@@ -8,7 +8,7 @@ package JobApp.Applicant;
 
 /**
  *
- * @author megha
+ * @author SrushtiGhatage
  */
 public class Applicant{
     

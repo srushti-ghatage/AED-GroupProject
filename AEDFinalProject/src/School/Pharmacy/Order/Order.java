@@ -6,7 +6,7 @@ package Pharmacy.Order;
 
 /**
  *
- * @author megha
+ * @author SrushtiGhatage
  */
 public class Order {
     private String orderid;

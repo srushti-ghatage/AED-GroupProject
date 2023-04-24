@@ -6,7 +6,7 @@ package Pharmacy.Medicine;
 
 /**
  *
- * @author megha
+ * @author SrushtiGhatage
  */
 public class Medicine {
     

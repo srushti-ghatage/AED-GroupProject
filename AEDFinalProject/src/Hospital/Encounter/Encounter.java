@@ -6,7 +6,7 @@ package Hospital.Encounter;
 
 /**
  *
- * @author megha
+ * @author SrushtiGhatage
  */
 public class Encounter {
     private String encounterNo;
