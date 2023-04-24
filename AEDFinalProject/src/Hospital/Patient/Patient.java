@@ -6,7 +6,7 @@ package Hospital.Patient;
 
 /**
  *
- * @author megha
+ * @author SrushtiGhatage
  */
 public class Patient {
     

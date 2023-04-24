@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author SrushtiGhatages
+ * @author SrushtiGhatage
  */
 public class PharmacistDirectory {
     private ArrayList<Pharmacist> pharList;

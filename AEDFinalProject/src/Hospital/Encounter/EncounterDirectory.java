@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author megha
+ * @author SrushtiGhatage
  */
 public class EncounterDirectory {
     

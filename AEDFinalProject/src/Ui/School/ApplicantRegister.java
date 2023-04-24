@@ -69,41 +69,31 @@ public class ApplicantRegister extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(255, 255, 255));
 
-        jPanel1.setBackground(new java.awt.Color(204, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
         lblTitle.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         lblTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitle.setText("Applicant Registration");
 
-        lblUsername.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblUsername.setText("Username:");
 
-        lblName.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblName.setText("Name:");
 
-        lblAge.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblAge.setText("Age:");
 
-        lblDOB.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblDOB.setText("DOB:");
 
-        lblGender.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblGender.setText("Gender:");
 
         cmbGender.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Others" }));
 
-        lblPassword.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblPassword.setText("Password:");
 
-        lblRole.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblRole.setText("Role:");
 
         txtRole.setEditable(false);
         txtRole.setText("Applicant");
 
-        btnBack.setBackground(new java.awt.Color(0, 51, 51));
-        btnBack.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        btnBack.setForeground(new java.awt.Color(255, 255, 255));
         btnBack.setText("Back");
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -111,15 +101,10 @@ public class ApplicantRegister extends javax.swing.JPanel {
             }
         });
 
-        lblEmailId.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblEmailId.setText("Email-Id:");
 
-        lblPhno.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblPhno.setText("Phone No:");
 
-        btnRegister.setBackground(new java.awt.Color(0, 51, 51));
-        btnRegister.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        btnRegister.setForeground(new java.awt.Color(255, 255, 255));
         btnRegister.setText("Register");
         btnRegister.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -167,9 +152,10 @@ public class ApplicantRegister extends javax.swing.JPanel {
                                 .addComponent(cmbGender, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(txtDOB, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(txtEmailId, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(303, 303, 303)
-                .addComponent(btnRegister))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(btnRegister)
+                .addGap(360, 360, 360))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -215,9 +201,9 @@ public class ApplicantRegister extends javax.swing.JPanel {
                             .addComponent(txtRole, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(lblRole)))
                     .addComponent(lblUsername))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 66, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 115, Short.MAX_VALUE)
                 .addComponent(btnRegister)
-                .addGap(55, 55, 55))
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -236,7 +222,7 @@ public class ApplicantRegister extends javax.swing.JPanel {
             .addGap(0, 700, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                    .addGap(0, 51, Short.MAX_VALUE)
+                    .addGap(0, 38, Short.MAX_VALUE)
                     .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
     }// </editor-fold>//GEN-END:initComponents

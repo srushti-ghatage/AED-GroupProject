@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author megha
+ * @author SrushtiGhatage
  */
 public class AppointmentDirectory {
     private ArrayList<Appointment> hosAppList;

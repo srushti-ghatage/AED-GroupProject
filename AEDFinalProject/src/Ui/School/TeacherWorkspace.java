@@ -20,7 +20,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author SrushtiGhatage
+ * @author megha
  */
 public class TeacherWorkspace extends javax.swing.JPanel {
 

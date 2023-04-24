@@ -115,6 +115,8 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
         jLabel9 = new javax.swing.JLabel();
         panelCareTaker = new javax.swing.JPanel();
         lblTitle3 = new javax.swing.JLabel();
+        lblCaretakerSearch = new javax.swing.JLabel();
+        txtCaretakerSearch = new javax.swing.JTextField();
         ScrollPaneNgoManager1 = new javax.swing.JScrollPane();
         tableCaretaker = new javax.swing.JTable();
         btnCaretakerView = new javax.swing.JButton();
@@ -144,6 +146,8 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
         jLabel10 = new javax.swing.JLabel();
         panelFundManager = new javax.swing.JPanel();
         lblTitle4 = new javax.swing.JLabel();
+        lblFundManagerSearch = new javax.swing.JLabel();
+        txtFundManagerSearch = new javax.swing.JTextField();
         ScrollPaneNgoManager2 = new javax.swing.JScrollPane();
         tableFundManager = new javax.swing.JTable();
         btnFundManagerView = new javax.swing.JButton();
@@ -199,6 +203,8 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
         txtChildrenDOB = new javax.swing.JTextField();
         lblChildrenGender = new javax.swing.JLabel();
         cmbChildrenGender = new javax.swing.JComboBox<>();
+        lblChildrenSearch = new javax.swing.JLabel();
+        txtChildrenSearch = new javax.swing.JTextField();
         btnChildrenView = new javax.swing.JButton();
         btnChildrenDelete = new javax.swing.JButton();
         lblChildrenRole = new javax.swing.JLabel();
@@ -235,7 +241,6 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
 
         panelControl.setBackground(new java.awt.Color(51, 51, 51));
 
-        btnHome.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         btnHome.setText("Home");
         btnHome.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -243,7 +248,6 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
             }
         });
 
-        btnEducation.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         btnEducation.setText("Education");
         btnEducation.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -251,7 +255,6 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
             }
         });
 
-        btnCaretaker.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         btnCaretaker.setText("Caretaker");
         btnCaretaker.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -259,7 +262,6 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
             }
         });
 
-        btnChildren.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         btnChildren.setText("Children");
         btnChildren.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -267,7 +269,6 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
             }
         });
 
-        btnEssentialItems.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         btnEssentialItems.setText("Orders");
         btnEssentialItems.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -275,7 +276,6 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
             }
         });
 
-        btnHealth.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         btnHealth.setText("Health");
         btnHealth.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -315,12 +315,12 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
                 .addComponent(btnCaretaker)
                 .addGap(18, 18, 18)
                 .addComponent(btnChildren)
-                .addContainerGap(305, Short.MAX_VALUE))
+                .addContainerGap(300, Short.MAX_VALUE))
             .addGroup(panelControlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(panelControlLayout.createSequentialGroup()
                     .addGap(114, 114, 114)
                     .addComponent(btnHome)
-                    .addContainerGap(614, Short.MAX_VALUE)))
+                    .addContainerGap(613, Short.MAX_VALUE)))
         );
 
         SplitPaneNgoManager.setLeftComponent(panelControl);
@@ -339,9 +339,6 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
         lblRole.setText("Role: NGO Manager");
         panelHome.add(lblRole, new org.netbeans.lib.awtextra.AbsoluteConstraints(961, 95, 139, -1));
 
-        btnLogOut.setBackground(new java.awt.Color(0, 51, 51));
-        btnLogOut.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        btnLogOut.setForeground(new java.awt.Color(255, 255, 255));
         btnLogOut.setText("Log Out");
         btnLogOut.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -356,7 +353,7 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
 
         panelWork.add(panelHome, "card2");
 
-        panelEducation.setBackground(new java.awt.Color(204, 255, 255));
+        panelEducation.setBackground(new java.awt.Color(255, 255, 255));
         panelEducation.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblTitle7.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
@@ -364,7 +361,6 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
         lblTitle7.setText("Children Education");
         panelEducation.add(lblTitle7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 6, 1149, -1));
 
-        tableChildrenApp.setBackground(new java.awt.Color(255, 255, 204));
         tableChildrenApp.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
@@ -388,14 +384,12 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
 
         panelEducation.add(ScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 242, 1092, 97));
 
-        lblChildName.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblChildName.setText("Name:");
         panelEducation.add(lblChildName, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 400, -1, -1));
 
         txtChildName.setEditable(false);
         panelEducation.add(txtChildName, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 397, 219, -1));
 
-        lblApplicationNo.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblApplicationNo.setText("Application No:");
         panelEducation.add(lblApplicationNo, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 360, -1, -1));
         panelEducation.add(txtApplicationNo, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 357, 219, -1));
@@ -403,22 +397,18 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
         txtChildAge.setEditable(false);
         panelEducation.add(txtChildAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 437, 219, -1));
 
-        lblChildAge.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblChildAge.setText("Age:");
         panelEducation.add(lblChildAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 440, -1, -1));
 
-        lblChildName2.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblChildName2.setText("DOB:");
         panelEducation.add(lblChildName2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 480, -1, -1));
 
         txtChildDOB.setEditable(false);
         panelEducation.add(txtChildDOB, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 477, 219, -1));
 
-        lblChildName3.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblChildName3.setText("Gender:");
         panelEducation.add(lblChildName3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 535, -1, -1));
 
-        lblChildName4.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblChildName4.setText("School:");
         panelEducation.add(lblChildName4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 649, -1, -1));
 
@@ -426,7 +416,6 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
         txtChildSchool.setText("School");
         panelEducation.add(txtChildSchool, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 650, 219, -1));
 
-        lblChildName5.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblChildName5.setText("Comment:");
         panelEducation.add(lblChildName5, new org.netbeans.lib.awtextra.AbsoluteConstraints(783, 360, -1, -1));
 
@@ -436,7 +425,6 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
 
         panelEducation.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(873, 357, 219, -1));
 
-        lblStatus.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblStatus.setText("Status:");
         panelEducation.add(lblStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 609, -1, -1));
 
@@ -444,8 +432,6 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
         txtStatus.setText("Pending");
         panelEducation.add(txtStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 610, 219, -1));
 
-        tableChildrenEducation.setBackground(new java.awt.Color(255, 255, 204));
-        tableChildrenEducation.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         tableChildrenEducation.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
@@ -469,20 +455,16 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
 
         panelEducation.add(ScrollPane8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 72, 1149, 93));
 
-        jLabel1.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         jLabel1.setText("NGO Children List:");
         panelEducation.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, -1, -1));
 
-        jLabel2.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         jLabel2.setText("Student Applications:");
         panelEducation.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 220, -1, -1));
 
-        lblChildName6.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblChildName6.setText("Class:");
         panelEducation.add(lblChildName6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 569, -1, -1));
         panelEducation.add(txtChildClass, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 570, 219, -1));
 
-        jLabel3.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         jLabel3.setText("NGO:");
         panelEducation.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 683, -1, -1));
 
@@ -490,9 +472,6 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
         txtNgo.setText("Yes");
         panelEducation.add(txtNgo, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 680, 219, -1));
 
-        btnAutofill.setBackground(new java.awt.Color(0, 51, 51));
-        btnAutofill.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        btnAutofill.setForeground(new java.awt.Color(255, 255, 255));
         btnAutofill.setText("Autofill");
         btnAutofill.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -504,9 +483,6 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
         cmbChildGender.setEditable(false);
         panelEducation.add(cmbChildGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 532, 219, -1));
 
-        btnApply.setBackground(new java.awt.Color(0, 51, 51));
-        btnApply.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        btnApply.setForeground(new java.awt.Color(255, 255, 255));
         btnApply.setText("Apply");
         btnApply.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -520,7 +496,7 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
 
         panelWork.add(panelEducation, "card8");
 
-        panelCareTaker.setBackground(new java.awt.Color(204, 255, 255));
+        panelCareTaker.setBackground(new java.awt.Color(255, 255, 255));
         panelCareTaker.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblTitle3.setFont(new java.awt.Font("Rockwell", 1, 36)); // NOI18N
@@ -528,7 +504,10 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
         lblTitle3.setText("Caretaker");
         panelCareTaker.add(lblTitle3, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 30, 680, -1));
 
-        tableCaretaker.setBackground(new java.awt.Color(255, 255, 204));
+        lblCaretakerSearch.setText("Search:");
+        panelCareTaker.add(lblCaretakerSearch, new org.netbeans.lib.awtextra.AbsoluteConstraints(443, 101, -1, -1));
+        panelCareTaker.add(txtCaretakerSearch, new org.netbeans.lib.awtextra.AbsoluteConstraints(498, 98, 225, -1));
+
         tableCaretaker.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
@@ -553,9 +532,6 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
 
         panelCareTaker.add(ScrollPaneNgoManager1, new org.netbeans.lib.awtextra.AbsoluteConstraints(28, 126, 695, 112));
 
-        btnCaretakerView.setBackground(new java.awt.Color(0, 51, 51));
-        btnCaretakerView.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        btnCaretakerView.setForeground(new java.awt.Color(255, 255, 255));
         btnCaretakerView.setText("View");
         btnCaretakerView.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -564,9 +540,6 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
         });
         panelCareTaker.add(btnCaretakerView, new org.netbeans.lib.awtextra.AbsoluteConstraints(28, 256, -1, -1));
 
-        btnCaretakerDelete.setBackground(new java.awt.Color(0, 51, 51));
-        btnCaretakerDelete.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        btnCaretakerDelete.setForeground(new java.awt.Color(255, 255, 255));
         btnCaretakerDelete.setText("Delete");
         btnCaretakerDelete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -575,7 +548,6 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
         });
         panelCareTaker.add(btnCaretakerDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(112, 256, -1, -1));
 
-        lblCaretakerId.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblCaretakerId.setText("Caretaker Id:");
         panelCareTaker.add(lblCaretakerId, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 317, -1, -1));
 
@@ -586,7 +558,6 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
         });
         panelCareTaker.add(txtCaretakerId, new org.netbeans.lib.awtextra.AbsoluteConstraints(154, 317, 206, -1));
 
-        lblCaretakerEmailId.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblCaretakerEmailId.setText("Email-Id:");
         panelCareTaker.add(lblCaretakerEmailId, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 599, -1, -1));
 
@@ -597,44 +568,36 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
         });
         panelCareTaker.add(txtCaretakerEmailId, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 599, 210, -1));
 
-        lblCaretakerName.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblCaretakerName.setText("Name:");
         panelCareTaker.add(lblCaretakerName, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 358, -1, -1));
         panelCareTaker.add(txtCaretakerName, new org.netbeans.lib.awtextra.AbsoluteConstraints(154, 357, 203, -1));
 
-        lblCaretakerPhno.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblCaretakerPhno.setText("Phone No:");
         panelCareTaker.add(lblCaretakerPhno, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 630, -1, -1));
         panelCareTaker.add(txtCaretakerPhno, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 627, 210, -1));
 
-        lblCaretakerUsername.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblCaretakerUsername.setText("Username:");
         panelCareTaker.add(lblCaretakerUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 400, -1, -1));
         panelCareTaker.add(txtCaretakerUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(154, 397, 206, -1));
 
-        lblCaretakerPassword.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblCaretakerPassword.setText("Password:");
         panelCareTaker.add(lblCaretakerPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(39, 670, -1, -1));
         panelCareTaker.add(txtCaretakerPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 667, 210, -1));
         panelCareTaker.add(txtCaretakerAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(154, 439, 206, -1));
 
-        lblCaretakerAge.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblCaretakerAge.setText("Age:");
         panelCareTaker.add(lblCaretakerAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 439, -1, -1));
 
-        lblCaretakerDOB.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblCaretakerDOB.setText("DOB:");
         panelCareTaker.add(lblCaretakerDOB, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 482, -1, -1));
         panelCareTaker.add(txtCaretakerDOB, new org.netbeans.lib.awtextra.AbsoluteConstraints(154, 479, 206, -1));
 
-        lblCaretakerGender.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblCaretakerGender.setText("Gender:");
         panelCareTaker.add(lblCaretakerGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 519, -1, -1));
 
         cmbCaretakerGender.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Others" }));
         panelCareTaker.add(cmbCaretakerGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 519, 210, -1));
 
-        lblCaretakerRole.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblCaretakerRole.setText("Role:");
         panelCareTaker.add(lblCaretakerRole, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 559, -1, -1));
 
@@ -642,9 +605,6 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
         txtCaretakerRole.setText("Caretaker");
         panelCareTaker.add(txtCaretakerRole, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 559, 210, -1));
 
-        btnCaretakerUpdate.setBackground(new java.awt.Color(0, 51, 51));
-        btnCaretakerUpdate.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        btnCaretakerUpdate.setForeground(new java.awt.Color(255, 255, 255));
         btnCaretakerUpdate.setText("Update");
         btnCaretakerUpdate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -653,9 +613,6 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
         });
         panelCareTaker.add(btnCaretakerUpdate, new org.netbeans.lib.awtextra.AbsoluteConstraints(652, 257, -1, -1));
 
-        btnCaretakerCreate.setBackground(new java.awt.Color(0, 51, 51));
-        btnCaretakerCreate.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        btnCaretakerCreate.setForeground(new java.awt.Color(255, 255, 255));
         btnCaretakerCreate.setText("Create");
         btnCaretakerCreate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -669,13 +626,17 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
 
         panelWork.add(panelCareTaker, "card4");
 
-        panelFundManager.setBackground(new java.awt.Color(204, 255, 255));
+        panelFundManager.setBackground(new java.awt.Color(255, 255, 255));
         panelFundManager.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblTitle4.setFont(new java.awt.Font("Rockwell", 1, 36)); // NOI18N
         lblTitle4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitle4.setText("Fund Manager");
         panelFundManager.add(lblTitle4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 6, 1170, -1));
+
+        lblFundManagerSearch.setText("Search:");
+        panelFundManager.add(lblFundManagerSearch, new org.netbeans.lib.awtextra.AbsoluteConstraints(443, 101, -1, -1));
+        panelFundManager.add(txtFundManagerSearch, new org.netbeans.lib.awtextra.AbsoluteConstraints(498, 98, 225, -1));
 
         tableFundManager.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -701,9 +662,6 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
 
         panelFundManager.add(ScrollPaneNgoManager2, new org.netbeans.lib.awtextra.AbsoluteConstraints(28, 126, 695, 112));
 
-        btnFundManagerView.setBackground(new java.awt.Color(0, 51, 51));
-        btnFundManagerView.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        btnFundManagerView.setForeground(new java.awt.Color(255, 255, 255));
         btnFundManagerView.setText("View");
         btnFundManagerView.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -712,9 +670,6 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
         });
         panelFundManager.add(btnFundManagerView, new org.netbeans.lib.awtextra.AbsoluteConstraints(28, 256, -1, -1));
 
-        btnFundManagerDelete.setBackground(new java.awt.Color(0, 51, 51));
-        btnFundManagerDelete.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        btnFundManagerDelete.setForeground(new java.awt.Color(255, 255, 255));
         btnFundManagerDelete.setText("Delete");
         btnFundManagerDelete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -723,49 +678,40 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
         });
         panelFundManager.add(btnFundManagerDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(112, 256, -1, -1));
 
-        lblFundManagerId.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblFundManagerId.setText("Fund Manager Id:");
-        panelFundManager.add(lblFundManagerId, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 330, -1, -1));
-        panelFundManager.add(txtFundManagerId, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 330, 206, -1));
+        panelFundManager.add(lblFundManagerId, new org.netbeans.lib.awtextra.AbsoluteConstraints(53, 334, -1, -1));
+        panelFundManager.add(txtFundManagerId, new org.netbeans.lib.awtextra.AbsoluteConstraints(152, 331, 206, -1));
 
-        lblFundManagerName.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblFundManagerName.setText("Name:");
-        panelFundManager.add(lblFundManagerName, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 370, -1, -1));
-        panelFundManager.add(txtFundManagerName, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 360, 206, -1));
+        panelFundManager.add(lblFundManagerName, new org.netbeans.lib.awtextra.AbsoluteConstraints(52, 373, -1, -1));
+        panelFundManager.add(txtFundManagerName, new org.netbeans.lib.awtextra.AbsoluteConstraints(152, 365, 206, -1));
 
-        lblFundManagerEmailId.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblFundManagerEmailId.setText("Email-Id:");
-        panelFundManager.add(lblFundManagerEmailId, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 590, -1, -1));
-        panelFundManager.add(txtFundManagerEmailId, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 590, 206, -1));
+        panelFundManager.add(lblFundManagerEmailId, new org.netbeans.lib.awtextra.AbsoluteConstraints(53, 592, -1, -1));
+        panelFundManager.add(txtFundManagerEmailId, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 590, 206, -1));
 
-        lblFundManagerPhno.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblFundManagerPhno.setText("Phone No:");
         panelFundManager.add(lblFundManagerPhno, new org.netbeans.lib.awtextra.AbsoluteConstraints(53, 632, -1, -1));
-        panelFundManager.add(txtFundManagerPhno, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 630, 206, -1));
+        panelFundManager.add(txtFundManagerPhno, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 630, 206, -1));
 
-        lblFundManagerPassword.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblFundManagerPassword.setText("Password:");
         panelFundManager.add(lblFundManagerPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(53, 672, -1, -1));
-        panelFundManager.add(txtFundManagerPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 670, 206, -1));
-        panelFundManager.add(txtFundManagerUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 400, 206, -1));
+        panelFundManager.add(txtFundManagerPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 670, 206, -1));
+        panelFundManager.add(txtFundManagerUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(152, 399, 206, -1));
 
-        lblFundManagerUsername.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblFundManagerUsername.setText("Username:");
         panelFundManager.add(lblFundManagerUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(52, 407, -1, -1));
 
-        lblFundManagerAge.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblFundManagerAge.setText("Age:");
-        panelFundManager.add(lblFundManagerAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 450, -1, -1));
-        panelFundManager.add(txtFundManagerAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 440, 206, -1));
+        panelFundManager.add(lblFundManagerAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(52, 449, -1, -1));
+        panelFundManager.add(txtFundManagerAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(152, 441, 206, -1));
 
-        lblFundManagerDOB.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblFundManagerDOB.setText("DOB:");
         panelFundManager.add(lblFundManagerDOB, new org.netbeans.lib.awtextra.AbsoluteConstraints(52, 483, -1, -1));
-        panelFundManager.add(txtFundManagerDOB, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 480, 206, -1));
+        panelFundManager.add(txtFundManagerDOB, new org.netbeans.lib.awtextra.AbsoluteConstraints(152, 481, 206, -1));
 
-        lblFundManagerGender.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblFundManagerGender.setText("Gender:");
-        panelFundManager.add(lblFundManagerGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 520, -1, -1));
+        panelFundManager.add(lblFundManagerGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(53, 524, -1, -1));
 
         cmbFundManagerGender.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Others" }));
         cmbFundManagerGender.addActionListener(new java.awt.event.ActionListener() {
@@ -773,24 +719,15 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
                 cmbFundManagerGenderActionPerformed(evt);
             }
         });
-        panelFundManager.add(cmbFundManagerGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 520, 210, -1));
+        panelFundManager.add(cmbFundManagerGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 520, 210, -1));
 
-        lblFundManagerRole.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblFundManagerRole.setText("Role:");
-        panelFundManager.add(lblFundManagerRole, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 560, -1, 20));
+        panelFundManager.add(lblFundManagerRole, new org.netbeans.lib.awtextra.AbsoluteConstraints(53, 564, -1, -1));
 
         txtFundManagerRole.setEditable(false);
         txtFundManagerRole.setText("Fund Manager");
-        txtFundManagerRole.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtFundManagerRoleActionPerformed(evt);
-            }
-        });
-        panelFundManager.add(txtFundManagerRole, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 560, 206, -1));
+        panelFundManager.add(txtFundManagerRole, new org.netbeans.lib.awtextra.AbsoluteConstraints(149, 561, 206, -1));
 
-        btnFundManagerCreate.setBackground(new java.awt.Color(0, 51, 51));
-        btnFundManagerCreate.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        btnFundManagerCreate.setForeground(new java.awt.Color(255, 255, 255));
         btnFundManagerCreate.setText("Create");
         btnFundManagerCreate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -799,9 +736,6 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
         });
         panelFundManager.add(btnFundManagerCreate, new org.netbeans.lib.awtextra.AbsoluteConstraints(544, 258, -1, -1));
 
-        btnFundMangerUpdate.setBackground(new java.awt.Color(0, 51, 51));
-        btnFundMangerUpdate.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        btnFundMangerUpdate.setForeground(new java.awt.Color(255, 255, 255));
         btnFundMangerUpdate.setText("Update");
         btnFundMangerUpdate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -815,7 +749,7 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
 
         panelWork.add(panelFundManager, "card5");
 
-        panelFoodInv.setBackground(new java.awt.Color(204, 255, 255));
+        panelFoodInv.setBackground(new java.awt.Color(255, 255, 255));
         panelFoodInv.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblTitle10.setFont(new java.awt.Font("Rockwell", 1, 36)); // NOI18N
@@ -823,7 +757,6 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
         lblTitle10.setText("Essential Items");
         panelFoodInv.add(lblTitle10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 6, 1170, -1));
 
-        tableNgoOrder.setBackground(new java.awt.Color(255, 255, 204));
         tableNgoOrder.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -847,16 +780,13 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
 
         panelFoodInv.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 121, 614, 115));
 
-        jLabel4.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         jLabel4.setText("Order Id:");
         panelFoodInv.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 267, -1, -1));
         panelFoodInv.add(txtOrderId, new org.netbeans.lib.awtextra.AbsoluteConstraints(111, 264, 189, -1));
 
-        jLabel5.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         jLabel5.setText("Item:");
         panelFoodInv.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 307, -1, -1));
 
-        jLabel6.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         jLabel6.setText("Status:");
         panelFoodInv.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 384, -1, -1));
 
@@ -864,16 +794,12 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
         txtStatus2.setText("Pending");
         panelFoodInv.add(txtStatus2, new org.netbeans.lib.awtextra.AbsoluteConstraints(111, 384, 189, -1));
 
-        jLabel7.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         jLabel7.setText("Quantity:");
         panelFoodInv.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 344, -1, -1));
         panelFoodInv.add(txtQty, new org.netbeans.lib.awtextra.AbsoluteConstraints(111, 344, 189, -1));
 
         panelFoodInv.add(txtItem, new org.netbeans.lib.awtextra.AbsoluteConstraints(111, 304, 189, -1));
 
-        btnPlaceOrder.setBackground(new java.awt.Color(0, 51, 51));
-        btnPlaceOrder.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        btnPlaceOrder.setForeground(new java.awt.Color(255, 255, 255));
         btnPlaceOrder.setText("Place Order");
         btnPlaceOrder.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -887,7 +813,7 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
 
         panelWork.add(panelFoodInv, "card9");
 
-        panelChildren.setBackground(new java.awt.Color(204, 255, 255));
+        panelChildren.setBackground(new java.awt.Color(255, 255, 255));
         panelChildren.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblTitle9.setFont(new java.awt.Font("Rockwell", 1, 36)); // NOI18N
@@ -895,8 +821,6 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
         lblTitle9.setText("Children");
         panelChildren.add(lblTitle9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 6, 1300, -1));
 
-        tableChildrenCreate.setBackground(new java.awt.Color(255, 255, 204));
-        tableChildrenCreate.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         tableChildrenCreate.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
@@ -920,36 +844,32 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
 
         panelChildren.add(ScrollPane7, new org.netbeans.lib.awtextra.AbsoluteConstraints(41, 130, 677, 119));
 
-        lblChildrenName.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblChildrenName.setText("Name:");
         panelChildren.add(lblChildrenName, new org.netbeans.lib.awtextra.AbsoluteConstraints(47, 362, -1, -1));
         panelChildren.add(txtChildrenName, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 359, 230, -1));
 
-        lblChildrenAge.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblChildrenAge.setText("Age:");
         panelChildren.add(lblChildrenAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(47, 402, -1, -1));
         panelChildren.add(txtChildrenAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 399, 230, -1));
 
-        lblChildrenId.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblChildrenId.setText("Children Id:");
         panelChildren.add(lblChildrenId, new org.netbeans.lib.awtextra.AbsoluteConstraints(47, 322, -1, -1));
         panelChildren.add(txtChildrenId, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 319, 230, -1));
 
-        lblChildrenDob.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblChildrenDob.setText("DOB:");
         panelChildren.add(lblChildrenDob, new org.netbeans.lib.awtextra.AbsoluteConstraints(47, 442, -1, -1));
         panelChildren.add(txtChildrenDOB, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 439, 230, -1));
 
-        lblChildrenGender.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblChildrenGender.setText("Gender:");
         panelChildren.add(lblChildrenGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(47, 482, -1, -1));
 
         cmbChildrenGender.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Others" }));
         panelChildren.add(cmbChildrenGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 479, 230, -1));
 
-        btnChildrenView.setBackground(new java.awt.Color(0, 51, 51));
-        btnChildrenView.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        btnChildrenView.setForeground(new java.awt.Color(255, 255, 255));
+        lblChildrenSearch.setText("Search:");
+        panelChildren.add(lblChildrenSearch, new org.netbeans.lib.awtextra.AbsoluteConstraints(438, 93, -1, -1));
+        panelChildren.add(txtChildrenSearch, new org.netbeans.lib.awtextra.AbsoluteConstraints(493, 90, 225, -1));
+
         btnChildrenView.setText("View");
         btnChildrenView.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -958,9 +878,6 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
         });
         panelChildren.add(btnChildrenView, new org.netbeans.lib.awtextra.AbsoluteConstraints(41, 267, -1, -1));
 
-        btnChildrenDelete.setBackground(new java.awt.Color(0, 51, 51));
-        btnChildrenDelete.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        btnChildrenDelete.setForeground(new java.awt.Color(255, 255, 255));
         btnChildrenDelete.setText("Delete");
         btnChildrenDelete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -969,7 +886,6 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
         });
         panelChildren.add(btnChildrenDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 267, -1, -1));
 
-        lblChildrenRole.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblChildrenRole.setText("Role:");
         panelChildren.add(lblChildrenRole, new org.netbeans.lib.awtextra.AbsoluteConstraints(47, 522, -1, -1));
 
@@ -977,15 +893,11 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
         txtChildrenRole.setText("Child");
         panelChildren.add(txtChildrenRole, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 519, 230, -1));
 
-        lblChildrenCaretaker.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblChildrenCaretaker.setText("Caretaker:");
         panelChildren.add(lblChildrenCaretaker, new org.netbeans.lib.awtextra.AbsoluteConstraints(47, 556, -1, -1));
 
         panelChildren.add(txtChildrenCaretaker, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 553, 230, -1));
 
-        btnChildrenCreate.setBackground(new java.awt.Color(0, 51, 51));
-        btnChildrenCreate.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        btnChildrenCreate.setForeground(new java.awt.Color(255, 255, 255));
         btnChildrenCreate.setText("Create");
         btnChildrenCreate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -994,9 +906,6 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
         });
         panelChildren.add(btnChildrenCreate, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 593, -1, -1));
 
-        btnChildrenUpdate.setBackground(new java.awt.Color(0, 51, 51));
-        btnChildrenUpdate.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        btnChildrenUpdate.setForeground(new java.awt.Color(255, 255, 255));
         btnChildrenUpdate.setText("Update");
         btnChildrenUpdate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1010,7 +919,7 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
 
         panelWork.add(panelChildren, "card10");
 
-        panelHealth.setBackground(new java.awt.Color(204, 255, 255));
+        panelHealth.setBackground(new java.awt.Color(255, 255, 255));
         panelHealth.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblTitle6.setFont(new java.awt.Font("Rockwell", 1, 36)); // NOI18N
@@ -1018,7 +927,6 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
         lblTitle6.setText("Children Health");
         panelHealth.add(lblTitle6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 6, 1170, -1));
 
-        tableChildrenHealth.setBackground(new java.awt.Color(255, 255, 204));
         tableChildrenHealth.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
@@ -1042,9 +950,6 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
 
         panelHealth.add(ScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 67, 699, 93));
 
-        btnAutofill1.setBackground(new java.awt.Color(0, 51, 51));
-        btnAutofill1.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        btnAutofill1.setForeground(new java.awt.Color(255, 255, 255));
         btnAutofill1.setText("Autofill");
         btnAutofill1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1053,7 +958,6 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
         });
         panelHealth.add(btnAutofill1, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 178, -1, -1));
 
-        tableChildrenAppoinment.setBackground(new java.awt.Color(255, 255, 204));
         tableChildrenAppoinment.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
@@ -1087,20 +991,16 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
         txtChildName1.setEditable(false);
         panelHealth.add(txtChildName1, new org.netbeans.lib.awtextra.AbsoluteConstraints(111, 383, 219, -1));
 
-        lblChildAge1.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblChildAge1.setText("Age:");
         panelHealth.add(lblChildAge1, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 426, -1, -1));
 
-        lblChildName8.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblChildName8.setText("Gender:");
         panelHealth.add(lblChildName8, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 466, -1, -1));
 
-        lblChildName9.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblChildName9.setText("Date:");
         panelHealth.add(lblChildName9, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 506, -1, -1));
         panelHealth.add(txtAppDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(111, 503, 219, -1));
 
-        lblStatus1.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblStatus1.setText("Status:");
         panelHealth.add(lblStatus1, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 546, -1, -1));
 
@@ -1108,7 +1008,6 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
         txtStatus1.setText("Pending");
         panelHealth.add(txtStatus1, new org.netbeans.lib.awtextra.AbsoluteConstraints(111, 543, 219, -1));
 
-        lblChildName10.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblChildName10.setText("Comment:");
         panelHealth.add(lblChildName10, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 593, -1, -1));
 
@@ -2013,10 +1912,6 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtCaretakerEmailIdActionPerformed
 
-    private void txtFundManagerRoleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFundManagerRoleActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtFundManagerRoleActionPerformed
-
         
 
     private void populateCaretakerTable(){
@@ -2235,6 +2130,7 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
     private javax.swing.JLabel lblCaretakerPassword;
     private javax.swing.JLabel lblCaretakerPhno;
     private javax.swing.JLabel lblCaretakerRole;
+    private javax.swing.JLabel lblCaretakerSearch;
     private javax.swing.JLabel lblCaretakerUsername;
     private javax.swing.JLabel lblChildAge;
     private javax.swing.JLabel lblChildAge1;
@@ -2255,6 +2151,7 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
     private javax.swing.JLabel lblChildrenId;
     private javax.swing.JLabel lblChildrenName;
     private javax.swing.JLabel lblChildrenRole;
+    private javax.swing.JLabel lblChildrenSearch;
     private javax.swing.JLabel lblFundManagerAge;
     private javax.swing.JLabel lblFundManagerDOB;
     private javax.swing.JLabel lblFundManagerEmailId;
@@ -2264,6 +2161,7 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
     private javax.swing.JLabel lblFundManagerPassword;
     private javax.swing.JLabel lblFundManagerPhno;
     private javax.swing.JLabel lblFundManagerRole;
+    private javax.swing.JLabel lblFundManagerSearch;
     private javax.swing.JLabel lblFundManagerUsername;
     private javax.swing.JLabel lblRole;
     private javax.swing.JLabel lblStatus;
@@ -2303,6 +2201,7 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
     private javax.swing.JPasswordField txtCaretakerPassword;
     private javax.swing.JTextField txtCaretakerPhno;
     private javax.swing.JTextField txtCaretakerRole;
+    private javax.swing.JTextField txtCaretakerSearch;
     private javax.swing.JTextField txtCaretakerUsername;
     private javax.swing.JTextField txtChildAge;
     private javax.swing.JTextField txtChildAge1;
@@ -2320,6 +2219,7 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
     private javax.swing.JTextField txtChildrenId;
     private javax.swing.JTextField txtChildrenName;
     private javax.swing.JTextField txtChildrenRole;
+    private javax.swing.JTextField txtChildrenSearch;
     private javax.swing.JTextField txtFundManagerAge;
     private javax.swing.JTextField txtFundManagerDOB;
     private javax.swing.JTextField txtFundManagerEmailId;
@@ -2328,6 +2228,7 @@ public class NgoManagerWorkspace extends javax.swing.JPanel {
     private javax.swing.JPasswordField txtFundManagerPassword;
     private javax.swing.JTextField txtFundManagerPhno;
     private javax.swing.JTextField txtFundManagerRole;
+    private javax.swing.JTextField txtFundManagerSearch;
     private javax.swing.JTextField txtFundManagerUsername;
     private javax.swing.JComboBox<String> txtItem;
     private javax.swing.JTextField txtNgo;

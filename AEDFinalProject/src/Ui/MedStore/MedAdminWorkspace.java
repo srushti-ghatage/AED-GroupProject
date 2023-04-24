@@ -37,7 +37,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author SrushtiGhatage
+ * @author megha
  */
 public class MedAdminWorkspace extends javax.swing.JPanel {
 
@@ -141,6 +141,8 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
         txtItemDesc = new javax.swing.JTextArea();
         panelStorekeeper = new javax.swing.JPanel();
         lblTitle3 = new javax.swing.JLabel();
+        lblCaretakerSearch = new javax.swing.JLabel();
+        txtMedStoreSearch = new javax.swing.JTextField();
         ScrollPaneNgoManager1 = new javax.swing.JScrollPane();
         tableStorekeeper = new javax.swing.JTable();
         btnCaretakerView = new javax.swing.JButton();
@@ -240,7 +242,6 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
 
         panelControl.setBackground(new java.awt.Color(51, 51, 51));
 
-        btnHome.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         btnHome.setText("Home");
         btnHome.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -248,7 +249,6 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
             }
         });
 
-        btnEncounter.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         btnEncounter.setText("Encounter");
         btnEncounter.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -256,7 +256,6 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
             }
         });
 
-        btnStorekeeper.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         btnStorekeeper.setText("Storekeeper");
         btnStorekeeper.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -264,7 +263,6 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
             }
         });
 
-        btnBilling.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         btnBilling.setText("Billing");
         btnBilling.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -272,7 +270,6 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
             }
         });
 
-        btnItems.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         btnItems.setText("Items");
         btnItems.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -280,7 +277,6 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
             }
         });
 
-        btnDeliveryMan.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         btnDeliveryMan.setText("Delivery Man");
         btnDeliveryMan.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -288,7 +284,6 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
             }
         });
 
-        btnNgoOrders.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         btnNgoOrders.setText("NGO Orders");
         btnNgoOrders.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -296,7 +291,6 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
             }
         });
 
-        btnMedOrders.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         btnMedOrders.setText("Medical Orders");
         btnMedOrders.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -340,7 +334,7 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
                 .addComponent(btnMedOrders)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnNgoOrders)
-                .addContainerGap(280, Short.MAX_VALUE))
+                .addContainerGap(272, Short.MAX_VALUE))
         );
 
         SplitPaneMedAdmin.setLeftComponent(panelControl);
@@ -360,9 +354,6 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
         panelHome.add(lblRole);
         lblRole.setBounds(1087, 106, 149, 16);
 
-        btnLogOut.setBackground(new java.awt.Color(0, 51, 51));
-        btnLogOut.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        btnLogOut.setForeground(new java.awt.Color(255, 255, 255));
         btnLogOut.setText("Log Out");
         btnLogOut.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -370,7 +361,7 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
             }
         });
         panelHome.add(btnLogOut);
-        btnLogOut.setBounds(1087, 128, 100, 30);
+        btnLogOut.setBounds(1087, 128, 73, 23);
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGES/medadminworkspace.gif"))); // NOI18N
         jLabel6.setText("jLabel6");
@@ -379,13 +370,12 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
 
         panelWork.add(panelHome, "card2");
 
-        panelEncounter.setBackground(new java.awt.Color(204, 255, 255));
+        panelEncounter.setBackground(new java.awt.Color(255, 255, 255));
 
         lblTitleEncounter.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         lblTitleEncounter.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitleEncounter.setText("ENCOUNTER");
 
-        tableEncounter1.setBackground(new java.awt.Color(255, 255, 204));
         tableEncounter1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
@@ -407,9 +397,6 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
         });
         jScrollPane3.setViewportView(tableEncounter1);
 
-        btnEncounterView.setBackground(new java.awt.Color(0, 51, 51));
-        btnEncounterView.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        btnEncounterView.setForeground(new java.awt.Color(255, 255, 255));
         btnEncounterView.setText("View");
         btnEncounterView.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -417,34 +404,25 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
             }
         });
 
-        lblEncounterNo.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblEncounterNo.setText("Encounter No");
 
-        lblEncounterHospital.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblEncounterHospital.setText("Hospital");
 
-        lblDoctorEncounterUsername.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblDoctorEncounterUsername.setText("Doctor Username");
 
-        lblEncounterPatientUsername.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblEncounterPatientUsername.setText("Patient Username");
 
-        lblEncounterDate.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblEncounterDate.setText("Date");
 
         txtEncounterHospital.setEditable(false);
         txtEncounterHospital.setText("Hospital");
 
-        lblEncounterBP.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblEncounterBP.setText("BP");
 
-        lblEncounterTemperature.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblEncounterTemperature.setText("Temperature");
 
-        lblEncounterMedicine.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblEncounterMedicine.setText("Medicine");
 
-        lblEncounterMedicineQuantity.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblEncounterMedicineQuantity.setText("Medicine Quantity");
 
         txtMedicineQuantity.addActionListener(new java.awt.event.ActionListener() {
@@ -506,7 +484,7 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
                 .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(24, 24, 24)
                 .addComponent(btnEncounterView)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 121, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 119, Short.MAX_VALUE)
                 .addGroup(panelEncounterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblEncounterNo)
                     .addComponent(txtEncounterNo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -541,13 +519,12 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
 
         panelWork.add(panelEncounter, "card5");
 
-        panelItem.setBackground(new java.awt.Color(204, 255, 255));
+        panelItem.setBackground(new java.awt.Color(255, 255, 255));
 
         lblTitlePatient.setFont(new java.awt.Font("Rockwell", 0, 36)); // NOI18N
         lblTitlePatient.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitlePatient.setText("Items");
 
-        tableItem.setBackground(new java.awt.Color(255, 255, 204));
         tableItem.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null},
@@ -574,9 +551,6 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
             tableItem.getColumnModel().getColumn(4).setHeaderValue("Quantity");
         }
 
-        btnMedCreate.setBackground(new java.awt.Color(0, 51, 51));
-        btnMedCreate.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        btnMedCreate.setForeground(new java.awt.Color(255, 255, 255));
         btnMedCreate.setText("Create");
         btnMedCreate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -584,9 +558,6 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
             }
         });
 
-        btnPatientView.setBackground(new java.awt.Color(0, 51, 51));
-        btnPatientView.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        btnPatientView.setForeground(new java.awt.Color(255, 255, 255));
         btnPatientView.setText("View");
         btnPatientView.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -594,9 +565,6 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
             }
         });
 
-        btnPatientUpdate.setBackground(new java.awt.Color(0, 51, 51));
-        btnPatientUpdate.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        btnPatientUpdate.setForeground(new java.awt.Color(255, 255, 255));
         btnPatientUpdate.setText("Update");
         btnPatientUpdate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -604,9 +572,6 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
             }
         });
 
-        btnPatientDelete.setBackground(new java.awt.Color(0, 51, 51));
-        btnPatientDelete.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        btnPatientDelete.setForeground(new java.awt.Color(255, 255, 255));
         btnPatientDelete.setText("Delete");
         btnPatientDelete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -614,19 +579,14 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
             }
         });
 
-        lblPatientID.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblPatientID.setText("Item Id:");
 
-        lblPatientUsername.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblPatientUsername.setText("Name:");
 
-        lblPatientName.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblPatientName.setText("Cost:");
 
-        lblPatientAge.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblPatientAge.setText("Expiry Date:");
 
-        lblPatientEmail.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblPatientEmail.setText("Quantity:");
 
         txtItemQuantity.addActionListener(new java.awt.event.ActionListener() {
@@ -635,12 +595,10 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
             }
         });
 
-        lblPatientEmail1.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        lblPatientEmail1.setText("Availability:");
+        lblPatientEmail1.setText("Avalability:");
 
         txtItemAvailability.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Yes", "No" }));
 
-        lblPatientName1.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblPatientName1.setText("Description:");
 
         txtItemDesc.setColumns(20);
@@ -743,18 +701,17 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
                                 .addComponent(lblPatientEmail))
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(txtItemQuantity, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(239, Short.MAX_VALUE))
+                .addContainerGap(238, Short.MAX_VALUE))
         );
 
         panelWork.add(panelItem, "card4");
-
-        panelStorekeeper.setBackground(new java.awt.Color(204, 255, 255));
 
         lblTitle3.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         lblTitle3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitle3.setText("Storekeeper");
 
-        tableStorekeeper.setBackground(new java.awt.Color(255, 255, 204));
+        lblCaretakerSearch.setText("Search:");
+
         tableStorekeeper.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
@@ -777,9 +734,6 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
         tableStorekeeper.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         ScrollPaneNgoManager1.setViewportView(tableStorekeeper);
 
-        btnCaretakerView.setBackground(new java.awt.Color(0, 51, 51));
-        btnCaretakerView.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        btnCaretakerView.setForeground(new java.awt.Color(255, 255, 255));
         btnCaretakerView.setText("View");
         btnCaretakerView.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -787,9 +741,6 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
             }
         });
 
-        btnCaretakerDelete.setBackground(new java.awt.Color(0, 51, 51));
-        btnCaretakerDelete.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        btnCaretakerDelete.setForeground(new java.awt.Color(255, 255, 255));
         btnCaretakerDelete.setText("Delete");
         btnCaretakerDelete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -797,7 +748,6 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
             }
         });
 
-        lblCaretakerId.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblCaretakerId.setText("Storekeeper Id:");
 
         txtCaretakerId.addActionListener(new java.awt.event.ActionListener() {
@@ -806,22 +756,16 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
             }
         });
 
-        lblCaretakerEmailId.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblCaretakerEmailId.setText("Email-Id:");
 
-        lblCaretakerName.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblCaretakerName.setText("Name:");
 
-        lblCaretakerPhno.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblCaretakerPhno.setText("Phone No:");
 
-        lblCaretakerUsername.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblCaretakerUsername.setText("Username:");
 
-        lblCaretakerPassword.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblCaretakerPassword.setText("Password:");
 
-        lblCaretakerAge.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblCaretakerAge.setText("Age:");
 
         btnCaretakerCreate.setText("Create");
@@ -838,12 +782,10 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
             }
         });
 
-        lblCaretakerGender.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblCaretakerGender.setText("Gender:");
 
         cmbCaretakerGender.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Others" }));
 
-        lblCaretakerRole.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblCaretakerRole.setText("Role:");
 
         txtCaretakerRole.setEditable(false);
@@ -853,135 +795,144 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
         panelStorekeeper.setLayout(panelStorekeeperLayout);
         panelStorekeeperLayout.setHorizontalGroup(
             panelStorekeeperLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(lblTitle3, javax.swing.GroupLayout.DEFAULT_SIZE, 1391, Short.MAX_VALUE)
+            .addComponent(lblTitle3, javax.swing.GroupLayout.DEFAULT_SIZE, 1173, Short.MAX_VALUE)
             .addGroup(panelStorekeeperLayout.createSequentialGroup()
                 .addGap(53, 53, 53)
                 .addGroup(panelStorekeeperLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblCaretakerRole)
-                    .addComponent(lblCaretakerGender)
-                    .addComponent(lblCaretakerId))
-                .addGap(59, 59, 59)
-                .addGroup(panelStorekeeperLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panelStorekeeperLayout.createSequentialGroup()
-                        .addComponent(txtCaretakerName, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lblCaretakerId)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnCaretakerCreate)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnCaretakerUpdate)
-                        .addGap(77, 77, 77))
-                    .addGroup(panelStorekeeperLayout.createSequentialGroup()
                         .addGroup(panelStorekeeperLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(cmbCaretakerGender, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtCaretakerRole, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtCaretakerAge, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblCaretakerEmailId)
+                            .addGroup(panelStorekeeperLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addGroup(panelStorekeeperLayout.createSequentialGroup()
+                                    .addComponent(btnCaretakerCreate)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(btnCaretakerUpdate))
+                                .addGroup(panelStorekeeperLayout.createSequentialGroup()
+                                    .addGroup(panelStorekeeperLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(lblCaretakerPhno)
+                                        .addComponent(lblCaretakerPassword))
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addGroup(panelStorekeeperLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(txtCaretakerPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtCaretakerPhno, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                        .addGap(77, 77, 77))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelStorekeeperLayout.createSequentialGroup()
+                        .addGroup(panelStorekeeperLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(panelStorekeeperLayout.createSequentialGroup()
-                                .addComponent(txtCaretakerId, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(118, 118, 118)
-                                .addGroup(panelStorekeeperLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lblCaretakerPassword)
-                                    .addGroup(panelStorekeeperLayout.createSequentialGroup()
-                                        .addGroup(panelStorekeeperLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(lblCaretakerPhno)
-                                            .addComponent(lblCaretakerEmailId))
-                                        .addGap(59, 59, 59)
-                                        .addGroup(panelStorekeeperLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addComponent(txtCaretakerPhno, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(txtCaretakerPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(txtCaretakerEmailId, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelStorekeeperLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(txtCaretakerUsername, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(985, 985, 985))
+                                .addComponent(lblCaretakerRole)
+                                .addGap(72, 72, 72)
+                                .addComponent(txtCaretakerRole, javax.swing.GroupLayout.DEFAULT_SIZE, 625, Short.MAX_VALUE))
+                            .addGroup(panelStorekeeperLayout.createSequentialGroup()
+                                .addComponent(lblCaretakerGender)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(cmbCaretakerGender, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(397, 397, 397))))
             .addGroup(panelStorekeeperLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(panelStorekeeperLayout.createSequentialGroup()
                     .addGap(28, 28, 28)
                     .addGroup(panelStorekeeperLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(panelStorekeeperLayout.createSequentialGroup()
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelStorekeeperLayout.createSequentialGroup()
                             .addGap(24, 24, 24)
                             .addGroup(panelStorekeeperLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(lblCaretakerName)
-                                .addComponent(lblCaretakerAge)
-                                .addComponent(lblCaretakerUsername)))
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelStorekeeperLayout.createSequentialGroup()
+                                    .addGap(0, 0, Short.MAX_VALUE)
+                                    .addComponent(txtCaretakerId, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(panelStorekeeperLayout.createSequentialGroup()
+                                    .addGroup(panelStorekeeperLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(lblCaretakerName)
+                                        .addComponent(lblCaretakerAge)
+                                        .addComponent(lblCaretakerUsername))
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addGroup(panelStorekeeperLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(txtCaretakerAge, javax.swing.GroupLayout.DEFAULT_SIZE, 206, Short.MAX_VALUE)
+                                        .addComponent(txtCaretakerName, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtCaretakerUsername))))
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(txtCaretakerEmailId, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(77, 77, 77))
                         .addGroup(panelStorekeeperLayout.createSequentialGroup()
-                            .addComponent(btnCaretakerView)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                            .addComponent(btnCaretakerDelete))
-                        .addComponent(ScrollPaneNgoManager1, javax.swing.GroupLayout.PREFERRED_SIZE, 695, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addContainerGap(668, Short.MAX_VALUE)))
+                            .addGroup(panelStorekeeperLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addGroup(panelStorekeeperLayout.createSequentialGroup()
+                                    .addComponent(lblCaretakerSearch)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(txtMedStoreSearch, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(panelStorekeeperLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(panelStorekeeperLayout.createSequentialGroup()
+                                        .addComponent(btnCaretakerView)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(btnCaretakerDelete))
+                                    .addComponent(ScrollPaneNgoManager1, javax.swing.GroupLayout.PREFERRED_SIZE, 695, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGap(28, 28, 28)))))
         );
         panelStorekeeperLayout.setVerticalGroup(
             panelStorekeeperLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelStorekeeperLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(lblTitle3)
-                .addGroup(panelStorekeeperLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panelStorekeeperLayout.createSequentialGroup()
-                        .addGap(294, 294, 294)
-                        .addGroup(panelStorekeeperLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblCaretakerId)
-                            .addComponent(txtCaretakerId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addComponent(txtCaretakerName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(panelStorekeeperLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 289, Short.MAX_VALUE)
-                        .addGroup(panelStorekeeperLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblCaretakerEmailId)
-                            .addComponent(txtCaretakerEmailId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(26, 26, 26)
-                        .addGroup(panelStorekeeperLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblCaretakerPhno)
-                            .addComponent(txtCaretakerPhno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(8, 8, 8)))
-                .addGroup(panelStorekeeperLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(txtCaretakerUsername, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(panelStorekeeperLayout.createSequentialGroup()
-                        .addGap(13, 13, 13)
-                        .addGroup(panelStorekeeperLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblCaretakerPassword)
-                            .addComponent(txtCaretakerPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(20, 20, 20)
-                .addComponent(txtCaretakerAge, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(293, 293, 293)
+                .addGroup(panelStorekeeperLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblCaretakerId)
+                    .addComponent(lblCaretakerEmailId))
                 .addGap(18, 18, 18)
+                .addGroup(panelStorekeeperLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblCaretakerPhno)
+                    .addComponent(txtCaretakerPhno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(panelStorekeeperLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblCaretakerPassword)
+                    .addComponent(txtCaretakerPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 161, Short.MAX_VALUE)
                 .addGroup(panelStorekeeperLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblCaretakerGender)
                     .addComponent(cmbCaretakerGender, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(24, 24, 24)
-                .addGroup(panelStorekeeperLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGap(18, 18, 18)
+                .addGroup(panelStorekeeperLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblCaretakerRole)
                     .addComponent(txtCaretakerRole, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(100, 100, 100)
+                .addGap(18, 18, 18)
                 .addGroup(panelStorekeeperLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnCaretakerCreate)
                     .addComponent(btnCaretakerUpdate))
                 .addGap(59, 59, 59))
             .addGroup(panelStorekeeperLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(panelStorekeeperLayout.createSequentialGroup()
-                    .addGap(123, 123, 123)
+                    .addGap(98, 98, 98)
+                    .addGroup(panelStorekeeperLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(lblCaretakerSearch)
+                        .addComponent(txtMedStoreSearch, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                     .addComponent(ScrollPaneNgoManager1, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(18, 18, 18)
                     .addGroup(panelStorekeeperLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(btnCaretakerView)
                         .addComponent(btnCaretakerDelete))
-                    .addGap(94, 94, 94)
-                    .addComponent(lblCaretakerName)
+                    .addGap(54, 54, 54)
+                    .addGroup(panelStorekeeperLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(txtCaretakerEmailId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtCaretakerId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGap(18, 18, 18)
-                    .addComponent(lblCaretakerUsername)
-                    .addGap(27, 27, 27)
-                    .addComponent(lblCaretakerAge)
-                    .addContainerGap(291, Short.MAX_VALUE)))
+                    .addGroup(panelStorekeeperLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(txtCaretakerName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lblCaretakerName))
+                    .addGap(18, 18, 18)
+                    .addGroup(panelStorekeeperLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(txtCaretakerUsername, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lblCaretakerUsername))
+                    .addGap(20, 20, 20)
+                    .addGroup(panelStorekeeperLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(txtCaretakerAge, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lblCaretakerAge))
+                    .addContainerGap(273, Short.MAX_VALUE)))
         );
 
         panelWork.add(panelStorekeeper, "card4");
 
-        panelBilling.setBackground(new java.awt.Color(204, 255, 255));
-
-        lblTitle4.setBackground(new java.awt.Color(204, 255, 255));
         lblTitle4.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         lblTitle4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitle4.setText("Medical Billing");
 
-        tableEncounterOrder.setBackground(new java.awt.Color(255, 255, 204));
         tableEncounterOrder.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null},
@@ -1003,7 +954,6 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
         });
         jScrollPane5.setViewportView(tableEncounterOrder);
 
-        tableItem1.setBackground(new java.awt.Color(255, 255, 204));
         tableItem1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null},
@@ -1025,22 +975,18 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
         });
         jScrollPane6.setViewportView(tableItem1);
 
-        lblPatientUsername1.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblPatientUsername1.setText("Item Name:");
 
         txtItemName1.setEditable(false);
 
-        lblPatientName2.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblPatientName2.setText("Cost:");
 
         txtItemCost1.setEditable(false);
 
-        lblPatientAge1.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblPatientAge1.setText("Expiry Date:");
 
         txtItemExDate1.setEditable(false);
 
-        lblPatientEmail2.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblPatientEmail2.setText("Quantity:");
 
         txtItemQuantity1.addActionListener(new java.awt.event.ActionListener() {
@@ -1049,9 +995,6 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
             }
         });
 
-        btnBillOrder.setBackground(new java.awt.Color(0, 102, 102));
-        btnBillOrder.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        btnBillOrder.setForeground(new java.awt.Color(255, 255, 255));
         btnBillOrder.setText("Order");
         btnBillOrder.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1059,9 +1002,6 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
             }
         });
 
-        btnSelectItem.setBackground(new java.awt.Color(0, 51, 51));
-        btnSelectItem.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        btnSelectItem.setForeground(new java.awt.Color(255, 255, 255));
         btnSelectItem.setText("Select");
         btnSelectItem.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1069,7 +1009,6 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
             }
         });
 
-        lblOrderId.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblOrderId.setText("Order Id:");
 
         txtItemOrderId.addActionListener(new java.awt.event.ActionListener() {
@@ -1082,9 +1021,6 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
         txtReceipt.setRows(5);
         jScrollPane7.setViewportView(txtReceipt);
 
-        btnPrint.setBackground(new java.awt.Color(0, 51, 51));
-        btnPrint.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        btnPrint.setForeground(new java.awt.Color(255, 255, 255));
         btnPrint.setText("Print");
         btnPrint.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1107,7 +1043,7 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
                     .addComponent(lblOrderId))
                 .addGap(47, 47, 47)
                 .addGroup(panelBillingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(txtItemOrderId, javax.swing.GroupLayout.DEFAULT_SIZE, 249, Short.MAX_VALUE)
+                    .addComponent(txtItemOrderId, javax.swing.GroupLayout.DEFAULT_SIZE, 543, Short.MAX_VALUE)
                     .addComponent(txtItemName1, javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(txtItemCost1, javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(txtItemExDate1, javax.swing.GroupLayout.Alignment.LEADING)
@@ -1116,7 +1052,7 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
                 .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(65, 65, 65))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelBillingLayout.createSequentialGroup()
-                .addContainerGap(193, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(panelBillingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btnSelectItem)
                     .addGroup(panelBillingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
@@ -1154,7 +1090,7 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
                                 .addGroup(panelBillingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(txtItemName1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(lblPatientUsername1))
-                                .addGap(40, 40, 40)
+                                .addGap(28, 28, 28)
                                 .addGroup(panelBillingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(txtItemCost1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(lblPatientName2))
@@ -1171,7 +1107,7 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
                         .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGroup(panelBillingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panelBillingLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 83, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 82, Short.MAX_VALUE)
                         .addComponent(btnBillOrder)
                         .addGap(26, 26, 26))
                     .addGroup(panelBillingLayout.createSequentialGroup()
@@ -1182,13 +1118,10 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
 
         panelWork.add(panelBilling, "card7");
 
-        panelDeliveryMan.setBackground(new java.awt.Color(204, 255, 255));
-
         lblTitle5.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         lblTitle5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitle5.setText("Delivery Man");
 
-        tableDeliveryMan.setBackground(new java.awt.Color(255, 255, 204));
         tableDeliveryMan.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
@@ -1211,9 +1144,6 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
         tableDeliveryMan.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         ScrollPaneNgoManager2.setViewportView(tableDeliveryMan);
 
-        btnCaretakerView1.setBackground(new java.awt.Color(0, 51, 51));
-        btnCaretakerView1.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        btnCaretakerView1.setForeground(new java.awt.Color(255, 255, 255));
         btnCaretakerView1.setText("View");
         btnCaretakerView1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1221,9 +1151,6 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
             }
         });
 
-        btnCaretakerDelete1.setBackground(new java.awt.Color(0, 51, 51));
-        btnCaretakerDelete1.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        btnCaretakerDelete1.setForeground(new java.awt.Color(255, 255, 255));
         btnCaretakerDelete1.setText("Delete");
         btnCaretakerDelete1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1231,7 +1158,6 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
             }
         });
 
-        lblCaretakerId1.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblCaretakerId1.setText("Delivery Man Id:");
 
         txtCaretakerId1.addActionListener(new java.awt.event.ActionListener() {
@@ -1240,33 +1166,18 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
             }
         });
 
-        lblCaretakerEmailId1.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblCaretakerEmailId1.setText("Email-Id:");
 
-        lblCaretakerName1.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblCaretakerName1.setText("Name:");
 
-        lblCaretakerPhno1.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblCaretakerPhno1.setText("Phone No:");
 
-        lblCaretakerUsername1.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblCaretakerUsername1.setText("Username:");
 
-        lblCaretakerPassword1.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblCaretakerPassword1.setText("Password:");
 
-        txtCaretakerPassword1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtCaretakerPassword1ActionPerformed(evt);
-            }
-        });
-
-        lblCaretakerAge1.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblCaretakerAge1.setText("Age:");
 
-        btnCaretakerCreate1.setBackground(new java.awt.Color(0, 51, 51));
-        btnCaretakerCreate1.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        btnCaretakerCreate1.setForeground(new java.awt.Color(255, 255, 255));
         btnCaretakerCreate1.setText("Create");
         btnCaretakerCreate1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1274,9 +1185,6 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
             }
         });
 
-        btnCaretakerUpdate1.setBackground(new java.awt.Color(0, 51, 51));
-        btnCaretakerUpdate1.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        btnCaretakerUpdate1.setForeground(new java.awt.Color(255, 255, 255));
         btnCaretakerUpdate1.setText("Update");
         btnCaretakerUpdate1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1284,12 +1192,10 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
             }
         });
 
-        lblCaretakerGender1.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblCaretakerGender1.setText("Gender:");
 
         cmbCaretakerGender1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Others" }));
 
-        lblCaretakerRole1.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         lblCaretakerRole1.setText("Role:");
 
         txtCaretakerRole1.setEditable(false);
@@ -1299,104 +1205,98 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
         panelDeliveryMan.setLayout(panelDeliveryManLayout);
         panelDeliveryManLayout.setHorizontalGroup(
             panelDeliveryManLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(lblTitle5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(lblTitle5, javax.swing.GroupLayout.DEFAULT_SIZE, 1173, Short.MAX_VALUE)
             .addGroup(panelDeliveryManLayout.createSequentialGroup()
                 .addGap(53, 53, 53)
                 .addGroup(panelDeliveryManLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panelDeliveryManLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addGroup(panelDeliveryManLayout.createSequentialGroup()
-                            .addComponent(lblCaretakerId1)
-                            .addGap(135, 135, 135)
-                            .addComponent(txtCaretakerId1, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addComponent(txtCaretakerName1, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(panelDeliveryManLayout.createSequentialGroup()
-                        .addGroup(panelDeliveryManLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblCaretakerGender1)
-                            .addComponent(lblCaretakerRole1))
-                        .addGap(191, 191, 191)
-                        .addGroup(panelDeliveryManLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtCaretakerAge1, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtCaretakerUsername1, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(cmbCaretakerGender1, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtCaretakerRole1, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 159, Short.MAX_VALUE)
-                .addGroup(panelDeliveryManLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panelDeliveryManLayout.createSequentialGroup()
-                        .addGroup(panelDeliveryManLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(panelDeliveryManLayout.createSequentialGroup()
-                                .addComponent(btnCaretakerCreate1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(btnCaretakerUpdate1))
-                            .addGroup(panelDeliveryManLayout.createSequentialGroup()
-                                .addComponent(lblCaretakerPassword1)
-                                .addGap(91, 91, 91)
-                                .addComponent(txtCaretakerPassword1, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 294, Short.MAX_VALUE)))
-                        .addGap(77, 77, 77))
-                    .addGroup(panelDeliveryManLayout.createSequentialGroup()
+                        .addComponent(lblCaretakerId1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(panelDeliveryManLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(lblCaretakerEmailId1)
-                            .addComponent(lblCaretakerPhno1))
-                        .addGap(90, 90, 90)
-                        .addGroup(panelDeliveryManLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtCaretakerPhno1, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtCaretakerEmailId1, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addGroup(panelDeliveryManLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addGroup(panelDeliveryManLayout.createSequentialGroup()
+                                    .addComponent(btnCaretakerCreate1)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(btnCaretakerUpdate1))
+                                .addGroup(panelDeliveryManLayout.createSequentialGroup()
+                                    .addGroup(panelDeliveryManLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(lblCaretakerPhno1)
+                                        .addComponent(lblCaretakerPassword1))
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addGroup(panelDeliveryManLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(txtCaretakerPassword1, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtCaretakerPhno1, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                        .addGap(77, 77, 77))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelDeliveryManLayout.createSequentialGroup()
+                        .addGroup(panelDeliveryManLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(panelDeliveryManLayout.createSequentialGroup()
+                                .addComponent(lblCaretakerRole1)
+                                .addGap(72, 72, 72)
+                                .addComponent(txtCaretakerRole1, javax.swing.GroupLayout.DEFAULT_SIZE, 625, Short.MAX_VALUE))
+                            .addGroup(panelDeliveryManLayout.createSequentialGroup()
+                                .addComponent(lblCaretakerGender1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(cmbCaretakerGender1, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(397, 397, 397))))
             .addGroup(panelDeliveryManLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(panelDeliveryManLayout.createSequentialGroup()
                     .addGap(28, 28, 28)
                     .addGroup(panelDeliveryManLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(panelDeliveryManLayout.createSequentialGroup()
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelDeliveryManLayout.createSequentialGroup()
                             .addGap(24, 24, 24)
                             .addGroup(panelDeliveryManLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(lblCaretakerName1)
-                                .addComponent(lblCaretakerAge1)
-                                .addComponent(lblCaretakerUsername1)))
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelDeliveryManLayout.createSequentialGroup()
+                                    .addGap(0, 0, Short.MAX_VALUE)
+                                    .addComponent(txtCaretakerId1, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(panelDeliveryManLayout.createSequentialGroup()
+                                    .addGroup(panelDeliveryManLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(lblCaretakerName1)
+                                        .addComponent(lblCaretakerAge1)
+                                        .addComponent(lblCaretakerUsername1))
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addGroup(panelDeliveryManLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(txtCaretakerAge1, javax.swing.GroupLayout.DEFAULT_SIZE, 206, Short.MAX_VALUE)
+                                        .addComponent(txtCaretakerName1, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtCaretakerUsername1))))
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(txtCaretakerEmailId1, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(77, 77, 77))
                         .addGroup(panelDeliveryManLayout.createSequentialGroup()
-                            .addComponent(btnCaretakerView1)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                            .addComponent(btnCaretakerDelete1))
-                        .addComponent(ScrollPaneNgoManager2, javax.swing.GroupLayout.PREFERRED_SIZE, 695, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addContainerGap(668, Short.MAX_VALUE)))
+                            .addGroup(panelDeliveryManLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(panelDeliveryManLayout.createSequentialGroup()
+                                    .addComponent(btnCaretakerView1)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(btnCaretakerDelete1))
+                                .addComponent(ScrollPaneNgoManager2, javax.swing.GroupLayout.PREFERRED_SIZE, 695, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGap(28, 28, 28)))))
         );
         panelDeliveryManLayout.setVerticalGroup(
             panelDeliveryManLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelDeliveryManLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(panelDeliveryManLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(panelDeliveryManLayout.createSequentialGroup()
-                        .addComponent(lblTitle5)
-                        .addGap(298, 298, 298)
-                        .addGroup(panelDeliveryManLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblCaretakerEmailId1, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(panelDeliveryManLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(lblCaretakerId1)
-                                .addComponent(txtCaretakerId1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(panelDeliveryManLayout.createSequentialGroup()
-                        .addComponent(txtCaretakerEmailId1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(3, 3, 3)))
+                .addComponent(lblTitle5)
+                .addGap(293, 293, 293)
+                .addGroup(panelDeliveryManLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblCaretakerId1)
+                    .addComponent(lblCaretakerEmailId1))
                 .addGap(18, 18, 18)
-                .addGroup(panelDeliveryManLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblCaretakerPhno1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(panelDeliveryManLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(txtCaretakerName1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(txtCaretakerPhno1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(panelDeliveryManLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblCaretakerPhno1)
+                    .addComponent(txtCaretakerPhno1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(panelDeliveryManLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblCaretakerPassword1)
-                    .addComponent(txtCaretakerUsername1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtCaretakerPassword1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(txtCaretakerAge1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 161, Short.MAX_VALUE)
+                .addGroup(panelDeliveryManLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblCaretakerGender1)
+                    .addComponent(cmbCaretakerGender1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(panelDeliveryManLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(cmbCaretakerGender1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblCaretakerGender1))
+                    .addComponent(lblCaretakerRole1)
+                    .addComponent(txtCaretakerRole1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addGroup(panelDeliveryManLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtCaretakerRole1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblCaretakerRole1))
-                .addGap(111, 111, 111)
                 .addGroup(panelDeliveryManLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnCaretakerCreate1)
                     .addComponent(btnCaretakerUpdate1))
@@ -1409,21 +1309,28 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
                     .addGroup(panelDeliveryManLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(btnCaretakerView1)
                         .addComponent(btnCaretakerDelete1))
-                    .addGap(94, 94, 94)
-                    .addComponent(lblCaretakerName1)
+                    .addGap(54, 54, 54)
+                    .addGroup(panelDeliveryManLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(txtCaretakerEmailId1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtCaretakerId1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGap(18, 18, 18)
-                    .addComponent(lblCaretakerUsername1)
-                    .addGap(27, 27, 27)
-                    .addComponent(lblCaretakerAge1)
-                    .addContainerGap(287, Short.MAX_VALUE)))
+                    .addGroup(panelDeliveryManLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(txtCaretakerName1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lblCaretakerName1))
+                    .addGap(18, 18, 18)
+                    .addGroup(panelDeliveryManLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(txtCaretakerUsername1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lblCaretakerUsername1))
+                    .addGap(20, 20, 20)
+                    .addGroup(panelDeliveryManLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(txtCaretakerAge1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lblCaretakerAge1))
+                    .addContainerGap(272, Short.MAX_VALUE)))
         );
 
         panelWork.add(panelDeliveryMan, "card4");
 
-        panelMedicalOrders.setBackground(new java.awt.Color(204, 255, 255));
-
         tableNgoOrder1.setAutoCreateRowSorter(true);
-        tableNgoOrder1.setBackground(new java.awt.Color(255, 255, 204));
         tableNgoOrder1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
@@ -1471,15 +1378,11 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
 
         panelWork.add(panelMedicalOrders, "card8");
 
-        panelNgoOrders.setBackground(new java.awt.Color(204, 255, 255));
-        panelNgoOrders.setForeground(new java.awt.Color(255, 255, 255));
-
         lblTitle6.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         lblTitle6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitle6.setText("NGO Orders");
 
         tableNgoOrder.setAutoCreateRowSorter(true);
-        tableNgoOrder.setBackground(new java.awt.Color(255, 255, 204));
         tableNgoOrder.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null},
@@ -1501,19 +1404,14 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
         });
         jScrollPane4.setViewportView(tableNgoOrder);
 
-        jLabel1.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         jLabel1.setText("Shopkeeper Id:");
 
-        jLabel2.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         jLabel2.setText("DeliveryMan Id:");
 
-        jLabel3.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         jLabel3.setText("Order Id:");
 
-        jLabel4.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         jLabel4.setText("Item:");
 
-        jLabel5.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         jLabel5.setText("Status:");
 
         txtOrderId.setEditable(false);
@@ -1525,9 +1423,6 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
 
         txtStatus.setEditable(false);
 
-        btnOutForDelivery.setBackground(new java.awt.Color(0, 51, 51));
-        btnOutForDelivery.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        btnOutForDelivery.setForeground(new java.awt.Color(255, 255, 255));
         btnOutForDelivery.setText("Out For Delivery");
         btnOutForDelivery.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1535,9 +1430,6 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
             }
         });
 
-        btnViewOrder.setBackground(new java.awt.Color(0, 51, 51));
-        btnViewOrder.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        btnViewOrder.setForeground(new java.awt.Color(255, 255, 255));
         btnViewOrder.setText("View");
         btnViewOrder.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1545,9 +1437,6 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
             }
         });
 
-        btnUpdateOrder.setBackground(new java.awt.Color(0, 51, 51));
-        btnUpdateOrder.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        btnUpdateOrder.setForeground(new java.awt.Color(255, 255, 255));
         btnUpdateOrder.setText("Update");
         btnUpdateOrder.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1555,9 +1444,6 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
             }
         });
 
-        btnCancelOrder.setBackground(new java.awt.Color(0, 51, 51));
-        btnCancelOrder.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        btnCancelOrder.setForeground(new java.awt.Color(255, 255, 255));
         btnCancelOrder.setText("Cancel Order");
         btnCancelOrder.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1565,9 +1451,6 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
             }
         });
 
-        btnDelivered.setBackground(new java.awt.Color(0, 51, 51));
-        btnDelivered.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
-        btnDelivered.setForeground(new java.awt.Color(255, 255, 255));
         btnDelivered.setText("Delivered");
         btnDelivered.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1577,7 +1460,6 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
 
         txtItem.setEditable(false);
 
-        jLabel7.setFont(new java.awt.Font("Rockwell", 1, 12)); // NOI18N
         jLabel7.setText("Quantity:");
 
         txtQty.setEditable(false);
@@ -1655,11 +1537,11 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
                 .addGroup(panelNgoOrdersLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
                     .addComponent(txtQty, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(35, 35, 35)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 80, Short.MAX_VALUE)
                 .addGroup(panelNgoOrdersLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
                     .addComponent(txtStatus, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
+                .addGap(47, 47, 47)
                 .addGroup(panelNgoOrdersLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnOutForDelivery)
                     .addComponent(btnUpdateOrder)
@@ -2672,10 +2554,6 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtOrderIdActionPerformed
 
-    private void txtCaretakerPassword1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCaretakerPassword1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtCaretakerPassword1ActionPerformed
-
     private void populateHospitalEncounterTable(){
         DefaultTableModel model = (DefaultTableModel) tableEncounter1.getModel();
         model.setRowCount(0);
@@ -2894,6 +2772,7 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
     private javax.swing.JLabel lblCaretakerPhno1;
     private javax.swing.JLabel lblCaretakerRole;
     private javax.swing.JLabel lblCaretakerRole1;
+    private javax.swing.JLabel lblCaretakerSearch;
     private javax.swing.JLabel lblCaretakerUsername;
     private javax.swing.JLabel lblCaretakerUsername1;
     private javax.swing.JLabel lblDoctorEncounterUsername;
@@ -2982,6 +2861,7 @@ public class MedAdminWorkspace extends javax.swing.JPanel {
     private javax.swing.JTextField txtItemOrderId;
     private javax.swing.JTextField txtItemQuantity;
     private javax.swing.JTextField txtItemQuantity1;
+    private javax.swing.JTextField txtMedStoreSearch;
     private javax.swing.JTextField txtMedicineQuantity;
     private javax.swing.JTextField txtOrderId;
     private javax.swing.JTextField txtQty;

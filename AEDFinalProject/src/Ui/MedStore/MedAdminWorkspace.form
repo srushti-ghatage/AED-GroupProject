@@ -80,7 +80,7 @@
                       <Component id="btnMedOrders" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="btnNgoOrders" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="280" max="32767" attributes="0"/>
+                      <EmptySpace pref="272" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -88,9 +88,6 @@
           <SubComponents>
             <Component class="javax.swing.JButton" name="btnHome">
               <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Rockwell" size="12" style="1"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Home"/>
               </Properties>
               <Events>
@@ -99,9 +96,6 @@
             </Component>
             <Component class="javax.swing.JButton" name="btnEncounter">
               <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Rockwell" size="12" style="1"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Encounter"/>
               </Properties>
               <Events>
@@ -110,9 +104,6 @@
             </Component>
             <Component class="javax.swing.JButton" name="btnStorekeeper">
               <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Rockwell" size="12" style="1"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Storekeeper"/>
               </Properties>
               <Events>
@@ -121,9 +112,6 @@
             </Component>
             <Component class="javax.swing.JButton" name="btnBilling">
               <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Rockwell" size="12" style="1"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Billing"/>
               </Properties>
               <Events>
@@ -132,9 +120,6 @@
             </Component>
             <Component class="javax.swing.JButton" name="btnItems">
               <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Rockwell" size="12" style="1"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Items"/>
               </Properties>
               <Events>
@@ -143,9 +128,6 @@
             </Component>
             <Component class="javax.swing.JButton" name="btnDeliveryMan">
               <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Rockwell" size="12" style="1"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Delivery Man"/>
               </Properties>
               <Events>
@@ -154,9 +136,6 @@
             </Component>
             <Component class="javax.swing.JButton" name="btnNgoOrders">
               <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Rockwell" size="12" style="1"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="NGO Orders"/>
               </Properties>
               <Events>
@@ -165,9 +144,6 @@
             </Component>
             <Component class="javax.swing.JButton" name="btnMedOrders">
               <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Rockwell" size="12" style="1"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Medical Orders"/>
               </Properties>
               <Events>
@@ -225,15 +201,6 @@
                 </Component>
                 <Component class="javax.swing.JButton" name="btnLogOut">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="0" type="rgb"/>
-                    </Property>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Log Out"/>
                   </Properties>
                   <Events>
@@ -241,7 +208,7 @@
                   </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="1087" y="128" width="100" height="30"/>
+                      <AbsoluteConstraints x="1087" y="128" width="-1" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -263,7 +230,7 @@
             <Container class="javax.swing.JPanel" name="panelEncounter">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ff" green="ff" red="cc" type="rgb"/>
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -334,7 +301,7 @@
                           <Component id="jScrollPane3" min="-2" pref="111" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
                           <Component id="btnEncounterView" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="121" max="32767" attributes="0"/>
+                          <EmptySpace pref="119" max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="lblEncounterNo" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="txtEncounterNo" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -395,9 +362,6 @@
                   <SubComponents>
                     <Component class="javax.swing.JTable" name="tableEncounter1">
                       <Properties>
-                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="cc" green="ff" red="ff" type="rgb"/>
-                        </Property>
                         <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                           <Table columnCount="5" rowCount="4">
                             <Column editable="true" title="Encounter No" type="java.lang.String"/>
@@ -445,15 +409,6 @@
                 </Container>
                 <Component class="javax.swing.JButton" name="btnEncounterView">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="0" type="rgb"/>
-                    </Property>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="View"/>
                   </Properties>
                   <Events>
@@ -462,41 +417,26 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblEncounterNo">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Encounter No"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblEncounterHospital">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Hospital"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblDoctorEncounterUsername">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Doctor Username"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblEncounterPatientUsername">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Patient Username"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblEncounterDate">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Date"/>
                   </Properties>
                 </Component>
@@ -516,9 +456,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblEncounterBP">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="BP"/>
                   </Properties>
                 </Component>
@@ -526,9 +463,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblEncounterTemperature">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Temperature"/>
                   </Properties>
                 </Component>
@@ -536,9 +470,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblEncounterMedicine">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Medicine"/>
                   </Properties>
                 </Component>
@@ -546,9 +477,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblEncounterMedicineQuantity">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Medicine Quantity"/>
                   </Properties>
                 </Component>
@@ -562,7 +490,7 @@
             <Container class="javax.swing.JPanel" name="panelItem">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ff" green="ff" red="cc" type="rgb"/>
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -693,7 +621,7 @@
                               </Group>
                               <Component id="txtItemQuantity" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace pref="239" max="32767" attributes="0"/>
+                          <EmptySpace pref="238" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -717,9 +645,6 @@
                   <SubComponents>
                     <Component class="javax.swing.JTable" name="tableItem">
                       <Properties>
-                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="cc" green="ff" red="ff" type="rgb"/>
-                        </Property>
                         <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                           <Table columnCount="6" rowCount="4">
                             <Column editable="true" title="Item Id" type="java.lang.String"/>
@@ -773,15 +698,6 @@
                 </Container>
                 <Component class="javax.swing.JButton" name="btnMedCreate">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="0" type="rgb"/>
-                    </Property>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Create"/>
                   </Properties>
                   <Events>
@@ -790,15 +706,6 @@
                 </Component>
                 <Component class="javax.swing.JButton" name="btnPatientView">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="0" type="rgb"/>
-                    </Property>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="View"/>
                   </Properties>
                   <Events>
@@ -807,15 +714,6 @@
                 </Component>
                 <Component class="javax.swing.JButton" name="btnPatientUpdate">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="0" type="rgb"/>
-                    </Property>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Update"/>
                   </Properties>
                   <Events>
@@ -824,15 +722,6 @@
                 </Component>
                 <Component class="javax.swing.JButton" name="btnPatientDelete">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="0" type="rgb"/>
-                    </Property>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Delete"/>
                   </Properties>
                   <Events>
@@ -841,9 +730,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblPatientID">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Item Id:"/>
                   </Properties>
                 </Component>
@@ -851,9 +737,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblPatientUsername">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Name:"/>
                   </Properties>
                 </Component>
@@ -861,9 +744,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblPatientName">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Cost:"/>
                   </Properties>
                 </Component>
@@ -871,9 +751,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblPatientAge">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Expiry Date:"/>
                   </Properties>
                 </Component>
@@ -881,9 +758,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblPatientEmail">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Quantity:"/>
                   </Properties>
                 </Component>
@@ -894,10 +768,7 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblPatientEmail1">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
-                    <Property name="text" type="java.lang.String" value="Availability:"/>
+                    <Property name="text" type="java.lang.String" value="Avalability:"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JComboBox" name="txtItemAvailability">
@@ -915,9 +786,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblPatientName1">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Description:"/>
                   </Properties>
                 </Component>
@@ -939,11 +807,6 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="panelStorekeeper">
-              <Properties>
-                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ff" green="ff" red="cc" type="rgb"/>
-                </Property>
-              </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
                   <CardConstraints cardName="card4"/>
@@ -953,78 +816,101 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="lblTitle3" alignment="0" pref="1391" max="32767" attributes="0"/>
+                      <Component id="lblTitle3" alignment="0" pref="1173" max="32767" attributes="0"/>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="lblCaretakerRole" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblCaretakerGender" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblCaretakerId" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <Component id="txtCaretakerName" min="-2" pref="203" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="lblCaretakerId" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
-                                  <Component id="btnCaretakerCreate" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="btnCaretakerUpdate" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="cmbCaretakerGender" min="-2" pref="210" max="-2" attributes="0"/>
-                                      <Component id="txtCaretakerRole" min="-2" pref="210" max="-2" attributes="0"/>
-                                      <Component id="txtCaretakerAge" alignment="0" min="-2" pref="206" max="-2" attributes="0"/>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="txtCaretakerId" min="-2" pref="206" max="-2" attributes="0"/>
-                                          <EmptySpace min="-2" pref="118" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="lblCaretakerPassword" min="-2" max="-2" attributes="0"/>
-                                              <Group type="102" attributes="0">
-                                                  <Group type="103" groupAlignment="0" attributes="0">
-                                                      <Component id="lblCaretakerPhno" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="lblCaretakerEmailId" min="-2" max="-2" attributes="0"/>
-                                                  </Group>
-                                                  <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
-                                                  <Group type="103" groupAlignment="1" attributes="0">
-                                                      <Component id="txtCaretakerPhno" alignment="1" min="-2" pref="206" max="-2" attributes="0"/>
-                                                      <Component id="txtCaretakerPassword" alignment="1" min="-2" pref="206" max="-2" attributes="0"/>
-                                                      <Component id="txtCaretakerEmailId" min="-2" pref="206" max="-2" attributes="0"/>
-                                                  </Group>
+                                      <Component id="lblCaretakerEmailId" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <Component id="btnCaretakerCreate" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="btnCaretakerUpdate" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <Group type="103" groupAlignment="1" attributes="0">
+                                                  <Component id="lblCaretakerPhno" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="lblCaretakerPassword" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="txtCaretakerPassword" alignment="0" min="-2" pref="206" max="-2" attributes="0"/>
+                                                  <Component id="txtCaretakerPhno" alignment="0" min="-2" pref="206" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
                                       </Group>
                                   </Group>
-                                  <EmptySpace max="32767" attributes="0"/>
+                                  <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Component id="lblCaretakerRole" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
+                                          <Component id="txtCaretakerRole" pref="625" max="32767" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Component id="lblCaretakerGender" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="32767" attributes="0"/>
+                                          <Component id="cmbCaretakerGender" min="-2" pref="210" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="397" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                      </Group>
-                      <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="txtCaretakerUsername" min="-2" pref="206" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="985" max="-2" attributes="0"/>
                       </Group>
                       <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
+                                  <Group type="102" alignment="1" attributes="0">
                                       <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="lblCaretakerName" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="lblCaretakerAge" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="lblCaretakerUsername" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                              <Component id="txtCaretakerId" min="-2" pref="206" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="lblCaretakerName" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="lblCaretakerAge" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="lblCaretakerUsername" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace max="32767" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                  <Component id="txtCaretakerAge" alignment="0" pref="206" max="32767" attributes="0"/>
+                                                  <Component id="txtCaretakerName" alignment="0" min="-2" pref="203" max="-2" attributes="0"/>
+                                                  <Component id="txtCaretakerUsername" alignment="0" max="32767" attributes="0"/>
+                                              </Group>
+                                          </Group>
                                       </Group>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Component id="txtCaretakerEmailId" min="-2" pref="206" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="btnCaretakerView" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="btnCaretakerDelete" min="-2" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="1" attributes="0">
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <Component id="lblCaretakerSearch" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="txtMedStoreSearch" min="-2" pref="225" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="103" alignment="1" groupAlignment="0" attributes="0">
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Component id="btnCaretakerView" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                  <Component id="btnCaretakerDelete" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Component id="ScrollPaneNgoManager1" alignment="0" min="-2" pref="695" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="ScrollPaneNgoManager1" alignment="0" min="-2" pref="695" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace pref="668" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -1034,53 +920,32 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="lblTitle3" min="-2" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="294" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="lblCaretakerId" min="-2" max="-2" attributes="0"/>
-                                      <Component id="txtCaretakerId" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="txtCaretakerName" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" attributes="0">
-                                  <EmptySpace pref="289" max="32767" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="lblCaretakerEmailId" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="txtCaretakerEmailId" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="lblCaretakerPhno" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="txtCaretakerPhno" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
-                              </Group>
+                          <EmptySpace min="-2" pref="293" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="lblCaretakerId" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblCaretakerEmailId" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="txtCaretakerUsername" min="-2" max="-2" attributes="0"/>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="lblCaretakerPassword" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="txtCaretakerPassword" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                          </Group>
-                          <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                          <Component id="txtCaretakerAge" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="lblCaretakerPhno" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtCaretakerPhno" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="lblCaretakerPassword" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtCaretakerPassword" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace pref="161" max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="lblCaretakerGender" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="cmbCaretakerGender" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="lblCaretakerRole" min="-2" max="-2" attributes="0"/>
-                              <Component id="txtCaretakerRole" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="lblCaretakerRole" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtCaretakerRole" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="btnCaretakerCreate" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="btnCaretakerUpdate" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -1089,20 +954,39 @@
                       </Group>
                       <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="123" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="98" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="lblCaretakerSearch" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtMedStoreSearch" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
                               <Component id="ScrollPaneNgoManager1" min="-2" pref="112" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="btnCaretakerView" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="btnCaretakerDelete" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace min="-2" pref="94" max="-2" attributes="0"/>
-                              <Component id="lblCaretakerName" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="txtCaretakerEmailId" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtCaretakerId" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="lblCaretakerUsername" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-                              <Component id="lblCaretakerAge" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace pref="291" max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="txtCaretakerName" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblCaretakerName" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="txtCaretakerUsername" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblCaretakerUsername" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="txtCaretakerAge" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblCaretakerAge" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace pref="273" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -1118,6 +1002,13 @@
                     <Property name="text" type="java.lang.String" value="Storekeeper"/>
                   </Properties>
                 </Component>
+                <Component class="javax.swing.JLabel" name="lblCaretakerSearch">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Search:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="txtMedStoreSearch">
+                </Component>
                 <Container class="javax.swing.JScrollPane" name="ScrollPaneNgoManager1">
                   <AuxValues>
                     <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
@@ -1127,9 +1018,6 @@
                   <SubComponents>
                     <Component class="javax.swing.JTable" name="tableStorekeeper">
                       <Properties>
-                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="cc" green="ff" red="ff" type="rgb"/>
-                        </Property>
                         <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                           <Table columnCount="5" rowCount="4">
                             <Column editable="true" title="ID" type="java.lang.String"/>
@@ -1151,15 +1039,6 @@
                 </Container>
                 <Component class="javax.swing.JButton" name="btnCaretakerView">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="0" type="rgb"/>
-                    </Property>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="View"/>
                   </Properties>
                   <Events>
@@ -1168,15 +1047,6 @@
                 </Component>
                 <Component class="javax.swing.JButton" name="btnCaretakerDelete">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="0" type="rgb"/>
-                    </Property>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Delete"/>
                   </Properties>
                   <Events>
@@ -1185,9 +1055,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblCaretakerId">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Storekeeper Id:"/>
                   </Properties>
                 </Component>
@@ -1198,9 +1065,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblCaretakerEmailId">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Email-Id:"/>
                   </Properties>
                 </Component>
@@ -1208,9 +1072,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblCaretakerName">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Name:"/>
                   </Properties>
                 </Component>
@@ -1218,9 +1079,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblCaretakerPhno">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Phone No:"/>
                   </Properties>
                 </Component>
@@ -1228,9 +1086,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblCaretakerUsername">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Username:"/>
                   </Properties>
                 </Component>
@@ -1238,9 +1093,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblCaretakerPassword">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Password:"/>
                   </Properties>
                 </Component>
@@ -1250,9 +1102,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblCaretakerAge">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Age:"/>
                   </Properties>
                 </Component>
@@ -1274,9 +1123,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblCaretakerGender">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Gender:"/>
                   </Properties>
                 </Component>
@@ -1296,9 +1142,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblCaretakerRole">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Role:"/>
                   </Properties>
                 </Component>
@@ -1311,11 +1154,6 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="panelBilling">
-              <Properties>
-                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ff" green="ff" red="cc" type="rgb"/>
-                </Property>
-              </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
                   <CardConstraints cardName="card7"/>
@@ -1337,7 +1175,7 @@
                           </Group>
                           <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="1" attributes="0">
-                              <Component id="txtItemOrderId" alignment="1" pref="249" max="32767" attributes="0"/>
+                              <Component id="txtItemOrderId" alignment="1" pref="543" max="32767" attributes="0"/>
                               <Component id="txtItemName1" alignment="0" max="32767" attributes="0"/>
                               <Component id="txtItemCost1" alignment="0" max="32767" attributes="0"/>
                               <Component id="txtItemExDate1" alignment="0" max="32767" attributes="0"/>
@@ -1348,7 +1186,7 @@
                           <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace pref="193" max="32767" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="btnSelectItem" min="-2" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" max="-2" attributes="0">
@@ -1394,7 +1232,7 @@
                                               <Component id="txtItemName1" alignment="3" min="-2" max="-2" attributes="0"/>
                                               <Component id="lblPatientUsername1" alignment="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
-                                          <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="3" attributes="0">
                                               <Component id="txtItemCost1" alignment="3" min="-2" max="-2" attributes="0"/>
                                               <Component id="lblPatientName2" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -1419,7 +1257,7 @@
                           </Group>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
-                                  <EmptySpace pref="83" max="32767" attributes="0"/>
+                                  <EmptySpace pref="82" max="32767" attributes="0"/>
                                   <Component id="btnBillOrder" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
                               </Group>
@@ -1436,9 +1274,6 @@
               <SubComponents>
                 <Component class="javax.swing.JLabel" name="lblTitle4">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="ff" red="cc" type="rgb"/>
-                    </Property>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI" size="24" style="1"/>
                     </Property>
@@ -1455,9 +1290,6 @@
                   <SubComponents>
                     <Component class="javax.swing.JTable" name="tableEncounterOrder">
                       <Properties>
-                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="cc" green="ff" red="ff" type="rgb"/>
-                        </Property>
                         <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                           <Table columnCount="3" rowCount="4">
                             <Column editable="true" title="Encounter No" type="java.lang.String"/>
@@ -1500,9 +1332,6 @@
                   <SubComponents>
                     <Component class="javax.swing.JTable" name="tableItem1">
                       <Properties>
-                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="cc" green="ff" red="ff" type="rgb"/>
-                        </Property>
                         <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                           <Table columnCount="6" rowCount="4">
                             <Column editable="true" title="Item Id" type="java.lang.String"/>
@@ -1556,9 +1385,6 @@
                 </Container>
                 <Component class="javax.swing.JLabel" name="lblPatientUsername1">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Item Name:"/>
                   </Properties>
                 </Component>
@@ -1569,9 +1395,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblPatientName2">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Cost:"/>
                   </Properties>
                 </Component>
@@ -1582,9 +1405,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblPatientAge1">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Expiry Date:"/>
                   </Properties>
                 </Component>
@@ -1595,9 +1415,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblPatientEmail2">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Quantity:"/>
                   </Properties>
                 </Component>
@@ -1608,15 +1425,6 @@
                 </Component>
                 <Component class="javax.swing.JButton" name="btnBillOrder">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="66" green="66" red="0" type="rgb"/>
-                    </Property>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Order"/>
                   </Properties>
                   <Events>
@@ -1625,15 +1433,6 @@
                 </Component>
                 <Component class="javax.swing.JButton" name="btnSelectItem">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="0" type="rgb"/>
-                    </Property>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Select"/>
                   </Properties>
                   <Events>
@@ -1642,9 +1441,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblOrderId">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Order Id:"/>
                   </Properties>
                 </Component>
@@ -1670,15 +1466,6 @@
                 </Container>
                 <Component class="javax.swing.JButton" name="btnPrint">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="0" type="rgb"/>
-                    </Property>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Print"/>
                   </Properties>
                   <Events>
@@ -1688,11 +1475,6 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="panelDeliveryMan">
-              <Properties>
-                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ff" green="ff" red="cc" type="rgb"/>
-                </Property>
-              </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
                   <CardConstraints cardName="card4"/>
@@ -1702,61 +1484,50 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="lblTitle5" alignment="0" max="32767" attributes="0"/>
+                      <Component id="lblTitle5" alignment="0" pref="1173" max="32767" attributes="0"/>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <Component id="lblCaretakerId1" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="135" max="-2" attributes="0"/>
-                                      <Component id="txtCaretakerId1" min="-2" pref="206" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Component id="txtCaretakerName1" min="-2" pref="203" max="-2" attributes="0"/>
-                              </Group>
                               <Group type="102" alignment="0" attributes="0">
+                                  <Component id="lblCaretakerId1" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="lblCaretakerGender1" min="-2" max="-2" attributes="0"/>
-                                      <Component id="lblCaretakerRole1" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace min="-2" pref="191" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="txtCaretakerAge1" min="-2" pref="206" max="-2" attributes="0"/>
-                                      <Component id="txtCaretakerUsername1" min="-2" pref="206" max="-2" attributes="0"/>
-                                      <Component id="cmbCaretakerGender1" min="-2" pref="210" max="-2" attributes="0"/>
-                                      <Component id="txtCaretakerRole1" alignment="0" min="-2" pref="210" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                          </Group>
-                          <EmptySpace pref="159" max="32767" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <Group type="103" groupAlignment="1" attributes="0">
-                                      <Group type="102" alignment="1" attributes="0">
-                                          <Component id="btnCaretakerCreate1" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="btnCaretakerUpdate1" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="1" attributes="0">
-                                          <Component id="lblCaretakerPassword1" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace min="-2" pref="91" max="-2" attributes="0"/>
-                                          <Component id="txtCaretakerPassword1" min="-2" pref="206" max="-2" attributes="0"/>
-                                          <EmptySpace min="0" pref="294" max="32767" attributes="0"/>
+                                      <Component id="lblCaretakerEmailId1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <Component id="btnCaretakerCreate1" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="btnCaretakerUpdate1" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <Group type="103" groupAlignment="1" attributes="0">
+                                                  <Component id="lblCaretakerPhno1" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="lblCaretakerPassword1" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="txtCaretakerPassword1" alignment="0" min="-2" pref="206" max="-2" attributes="0"/>
+                                                  <Component id="txtCaretakerPhno1" alignment="0" min="-2" pref="206" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
                                       </Group>
                                   </Group>
                                   <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
                               </Group>
-                              <Group type="102" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="lblCaretakerEmailId1" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="lblCaretakerPhno1" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Component id="lblCaretakerRole1" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
+                                          <Component id="txtCaretakerRole1" pref="625" max="32767" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Component id="lblCaretakerGender1" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="32767" attributes="0"/>
+                                          <Component id="cmbCaretakerGender1" min="-2" pref="210" max="-2" attributes="0"/>
+                                      </Group>
                                   </Group>
-                                  <EmptySpace min="-2" pref="90" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="txtCaretakerPhno1" min="-2" pref="206" max="-2" attributes="0"/>
-                                      <Component id="txtCaretakerEmailId1" min="-2" pref="206" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace max="32767" attributes="0"/>
+                                  <EmptySpace min="-2" pref="397" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -1764,22 +1535,43 @@
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
+                                  <Group type="102" alignment="1" attributes="0">
                                       <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="lblCaretakerName1" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="lblCaretakerAge1" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="lblCaretakerUsername1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                              <Component id="txtCaretakerId1" min="-2" pref="206" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="lblCaretakerName1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="lblCaretakerAge1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="lblCaretakerUsername1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace max="32767" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                  <Component id="txtCaretakerAge1" alignment="0" pref="206" max="32767" attributes="0"/>
+                                                  <Component id="txtCaretakerName1" alignment="0" min="-2" pref="203" max="-2" attributes="0"/>
+                                                  <Component id="txtCaretakerUsername1" alignment="0" max="32767" attributes="0"/>
+                                              </Group>
+                                          </Group>
                                       </Group>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Component id="txtCaretakerEmailId1" min="-2" pref="206" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="btnCaretakerView1" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="btnCaretakerDelete1" min="-2" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="btnCaretakerView1" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                              <Component id="btnCaretakerDelete1" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Component id="ScrollPaneNgoManager2" alignment="0" min="-2" pref="695" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="ScrollPaneNgoManager2" alignment="0" min="-2" pref="695" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace pref="668" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -1788,50 +1580,33 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="1" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <Component id="lblTitle5" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="298" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="lblCaretakerEmailId1" alignment="1" min="-2" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="3" attributes="0">
-                                          <Component id="lblCaretakerId1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="txtCaretakerId1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                              </Group>
-                              <Group type="102" attributes="0">
-                                  <Component id="txtCaretakerEmailId1" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
-                              </Group>
+                          <Component id="lblTitle5" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="293" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="lblCaretakerId1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblCaretakerEmailId1" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="lblCaretakerPhno1" alignment="0" max="32767" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="txtCaretakerName1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="txtCaretakerPhno1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="lblCaretakerPhno1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtCaretakerPhno1" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="lblCaretakerPassword1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="txtCaretakerUsername1" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="txtCaretakerPassword1" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="txtCaretakerAge1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <EmptySpace pref="161" max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="cmbCaretakerGender1" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="lblCaretakerGender1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="cmbCaretakerGender1" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="txtCaretakerRole1" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="lblCaretakerRole1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtCaretakerRole1" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="-2" pref="111" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="btnCaretakerCreate1" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="btnCaretakerUpdate1" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -1847,13 +1622,27 @@
                                   <Component id="btnCaretakerView1" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="btnCaretakerDelete1" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace min="-2" pref="94" max="-2" attributes="0"/>
-                              <Component id="lblCaretakerName1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="txtCaretakerEmailId1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtCaretakerId1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="lblCaretakerUsername1" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-                              <Component id="lblCaretakerAge1" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace pref="287" max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="txtCaretakerName1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblCaretakerName1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="txtCaretakerUsername1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblCaretakerUsername1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="txtCaretakerAge1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblCaretakerAge1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace pref="272" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -1878,9 +1667,6 @@
                   <SubComponents>
                     <Component class="javax.swing.JTable" name="tableDeliveryMan">
                       <Properties>
-                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="cc" green="ff" red="ff" type="rgb"/>
-                        </Property>
                         <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                           <Table columnCount="5" rowCount="4">
                             <Column editable="true" title="ID" type="java.lang.String"/>
@@ -1902,15 +1688,6 @@
                 </Container>
                 <Component class="javax.swing.JButton" name="btnCaretakerView1">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="0" type="rgb"/>
-                    </Property>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="View"/>
                   </Properties>
                   <Events>
@@ -1919,15 +1696,6 @@
                 </Component>
                 <Component class="javax.swing.JButton" name="btnCaretakerDelete1">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="0" type="rgb"/>
-                    </Property>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Delete"/>
                   </Properties>
                   <Events>
@@ -1936,9 +1704,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblCaretakerId1">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Delivery Man Id:"/>
                   </Properties>
                 </Component>
@@ -1949,9 +1714,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblCaretakerEmailId1">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Email-Id:"/>
                   </Properties>
                 </Component>
@@ -1959,9 +1721,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblCaretakerName1">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Name:"/>
                   </Properties>
                 </Component>
@@ -1969,9 +1728,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblCaretakerPhno1">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Phone No:"/>
                   </Properties>
                 </Component>
@@ -1979,9 +1735,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblCaretakerUsername1">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Username:"/>
                   </Properties>
                 </Component>
@@ -1989,38 +1742,20 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblCaretakerPassword1">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Password:"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JPasswordField" name="txtCaretakerPassword1">
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtCaretakerPassword1ActionPerformed"/>
-                  </Events>
                 </Component>
                 <Component class="javax.swing.JTextField" name="txtCaretakerAge1">
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblCaretakerAge1">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Age:"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JButton" name="btnCaretakerCreate1">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="0" type="rgb"/>
-                    </Property>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Create"/>
                   </Properties>
                   <Events>
@@ -2029,15 +1764,6 @@
                 </Component>
                 <Component class="javax.swing.JButton" name="btnCaretakerUpdate1">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="0" type="rgb"/>
-                    </Property>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Update"/>
                   </Properties>
                   <Events>
@@ -2046,9 +1772,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblCaretakerGender1">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Gender:"/>
                   </Properties>
                 </Component>
@@ -2068,9 +1791,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblCaretakerRole1">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Role:"/>
                   </Properties>
                 </Component>
@@ -2083,11 +1803,6 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="panelMedicalOrders">
-              <Properties>
-                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ff" green="ff" red="cc" type="rgb"/>
-                </Property>
-              </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
                   <CardConstraints cardName="card8"/>
@@ -2128,9 +1843,6 @@
                     <Component class="javax.swing.JTable" name="tableNgoOrder1">
                       <Properties>
                         <Property name="autoCreateRowSorter" type="boolean" value="true"/>
-                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="cc" green="ff" red="ff" type="rgb"/>
-                        </Property>
                         <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                           <Table columnCount="5" rowCount="4">
                             <Column editable="true" title="Order Id" type="java.lang.String"/>
@@ -2188,14 +1900,6 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="panelNgoOrders">
-              <Properties>
-                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ff" green="ff" red="cc" type="rgb"/>
-                </Property>
-                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                </Property>
-              </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
                   <CardConstraints cardName="card9"/>
@@ -2290,12 +1994,12 @@
                               <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="txtQty" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                          <EmptySpace pref="80" max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="txtStatus" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace pref="49" max="32767" attributes="0"/>
+                          <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="btnOutForDelivery" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="btnUpdateOrder" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -2327,9 +2031,6 @@
                     <Component class="javax.swing.JTable" name="tableNgoOrder">
                       <Properties>
                         <Property name="autoCreateRowSorter" type="boolean" value="true"/>
-                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="cc" green="ff" red="ff" type="rgb"/>
-                        </Property>
                         <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                           <Table columnCount="6" rowCount="4">
                             <Column editable="true" title="Order Id" type="java.lang.String"/>
@@ -2383,41 +2084,26 @@
                 </Container>
                 <Component class="javax.swing.JLabel" name="jLabel1">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Shopkeeper Id:"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel2">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="DeliveryMan Id:"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel3">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Order Id:"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel4">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Item:"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel5">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Status:"/>
                   </Properties>
                 </Component>
@@ -2436,15 +2122,6 @@
                 </Component>
                 <Component class="javax.swing.JButton" name="btnOutForDelivery">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="0" type="rgb"/>
-                    </Property>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Out For Delivery"/>
                   </Properties>
                   <Events>
@@ -2453,15 +2130,6 @@
                 </Component>
                 <Component class="javax.swing.JButton" name="btnViewOrder">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="0" type="rgb"/>
-                    </Property>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="View"/>
                   </Properties>
                   <Events>
@@ -2470,15 +2138,6 @@
                 </Component>
                 <Component class="javax.swing.JButton" name="btnUpdateOrder">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="0" type="rgb"/>
-                    </Property>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Update"/>
                   </Properties>
                   <Events>
@@ -2487,15 +2146,6 @@
                 </Component>
                 <Component class="javax.swing.JButton" name="btnCancelOrder">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="0" type="rgb"/>
-                    </Property>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Cancel Order"/>
                   </Properties>
                   <Events>
@@ -2504,15 +2154,6 @@
                 </Component>
                 <Component class="javax.swing.JButton" name="btnDelivered">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="0" type="rgb"/>
-                    </Property>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Delivered"/>
                   </Properties>
                   <Events>
@@ -2526,9 +2167,6 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel7">
                   <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Rockwell" size="12" style="1"/>
-                    </Property>
                     <Property name="text" type="java.lang.String" value="Quantity:"/>
                   </Properties>
                 </Component>
